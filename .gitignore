@@ -1,0 +1,35 @@
+.DS_Store
+paper.pdf
+
+__pycache__/
+*.py[cod]
+
+# Local render caches and provenance records are not deployment assets.
+assets/cache/
+assets/references/control/*.json
+
+# Legacy source collections and superseded generated media are not deployed.
+fail_videos/
+success_videos/
+supp_presentation_merged_videos/
+v2_10_lift_videos/
+v2_11_point_cloud_videos/
+overview.mp4
+assets/compositions/
+assets/figures/
+assets/favicon-options/*.png
+assets/favicon-options/hand-waypoints.svg
+assets/references/*_comparison.mp4
+assets/rollouts/control/cup_045.mp4
+assets/templates/templates/
+presentation/assets/bimanual.gif
+presentation/assets/compiled_reference.gif
+presentation/assets/grasp_change.gif
+presentation/assets/grounded_policy.gif
+presentation/assets/invert_template_side.png
+presentation/assets/invert_template_top.png
+presentation/assets/original_prior_work.png
+presentation/assets/pose_control.gif
+presentation/assets/real_world.gif
+presentation/assets/scale_reuse.gif
+presentation/assets/template_reuse.gif

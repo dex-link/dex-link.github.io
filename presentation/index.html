@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DexLink motivation, capabilities, and method overview.">
+  <title>DexLink overview</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body tabindex="0">
+  <main class="deck" aria-live="polite">
+    <section class="slide exact-slide is-active" data-title="Motivation">
+      <img src="assets/original_motivation.png" alt="Motivation: task goals alone do not specify how a dexterous task should be performed.">
+    </section>
+
+    <section class="slide prior-slide" data-title="Prior work">
+      <h1>Prior Works:</h1>
+      <ul>
+        <li>Dense hand–object trajectories provide low-level detailed task guidance, but they are tied to specific tasks and objects.</li>
+        <li>Hand-only pose priors are easier to reuse, but they do not specify the hand–object interaction to achieve.</li>
+        <li>We want a middle-ground task representation:
+          <span>reusable across objects and tasks, but still informative about how the hand should interact with the object.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide definition-slide" data-title="Interaction templates">
+      <h1>DexLink</h1>
+      <ul>
+        <li>We use hand–object interaction templates: a template captures how a hand interacts with an object or object part.
+          <ul>
+            <li>It can specify the intended grasp, contact region, and hand orientation.</li>
+            <li>Templates can be reused across object instances and even across related object categories.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide exact-slide" data-title="Task diversity">
+      <img src="assets/original_task_montage.png" alt="Examples of dexterous manipulation tasks represented with hand–object interaction templates.">
+    </section>
+
+    <section class="slide claim-slide" data-title="Grasp change">
+      <video muted loop playsinline preload="metadata" data-slide-video src="../assets/rollouts/tasks/mug_grasp_change.mp4"></video>
+      <p><strong>Grasp Change:</strong> DexLink allows fine-grained specification of low-level behavior</p>
+    </section>
+
+    <section class="slide claim-slide" data-title="Long-horizon manipulation">
+      <video muted loop playsinline preload="metadata" data-slide-video src="../assets/rollouts/tasks/stack_blocks.mp4"></video>
+      <p><strong>Long Horizon:</strong> DexLink allows efficient long-horizon task learning</p>
+    </section>
+
+    <section class="slide claim-slide" data-title="Bimanual manipulation">
+      <video muted loop playsinline preload="metadata" data-slide-video src="../assets/rollouts/tasks/banana_handover.mp4"></video>
+      <p><strong>Bimanual:</strong> DexLink extends to bimanual manipulation</p>
+    </section>
+
+    <section class="slide method-overview-slide" data-title="Method overview">
+      <h1>DexLink</h1>
+      <img src="assets/method_pipeline.png" alt="DexLink pipeline from sparse task specification and interaction templates to a physically grounded trajectory.">
+    </section>
+
+    <section class="slide method-step-slide" data-title="Task specification and retargeting">
+      <header>
+        <h1>Task Specification and Object-Aware Retargeting</h1>
+        <p>Object-state waypoints specify the desired task progression. Interaction templates are assigned independently at selected waypoints and retargeted to the robot hand and target object.</p>
+      </header>
+      <div class="method-stack">
+        <figure>
+          <img src="assets/method_inputs.png" alt="Object-state waypoints with independently assigned interaction templates">
+          <figcaption>Task specification and assigned templates</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/method_retargeting.png" alt="Object-aware retargeting of human hand–object templates to the robot hand">
+          <figcaption>Object-aware retargeting of interaction templates</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="slide method-step-slide" data-title="Reference construction">
+      <header>
+        <h1>Reference Trajectory Construction</h1>
+        <p>The retargeted robot hand transforms are interpolated along the object-state waypoints to construct an approximate kinematic reference.</p>
+      </header>
+      <div class="progression-layout">
+        <figure>
+          <img src="assets/method_reference_static.png" alt="Static progression of the interpolated reference trajectory">
+          <figcaption>Static progression</figcaption>
+        </figure>
+        <figure>
+          <img class="animated-media" src="assets/invert_reference.gif" alt="Animated reference trajectory for the cup inversion task">
+          <figcaption>Constructed reference trajectory</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="slide method-step-slide" data-title="Residual RL refinement">
+      <header>
+        <h1>Residual RL Refinement</h1>
+        <p>A residual policy refines the approximate reference into a physically grounded closed-loop trajectory.</p>
+      </header>
+      <div class="progression-layout">
+        <figure>
+          <img src="assets/method_result_static.png" alt="Static progression of the physically grounded cup-inversion trajectory">
+          <figcaption>Resulting trajectory</figcaption>
+        </figure>
+        <figure>
+          <img class="animated-media" src="assets/invert_policy.gif" alt="Physically grounded policy execution for the cup inversion task">
+          <figcaption>Residual-policy execution</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <button class="nav-button previous" id="previous" type="button" aria-label="Previous slide">←</button>
+  <button class="nav-button next" id="next" type="button" aria-label="Next slide">→</button>
+  <div class="slide-status"><span id="position">1 / 11</span><span id="title">Motivation</span></div>
+  <a class="open-link" id="open-link" href="index.html" target="_blank" rel="noopener">Open presentation</a>
+  <script src="deck.js"></script>
+</body>
+</html>

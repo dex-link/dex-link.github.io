@@ -1,0 +1,75 @@
+:root {
+  --ink: #111111;
+  --muted: #5d626a;
+  --blue: #1d4ed8;
+  --line: #d7dce3;
+  --paper: #ffffff;
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; }
+body { margin: 0; overflow: hidden; color: var(--ink); background: #111827; font-family: var(--font-sans); }
+figure { margin: 0; }
+img, video { display: block; max-width: 100%; }
+
+.deck { position: absolute; inset: 0; }
+.slide { position: absolute; inset: 0; display: none; background: var(--paper); overflow: hidden; }
+.slide.is-active { display: block; }
+.slide h1 { font-family: var(--font-sans); font-weight: 400; letter-spacing: -.025em; }
+
+/* The original PDF pages retain their native 16:9 composition. */
+.exact-slide img { width: 100%; height: 100%; object-fit: contain; background: white; }
+
+.prior-slide { padding: 7.4vh 5.4vw; }
+.prior-slide.is-active { display: grid; grid-template-rows: auto minmax(0, 1fr); }
+.prior-slide h1 { margin: 0; font-size: clamp(26px, 3vw, 58px); }
+.prior-slide > ul { align-self: center; justify-self: center; width: min(78vw, 1420px); margin: 0; padding-left: 1.25em; font-size: clamp(18px, 1.7vw, 33px); line-height: 1.28; }
+.prior-slide li + li { margin-top: 2.4vh; }
+.prior-slide li::marker { color: #555; }
+.prior-slide li span { display: block; max-width: 68vw; margin-top: .7vh; color: var(--blue); font-weight: 600; }
+
+.definition-slide { padding: 18vh 9.6vw; }
+.definition-slide h1,
+.method-overview-slide h1 { margin: 0; color: var(--muted); font-size: clamp(42px, 6.1vw, 118px); line-height: 1; }
+.definition-slide > ul { margin: 11vh 0 0; padding-left: 1.35em; font-size: clamp(17px, 2vw, 39px); line-height: 1.14; }
+.definition-slide li::marker { color: #666; }
+.definition-slide ul ul { margin-top: .7vh; padding-left: 2.5em; }
+
+.claim-slide { padding: 8.5vh 10.5vw 6.5vh; text-align: center; }
+.claim-slide video { width: 72vw; height: 70vh; margin: 0 auto; object-fit: contain; background: #fafaf8; }
+.claim-slide p { max-width: 82vw; margin: 4.2vh auto 0; color: var(--muted); font-size: clamp(18px, 1.8vw, 34px); line-height: 1.2; }
+.claim-slide strong { color: var(--ink); font-weight: 600; }
+
+.method-overview-slide { padding: 5.6vh 4.5vw 5vh; }
+.method-overview-slide h1 { font-size: clamp(32px, 4.6vw, 88px); }
+.method-overview-slide > img { width: 91vw; height: 78vh; margin: 3.8vh auto 0; object-fit: contain; }
+
+.method-step-slide { padding: 5.7vh 5.4vw 6.5vh; }
+.method-step-slide header h1 { margin: 0; color: var(--ink); font-size: clamp(26px, 3vw, 58px); line-height: 1.08; }
+.method-step-slide header p { max-width: 84vw; margin: 1.2vh 0 0; color: var(--muted); font-size: clamp(11px, 1.18vw, 23px); line-height: 1.35; }
+.method-stack,
+.progression-layout { display: grid; gap: 2vh; height: 67vh; margin-top: 3vh; }
+.method-stack { grid-template-rows: repeat(2, minmax(0, 1fr)); }
+.progression-layout { grid-template-rows: .42fr .58fr; }
+.method-stack figure,
+.progression-layout figure { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-width: 0; min-height: 0; }
+.method-stack figure > img,
+.progression-layout figure > img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.method-stack figcaption,
+.progression-layout figcaption { padding-top: .7vh; color: var(--muted); font-size: clamp(9px, .9vw, 17px); text-align: center; }
+.animated-media { width: 100%; height: 100%; object-fit: contain; background: #fafaf8; }
+
+.nav-button { position: fixed; z-index: 20; right: 2.4vw; bottom: 2.2vh; width: clamp(30px, 3vw, 48px); aspect-ratio: 1; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); background: rgba(255,255,255,.94); font-size: clamp(14px, 1.35vw, 22px); cursor: pointer; }
+.nav-button:disabled { cursor: default; opacity: .28; }
+.previous { right: 6vw; }
+.slide-status { position: fixed; z-index: 20; left: 2.4vw; bottom: 2.9vh; display: flex; gap: .8vw; color: var(--muted); font-size: clamp(8px, .75vw, 12px); }
+.slide-status span:first-child { color: var(--blue); font-weight: 700; }
+.progress { position: fixed; z-index: 20; left: 50%; bottom: 3.3vh; display: flex; gap: .4vw; transform: translateX(-50%); }
+.progress i { display: block; width: clamp(12px, 1.45vw, 24px); height: 2px; background: #cbd5e1; cursor: pointer; }
+.progress i.is-active { background: var(--blue); }
+.open-link { position: fixed; z-index: 20; right: 3vw; top: 2.5vh; color: var(--blue); font-size: clamp(8px, .75vw, 12px); text-decoration: none; }
+
+@media (max-aspect-ratio: 4/3) {
+  .claim-slide video { width: 86vw; }
+}

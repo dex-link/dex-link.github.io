@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>DexLink favicon studies</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #111827; background: #fff; font-family: Inter, system-ui, sans-serif; }
+    main { width: min(1080px, calc(100% - 40px)); margin: 70px auto; }
+    h1 { margin: 0; font-family: Georgia, serif; font-size: 42px; font-weight: 500; }
+    .intro { max-width: 720px; margin: 12px 0 38px; color: #526071; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    article { display: grid; grid-template-columns: 150px 1fr; gap: 24px; padding: 24px; border: 1px solid #cbd5e1; }
+    .large { width: 128px; height: 128px; }
+    h2 { margin: 2px 0 8px; font-size: 20px; }
+    p { margin: 0; color: #526071; line-height: 1.5; }
+    .scale { display: flex; align-items: end; gap: 18px; margin-top: 22px; color: #64748b; font-size: 11px; }
+    .scale span { display: grid; justify-items: center; gap: 6px; }
+    .s16 { width: 16px; height: 16px; }
+    .s32 { width: 32px; height: 32px; }
+    .s48 { width: 48px; height: 48px; }
+    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } article { grid-template-columns: 110px 1fr; } .large { width: 96px; height: 96px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Favicon studies</h1>
+    <p class="intro">Four hand-based directions and one editable block-and-waypoint base. The size row shows how much detail survives at common browser favicon sizes.</p>
+    <div class="grid">
+      <article>
+        <img class="large" src="assets/favicon-options/hand-open.svg" alt="Option A: open articulated hand skeleton">
+        <div><h2>A · Open skeleton</h2><p>The most literal hand-skeleton mark, with five articulated digits and highlighted joints.</p><div class="scale"><span><img class="s16" src="assets/favicon-options/hand-open.svg" alt="">16</span><span><img class="s32" src="assets/favicon-options/hand-open.svg" alt="">32</span><span><img class="s48" src="assets/favicon-options/hand-open.svg" alt="">48</span></div></div>
+      </article>
+      <article>
+        <img class="large" src="assets/favicon-options/hand-pinch.svg" alt="Option B: skeletal pinch around an object">
+        <div><h2>B · Pinch</h2><p>A reduced two-digit interaction. It is the simplest silhouette and remains strongest at 16 px.</p><div class="scale"><span><img class="s16" src="assets/favicon-options/hand-pinch.svg" alt="">16</span><span><img class="s32" src="assets/favicon-options/hand-pinch.svg" alt="">32</span><span><img class="s48" src="assets/favicon-options/hand-pinch.svg" alt="">48</span></div></div>
+      </article>
+      <article>
+        <img class="large" src="assets/favicon-options/hand-grasp.svg" alt="Option C: articulated fingers approaching an object">
+        <div><h2>C · Object-aware grasp</h2><p>Three articulated digits curve toward an object, emphasizing hand–object interaction.</p><div class="scale"><span><img class="s16" src="assets/favicon-options/hand-grasp.svg" alt="">16</span><span><img class="s32" src="assets/favicon-options/hand-grasp.svg" alt="">32</span><span><img class="s48" src="assets/favicon-options/hand-grasp.svg" alt="">48</span></div></div>
+      </article>
+      <article>
+        <img class="large" src="assets/favicon-options/hand-link.svg" alt="Option D: articulated hand connected to a link symbol">
+        <div><h2>D · Hand link</h2><p>A skeletal hand combined with a compact link motif, connecting dexterity to the DexLink name.</p><div class="scale"><span><img class="s16" src="assets/favicon-options/hand-link.svg" alt="">16</span><span><img class="s32" src="assets/favicon-options/hand-link.svg" alt="">32</span><span><img class="s48" src="assets/favicon-options/hand-link.svg" alt="">48</span></div></div>
+      </article>
+      <article>
+        <img class="large" src="assets/favicon-options/block-waypoints.svg" alt="Option E: cube along an opacity-graded waypoint path">
+        <div><h2>E · Block and waypoints</h2><p>An editable, transparent base containing only the block and its waypoint motion. A hand can be drawn over the intermediate block pose.</p><div class="scale"><span><img class="s16" src="assets/favicon-options/block-waypoints.svg" alt="">16</span><span><img class="s32" src="assets/favicon-options/block-waypoints.svg" alt="">32</span><span><img class="s48" src="assets/favicon-options/block-waypoints.svg" alt="">48</span></div></div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
