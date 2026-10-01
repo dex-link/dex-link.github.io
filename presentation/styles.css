@@ -22,7 +22,7 @@ img, video { display: block; max-width: 100%; }
 .exact-slide img { width: 100%; height: 100%; object-fit: contain; background: white; }
 
 .motivation-slide { padding: 12vh 8.5vw; }
-.motivation-slide.is-active { display: flex; align-items: center; }
+.motivation-slide.is-active { display: grid; place-items: center; }
 .motivation-slide ul { width: min(82vw, 1580px); margin: 0; padding-left: 1.15em; font-size: clamp(19px, 1.75vw, 34px); line-height: 1.3; }
 .motivation-slide li + li { margin-top: 5.8vh; }
 .motivation-slide li::marker { color: #555; }
