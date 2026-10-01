@@ -84,7 +84,7 @@ def check_media_references() -> None:
 
 def check_policy_checkpoints() -> None:
     module = load_build_module()
-    for asset in module.POLICY_ASSETS:
+    for asset in (*module.POLICY_ASSETS, *module.ARCTIC_POLICY_ASSETS):
         if asset.checkpoint_timestep <= 0:
             raise ValueError(
                 "Website policy asset does not declare a positive checkpoint "

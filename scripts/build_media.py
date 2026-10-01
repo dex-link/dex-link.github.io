@@ -19,6 +19,16 @@ class PolicyAsset:
 
 
 @dataclass(frozen=True)
+class ArcticPolicyAsset:
+    source: str
+    destination: str
+    benchmark_kind: str
+    task_id: str
+    seed: int
+    checkpoint_timestep: int
+
+
+@dataclass(frozen=True)
 class StaticAsset:
     source: Path
     destination: str
@@ -48,6 +58,9 @@ class ImageCropAsset:
 SITE_ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE = Path.cwd().resolve()
 MANIFEST = WORKSPACE / "revision/data/revision_policy_video_manifest_20260924.csv"
+ARCTIC_MANIFEST = (
+    WORKSPACE / "revision/data/arctic_checkpoint_run_manifest_20260924.csv"
+)
 ORIGINAL_DECK = Path("/mnt/external/Downloads/dexLink.pdf")
 
 
@@ -235,6 +248,67 @@ POLICY_ASSETS = (
 )
 
 
+ARCTIC_POLICY_ASSETS = (
+    # Dense ARCTIC tracking examples at audited positive checkpoints.
+    ArcticPolicyAsset(
+        "revision/videos/arctic_latest_checkpoint_20260924/originals/ketchup-100/seed42/step140800/rollout.mp4",
+        "assets/dense-tracking/ketchup-100_rollout.mp4",
+        "original",
+        "ketchup-100",
+        42,
+        140800,
+    ),
+    ArcticPolicyAsset(
+        "revision/videos/arctic_latest_checkpoint_20260924/originals/box-200/seed42/step192000/rollout.mp4",
+        "assets/dense-tracking/box-200_rollout.mp4",
+        "original",
+        "box-200",
+        42,
+        192000,
+    ),
+    ArcticPolicyAsset(
+        "revision/videos/arctic_latest_checkpoint_20260924/originals/mixer-170/seed52/step51200/rollout.mp4",
+        "assets/dense-tracking/mixer-170_rollout.mp4",
+        "original",
+        "mixer-170",
+        52,
+        51200,
+    ),
+    ArcticPolicyAsset(
+        "revision/videos/arctic_latest_checkpoint_20260924/originals/ketchup-300/seed23/step38400/rollout.mp4",
+        "assets/dense-tracking/ketchup-300_rollout.mp4",
+        "original",
+        "ketchup-300",
+        23,
+        38400,
+    ),
+    ArcticPolicyAsset(
+        "revision/videos/arctic_latest_checkpoint_20260924/originals/mixer-300/seed52/step44800/rollout.mp4",
+        "assets/dense-tracking/mixer-300_rollout.mp4",
+        "original",
+        "mixer-300",
+        52,
+        44800,
+    ),
+    ArcticPolicyAsset(
+        "revision/videos/arctic_latest_checkpoint_20260924/transfers/notebook-300_proc-notebook-1/seed23/step121600/rollout.mp4",
+        "assets/dense-tracking/notebook-300_rollout.mp4",
+        "transfer",
+        "notebook-300_proc-notebook-1",
+        23,
+        121600,
+    ),
+    ArcticPolicyAsset(
+        "revision/videos/arctic_latest_checkpoint_20260924/transfers/waffleiron-300_proc-notebook-1/seed23/step89600/rollout.mp4",
+        "assets/dense-tracking/waffleiron-300_rollout.mp4",
+        "transfer",
+        "waffleiron-300_proc-notebook-1",
+        23,
+        89600,
+    ),
+)
+
+
 STATIC_ASSETS = (
     # Paper and method visuals.
     StaticAsset(
@@ -278,6 +352,14 @@ STATIC_ASSETS = (
             ("tasks", WORKSPACE / "revision/supplementary/assets/ablations/templates"),
         )
         for path in sorted(directory.glob("*.png"))
+    ),
+    StaticAsset(
+        WORKSPACE / "external_data/oakink_demo_renders/mug-C10001-cc7dfee50b.png",
+        "assets/templates/tasks/mug_top_source.png",
+    ),
+    StaticAsset(
+        WORKSPACE / "external_data/oakink_demo_renders/mug-C10001-8f91a5a1be.png",
+        "assets/templates/tasks/mug_side_source.png",
     ),
     # Reference trajectories and controllability comparisons.
     StaticAsset(
@@ -447,6 +529,27 @@ def load_manifest_rows() -> dict[str, dict[str, str]]:
     return {row["video_path"]: row for row in rows}
 
 
+def load_arctic_manifest_rows() -> dict[tuple[str, str, int, int], dict[str, str]]:
+    if not ARCTIC_MANIFEST.is_file():
+        raise FileNotFoundError(
+            f"Expected ARCTIC policy-video manifest at {ARCTIC_MANIFEST}."
+        )
+    with ARCTIC_MANIFEST.open(newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    keyed_rows: dict[tuple[str, str, int, int], dict[str, str]] = {}
+    for row in rows:
+        key = (
+            row["benchmark_kind"],
+            row["task_id"],
+            int(row["seed"]),
+            int(row["checkpoint_timestep"]),
+        )
+        if key in keyed_rows:
+            raise ValueError(f"Duplicate ARCTIC manifest row for {key}.")
+        keyed_rows[key] = row
+    return keyed_rows
+
+
 def manifest_path_for_fixed_view(source: str) -> str:
     source_path = Path(source)
     if source_path.name != "rollout_fixed.mp4":
@@ -499,6 +602,26 @@ def copy_policy_assets(manifest_rows: dict[str, dict[str, str]]) -> None:
                 f"Checkpoint changed for {asset.source}: expected {asset.checkpoint_timestep}, "
                 f"manifest records {recorded_timestep}."
             )
+        copy_file(WORKSPACE / asset.source, SITE_ROOT / asset.destination)
+
+
+def copy_arctic_policy_assets(
+    manifest_rows: dict[tuple[str, str, int, int], dict[str, str]]
+) -> None:
+    for asset in ARCTIC_POLICY_ASSETS:
+        key = (
+            asset.benchmark_kind,
+            asset.task_id,
+            asset.seed,
+            asset.checkpoint_timestep,
+        )
+        if asset.checkpoint_timestep <= 0:
+            raise ValueError(
+                f"Refusing timestep-{asset.checkpoint_timestep} ARCTIC policy "
+                f"asset: {asset.source}"
+            )
+        if key not in manifest_rows:
+            raise KeyError(f"ARCTIC policy asset has no manifest entry: {key}.")
         copy_file(WORKSPACE / asset.source, SITE_ROOT / asset.destination)
 
 
@@ -621,6 +744,8 @@ def main() -> None:
         )
     manifest_rows = load_manifest_rows()
     copy_policy_assets(manifest_rows)
+    arctic_manifest_rows = load_arctic_manifest_rows()
+    copy_arctic_policy_assets(arctic_manifest_rows)
     for asset in STATIC_ASSETS:
         copy_file(asset.source, SITE_ROOT / asset.destination)
     for asset in CLEAN_REFERENCE_ASSETS:
@@ -633,6 +758,7 @@ def main() -> None:
         render_gif(SITE_ROOT / source, SITE_ROOT / destination, width)
     print(
         f"Built {len(POLICY_ASSETS)} audited policy assets, "
+        f"{len(ARCTIC_POLICY_ASSETS)} audited ARCTIC policy assets, "
         f"{len(STATIC_ASSETS)} static assets, "
         f"{len(CLEAN_REFERENCE_ASSETS)} clean references, "
         f"{len(PDF_SLIDE_ASSETS)} original-deck slides, "

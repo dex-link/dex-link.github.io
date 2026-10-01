@@ -105,12 +105,12 @@ The representative 45° website rollout uses seed 52 at checkpoint 42,000. It re
 
 Use the four representative ablation tasks as the core heterogeneous task grid, with two task cards per row when space permits:
 
-- Open notebook — articulated-object manipulation
-- Stack three blocks — sequential multi-object placement
-- Banana handover — dynamic bimanual transfer
-- Mug grasp change — grasp transition
+- Open notebook — articulated-object manipulation; show the ARCTIC notebook source motion.
+- Stack three blocks — sequential multi-object placement; label the source template as OakInk.
+- Banana handover — dynamic bimanual transfer constructed from the ARCTIC ketchup sequence; show the corresponding ketchup source motion.
+- Mug grasp change — grasp transition; show both OakInk source templates (top and side grasps).
 
-For these cards, the repository already contains both the template strip and a reference-motion render, so the full `template → reference → policy` visual can be shown.
+Each card shows `source → reference → policy`. Dense ARCTIC sources are shown as videos, while the discrete OakInk interactions are shown as static templates.
 
 #### D. Additional task examples
 
