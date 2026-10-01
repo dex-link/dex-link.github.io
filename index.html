@@ -26,17 +26,19 @@
       <div class="section-shell">
         <div class="deck-embed embedded-deck" id="project-deck" tabindex="0" aria-label="DexLink method presentation">
           <div class="embedded-slides" aria-live="polite">
-            <section class="embedded-slide exact-slide is-active" data-title="Motivation">
-              <img src="presentation/assets/original_motivation.png" alt="Motivation: task goals alone do not specify how a dexterous task should be performed.">
+            <section class="embedded-slide motivation-slide is-active" data-title="Motivation">
+              <ul>
+                <li>Simulation provides a scalable platform for generating dexterous manipulation data, but <span>which tasks and behaviors to generate remains an open challenge.</span></li>
+              </ul>
             </section>
 
             <section class="embedded-slide prior-slide" data-title="Prior work">
-              <h1>Prior Works:</h1>
+              <h1>Existing Behavior Specifications</h1>
               <ul>
-                <li>Dense hand–object trajectories provide low-level detailed task guidance, but they are tied to specific tasks and objects.</li>
-                <li>Hand-only pose priors are easier to reuse, but they do not specify the hand–object interaction to achieve.</li>
-                <li>We want a middle-ground task representation:
-                  <span>reusable across objects and tasks, but still informative about how the hand should interact with the object.</span>
+                <li><strong>Indirect specifications</strong>—task-specific rewards, hand priors, or wrist-only targets—are reusable, but provide weak control over the learned hand–object interactions.</li>
+                <li><strong>Dense specifications</strong>—demonstrations or dense motion references—provide detailed guidance, but are costly to collect and typically tied to a specific task–object pair.</li>
+                <li>This motivates a middle-ground task representation that achieves the best of both worlds:
+                  <span>explicit interaction guidance with less task- and object-specific data.</span>
                 </li>
               </ul>
             </section>
