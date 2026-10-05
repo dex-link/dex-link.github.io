@@ -23,6 +23,9 @@ BANNED_PATTERNS = (
     r"mailto:",
     r"\b(?:authors?|affiliations?|acknowledgements?)\s*:",
 )
+ALLOWED_PUBLIC_TEXT = (
+    "https://github.com/meenalparakh/dexlink.git",
+)
 MEDIA_PATTERN = re.compile(
     r"(?P<path>(?:\.\./)?(?:presentation/)?assets/[A-Za-z0-9_./-]+\.(?:png|gif|mp4|ttf)|real_execution\.mp4|paper\.pdf)"
 )
@@ -55,8 +58,11 @@ def check_text() -> None:
         if not path.is_file():
             raise FileNotFoundError(f"Missing website file: {path}")
         text = path.read_text()
+        text_for_identity_check = text
+        for allowed_text in ALLOWED_PUBLIC_TEXT:
+            text_for_identity_check = text_for_identity_check.replace(allowed_text, "")
         for pattern in BANNED_PATTERNS:
-            if re.search(pattern, text, flags=re.IGNORECASE):
+            if re.search(pattern, text_for_identity_check, flags=re.IGNORECASE):
                 raise ValueError(
                     f"Banned identifying or legacy text '{pattern}' in {path}."
                 )

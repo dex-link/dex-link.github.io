@@ -32,6 +32,19 @@ a { color: inherit; }
 .skip-link:focus { top: 12px; }
 .section-shell { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; }
 
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; border: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.resource-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 9px; margin-top: 26px; }
+.resource-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 9px 16px; border: 1px solid var(--cobalt); border-radius: 4px; color: var(--cobalt-dark); background: white; font-size: 14px; font-weight: 750; line-height: 1.2; text-decoration: none; transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; }
+a.resource-link:hover, a.resource-link:focus-visible { color: white; border-color: var(--cobalt-dark); background: var(--cobalt-dark); }
+.resource-link.is-pending { cursor: default; border-style: dashed; border-color: var(--line); color: var(--muted); background: var(--paper-deep); }
+.resource-link.is-pending::after { content: "Soon"; margin-left: 8px; color: var(--cobalt); font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.resource-links .resource-link { min-height: auto; padding: 2px 0; border: 0; border-radius: 0; color: var(--ink); background: transparent; font-size: 15px; font-weight: 500; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .24em; }
+.resource-links a.resource-link:hover, .resource-links a.resource-link:focus-visible { color: var(--cobalt); border-color: transparent; background: transparent; }
+.resource-links .resource-link.is-pending { border: 0; color: var(--muted); background: transparent; }
+.resource-links .resource-link.is-pending::after { content: none; }
+.resource-separator { color: var(--line); font-size: 16px; line-height: 1; }
+.resource-rail { display: none; }
+
 .hero { width: min(1060px, calc(100% - 48px)); margin: 0 auto; padding: 78px 0 48px; text-align: center; }
 .eyebrow, .section-kicker { margin: 0 0 15px; color: var(--cobalt); font-size: 12px; font-weight: 750; letter-spacing: 0.1em; text-transform: uppercase; }
 .hero-title { display: grid; grid-template-columns: clamp(130px, 16vw, 180px) minmax(0, 1fr); gap: clamp(18px, 3vw, 34px); align-items: center; text-align: left; }
@@ -164,6 +177,19 @@ h2 { margin: 0; font-family: "Oswald", "Arial Narrow", sans-serif; font-size: cl
 .real-video { position: relative; padding: 10px; border: 1px solid var(--line); border-radius: 4px; background: white; }
 .real-video video { width: 100%; max-height: 640px; border-radius: 2px; object-fit: contain; background: #111827; }
 .real-video span { position: absolute; left: 24px; top: 24px; padding: 6px 10px; border-radius: 2px; color: white; background: rgba(17,24,39,.86); font-size: 10px; font-weight: 750; text-transform: uppercase; }
+@media (min-width: 1400px) {
+  .section-shell { width: min(var(--max), calc(100% - 240px)); }
+  .hero { width: min(1060px, calc(100% - 240px)); }
+  .method-section .section-shell { width: min(900px, calc(100% - 240px)); }
+  .resource-rail { position: fixed; right: 0; top: 50%; z-index: 20; display: flex; width: 58px; flex-direction: column; border: 1px solid var(--line); border-radius: 6px 0 0 6px; background: rgba(255,255,255,.96); overflow: hidden; transform: translateY(-50%); }
+  .resource-rail .resource-link { width: 100%; min-width: 0; min-height: 54px; padding: 10px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; font-size: 12px; overflow-wrap: anywhere; text-align: center; }
+  .resource-rail .resource-link:last-child { border-bottom: 0; }
+  .resource-rail .resource-link.is-pending { border-bottom-style: solid; color: var(--cobalt-dark); background: var(--paper-deep); }
+  .resource-rail .resource-link.is-pending::after { content: none; }
+  .resource-symbol { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .resource-symbol-arxiv { width: 22px; height: 33px; object-fit: contain; }
+  .resource-symbol-github { fill: currentColor; stroke: none; }
+}
 @media (max-width: 1080px) {
   .hero { grid-template-columns: 1fr; }
   .hero-copy { max-width: 900px; }
