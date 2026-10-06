@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A cinematic DexLink teaser for a short research video.">
+  <title>DexLink · tweet teaser draft</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body tabindex="0">
+  <main class="deck" aria-live="polite">
+    <section class="slide task-reel-slide is-active" data-title="Task diversity" data-task-reel>
+      <div class="task-reel-media" aria-hidden="true">
+        <div class="task-reel-stage is-visible" id="task-reel-a"></div>
+        <div class="task-reel-stage" id="task-reel-b"></div>
+      </div>
+      <div class="task-reel-shade" aria-hidden="true"></div>
+      <p class="task-reel-speed" id="task-reel-speed" aria-label="Playback speed">1.5×</p>
+      <div class="task-reel-caption">
+        <p class="task-reel-marker" id="task-reel-marker">Object reorientation</p>
+        <h1 id="task-reel-name">Invert cup</h1>
+      </div>
+    </section>
+
+    <section class="slide title-slide finale-slide" data-title="DexLink" data-mosaic="finale">
+      <div class="title-light" aria-hidden="true"></div>
+      <div class="title-lockup">
+        <h1>DexLink</h1>
+        <p>Synthesizing Dexterous Demonstrations<br>from Chained Hand–Object Poses</p>
+      </div>
+    </section>
+
+  </main>
+
+  <template id="website-presentation-comparison">
+    <section class="slide landscape-slide" data-title="Behavior synthesis landscape">
+      <div class="landscape-intro">
+        <p>How do we specify<br>the behavior we want?</p>
+      </div>
+
+      <div class="capability-grid" aria-label="Comparison of behavior synthesis approaches">
+        <div class="capability-corner"></div>
+
+        <header class="approach grasp-approach">
+          <svg class="approach-symbol" viewBox="0 0 120 70" aria-hidden="true">
+            <path d="M23 48c13-19 26-29 39-29 10 0 17 6 17 15 0 11-9 18-21 18-10 0-18-5-18-13 0-7 6-12 13-12"></path>
+            <circle cx="89" cy="36" r="14"></circle>
+          </svg>
+          <h2>Grasp-specific</h2>
+          <p>Chen et al. ’25 · Ma et al. ’25</p>
+        </header>
+
+        <header class="approach dense-approach">
+          <svg class="approach-symbol" viewBox="0 0 120 70" aria-hidden="true">
+            <path d="M9 50c16-33 31-34 45-7s31 25 57-19"></path>
+            <circle cx="9" cy="50" r="3"></circle><circle cx="33" cy="28" r="3"></circle><circle cx="57" cy="47" r="3"></circle><circle cx="82" cy="43" r="3"></circle><circle cx="111" cy="24" r="3"></circle>
+          </svg>
+          <h2>Dense demonstrations</h2>
+          <p>Jiang et al. ’25 · Li et al. ’25</p>
+        </header>
+
+        <header class="approach reward-approach">
+          <svg class="approach-symbol" viewBox="0 0 120 70" aria-hidden="true">
+            <circle cx="60" cy="35" r="27"></circle><circle cx="60" cy="35" r="16"></circle><circle cx="60" cy="35" r="5"></circle>
+            <path d="M23 60 50 42M97 10 70 28"></path>
+          </svg>
+          <h2>Rewards / priors</h2>
+          <p>Chen et al. ’21 · Mandikal &amp; Grauman ’22</p>
+        </header>
+
+        <header class="approach dexlink-approach">
+          <img src="../assets/method-icon.png" alt="" aria-hidden="true">
+          <h2>DexLink</h2>
+          <p>sparse · composable</p>
+        </header>
+
+        <div class="capability-label">Task diversity</div>
+        <div class="capability"><svg class="mark cross" style="--mark-delay:.1s" viewBox="0 0 32 32" aria-label="No"><path pathLength="1" d="M7 7 25 25"></path><path pathLength="1" d="M25 7 7 25"></path></svg></div>
+        <div class="capability"><svg class="mark check" style="--mark-delay:.2s" viewBox="0 0 32 32" aria-label="Yes"><path pathLength="1" d="m5 17 7 7L27 8"></path></svg></div>
+        <div class="capability"><svg class="mark cross" style="--mark-delay:.3s" viewBox="0 0 32 32" aria-label="No"><path pathLength="1" d="M7 7 25 25"></path><path pathLength="1" d="M25 7 7 25"></path></svg></div>
+        <div class="capability dexlink-cell"><svg class="mark check" style="--mark-delay:.4s" viewBox="0 0 32 32" aria-label="Yes"><path pathLength="1" d="m5 17 7 7L27 8"></path></svg></div>
+
+        <div class="capability-label">Object diversity</div>
+        <div class="capability"><svg class="mark check" style="--mark-delay:.5s" viewBox="0 0 32 32" aria-label="Yes"><path pathLength="1" d="m5 17 7 7L27 8"></path></svg></div>
+        <div class="capability"><svg class="mark cross" style="--mark-delay:.6s" viewBox="0 0 32 32" aria-label="No"><path pathLength="1" d="M7 7 25 25"></path><path pathLength="1" d="M25 7 7 25"></path></svg></div>
+        <div class="capability"><svg class="mark check" style="--mark-delay:.7s" viewBox="0 0 32 32" aria-label="Yes"><path pathLength="1" d="m5 17 7 7L27 8"></path></svg></div>
+        <div class="capability dexlink-cell"><svg class="mark check" style="--mark-delay:.8s" viewBox="0 0 32 32" aria-label="Yes"><path pathLength="1" d="m5 17 7 7L27 8"></path></svg></div>
+
+        <div class="capability-label">Interaction control</div>
+        <div class="capability"><svg class="mark check" style="--mark-delay:.9s" viewBox="0 0 32 32" aria-label="Yes"><path pathLength="1" d="m5 17 7 7L27 8"></path></svg></div>
+        <div class="capability"><svg class="mark check" style="--mark-delay:1s" viewBox="0 0 32 32" aria-label="Yes"><path pathLength="1" d="m5 17 7 7L27 8"></path></svg></div>
+        <div class="capability"><svg class="mark cross" style="--mark-delay:1.1s" viewBox="0 0 32 32" aria-label="No"><path pathLength="1" d="M7 7 25 25"></path><path pathLength="1" d="M25 7 7 25"></path></svg></div>
+        <div class="capability dexlink-cell"><svg class="mark check" style="--mark-delay:1.2s" viewBox="0 0 32 32" aria-label="Yes"><path pathLength="1" d="m5 17 7 7L27 8"></path></svg></div>
+      </div>
+    </section>
+  </template>
+
+  <div class="review-chrome">
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="slide-status"><span id="position">1 / 2</span><span id="slide-title">The task world</span></div>
+    <button class="nav-button previous" id="previous" type="button" aria-label="Previous slide">←</button>
+    <button class="nav-button next" id="next" type="button" aria-label="Next slide">→</button>
+  </div>
+
+  <script src="deck.js"></script>
+</body>
+</html>
