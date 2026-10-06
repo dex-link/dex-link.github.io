@@ -1,4 +1,5 @@
 const debuggingPort = process.argv[2] || "9222";
+const action = process.argv[3] || "start";
 const endpoint = `http://127.0.0.1:${debuggingPort}`;
 
 async function waitForPage() {
@@ -47,5 +48,5 @@ for (let attempt = 0; attempt < 100; attempt += 1) {
   await new Promise((resolve) => setTimeout(resolve, 100));
 }
 
-await evaluate("showSlide(0)");
+if (action === "start") await evaluate("startTaskReel(true)");
 socket.close();

@@ -312,14 +312,16 @@ async function playToCompletion(media) {
   await completion;
 }
 
-async function showTaskReelItem(itemIndex, immediate = false) {
+async function showTaskReelItem(itemIndex, immediate = false, reuseExisting = false) {
   const currentRun = taskReelRun;
   taskReelIndex = (itemIndex + taskReel.length) % taskReel.length;
   const item = taskReel[taskReelIndex];
   const incomingIndex = immediate ? activeReelStage : 1 - activeReelStage;
   const incoming = taskReelStages[incomingIndex];
   const outgoing = taskReelStages[activeReelStage];
-  const mediaItems = createReelStage(incoming, item);
+  const mediaItems = reuseExisting
+    ? [...incoming.querySelectorAll("video")]
+    : createReelStage(incoming, item);
 
   await Promise.all(mediaItems.map(waitForReady));
   if (currentRun !== taskReelRun) return;
@@ -361,14 +363,14 @@ async function showTaskReelItem(itemIndex, immediate = false) {
   else showTaskReelItem(taskReelIndex + 1);
 }
 
-function startTaskReel() {
+function startTaskReel(reusePrepared = false) {
   taskReelRun += 1;
   taskReelStages.forEach((stage, stageIndex) => {
     stage.querySelectorAll("video").forEach((media) => media.pause());
     stage.classList.toggle("is-visible", stageIndex === 0);
   });
   activeReelStage = 0;
-  showTaskReelItem(taskReelStartIndex, true);
+  showTaskReelItem(taskReelStartIndex, true, reusePrepared);
 }
 
 function stopTaskReel() {

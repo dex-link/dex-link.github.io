@@ -56,6 +56,10 @@ if ! curl --silent --fail "http://127.0.0.1:${debugging_port}/json" >/dev/null; 
   exit 1
 fi
 
+# Wait until the first task's video frame is decoded and painted before capture.
+node "${script_dir}/start-recording.mjs" "${debugging_port}" prepare
+sleep 0.25
+
 ffmpeg -y \
   -f x11grab \
   -draw_mouse 0 \
@@ -72,6 +76,6 @@ ffmpeg -y \
   "${output_path}" >/dev/null 2>&1 &
 ffmpeg_pid=$!
 
-sleep 0.25
-node "${script_dir}/start-recording.mjs" "${debugging_port}"
+sleep 0.1
+node "${script_dir}/start-recording.mjs" "${debugging_port}" start
 wait "${ffmpeg_pid}"
