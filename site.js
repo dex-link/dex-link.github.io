@@ -199,7 +199,7 @@ function renderControlCards() {
   document.querySelector("#control-grid").innerHTML = controlTasks.map((task) => `
     <article class="control-card">
       <div class="control-card-copy"><span class="tag">Control axis</span><h3>${task.title}</h3><p>${task.note}</p>${task.templates ? `<div class="control-template-pair">${task.templates.map(([label, src]) => `<figure><img src="${src}" alt="${label} source template for ${task.title}"><figcaption>${label}</figcaption></figure>`).join("")}</div>` : `<img src="${task.template}" alt="Interaction template for ${task.title}">`}</div>
-      <div class="reference-panel"><span class="media-label">Constructed references</span><div class="reference-grid" data-count="${task.references.length}">${task.references.map(([label, src]) => video(src, label)).join("")}</div></div>
+      <div class="reference-panel"><span class="media-label">Intermediate references</span><div class="reference-grid" data-count="${task.references.length}">${task.references.map(([label, src]) => video(src, label)).join("")}</div></div>
       <div class="outcomes-panel"><span class="media-label">Grounded policy</span><div class="outcomes" data-count="${task.clips.length}">${task.clips.map(([label, src]) => `<div class="outcome">${video(src, label)}</div>`).join("")}</div></div>
     </article>
   `).join("");
