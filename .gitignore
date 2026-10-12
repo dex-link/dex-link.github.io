@@ -33,3 +33,12 @@ presentation/assets/pose_control.gif
 presentation/assets/real_world.gif
 presentation/assets/scale_reuse.gif
 presentation/assets/template_reuse.gif
+
+# The teaser source tree is locally excluded; keep the deployable real-world
+# grid and its provenance record visible to Git.
+!tweet/
+tweet/*
+!tweet/assets/
+tweet/assets/*
+!tweet/assets/real-world/
+!tweet/assets/real-world/**

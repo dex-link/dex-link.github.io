@@ -48,5 +48,5 @@ for (let attempt = 0; attempt < 100; attempt += 1) {
   await new Promise((resolve) => setTimeout(resolve, 100));
 }
 
-if (action === "start") await evaluate("startTaskReel(true)");
+if (action === "start") await evaluate("startTeaser()");
 socket.close();

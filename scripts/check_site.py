@@ -27,7 +27,7 @@ ALLOWED_PUBLIC_TEXT = (
     "https://github.com/meenalparakh/dexlink.git",
 )
 MEDIA_PATTERN = re.compile(
-    r"(?P<path>(?:\.\./)?(?:presentation/)?assets/[A-Za-z0-9_./-]+\.(?:png|gif|mp4|ttf)|real_execution\.mp4|paper\.pdf)"
+    r"(?P<path>(?:\.\./)?(?:presentation/|tweet/)?assets/[A-Za-z0-9_./-]+\.(?:png|gif|mp4|ttf)|real_execution\.mp4|paper\.pdf)"
 )
 
 

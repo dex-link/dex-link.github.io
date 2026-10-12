@@ -10,7 +10,90 @@
 </head>
 <body tabindex="0">
   <main class="deck" aria-live="polite">
-    <section class="slide task-reel-slide is-active" data-title="Task diversity" data-task-reel>
+    <section class="slide opening-title-slide is-active" data-title="dexlink">
+      <div class="opening-title-lockup">
+        <h1>dexlink</h1>
+        <p>synthesizing dexterous demonstrations<br>from chained hand–object poses</p>
+      </div>
+    </section>
+
+    <section class="slide opening-message-slide" data-title="one framework">
+      <section class="opening-description" aria-label="dexlink task description">
+        <p class="opening-input">compose tasks with <span>object waypoints</span> and reusable <span>hand–object interactions.</span></p>
+        <div class="opening-waypoint-line" aria-hidden="true"><i></i><i></i><i></i></div>
+        <p class="opening-output">the framework turns them into physically grounded policies that follow the behavior described.</p>
+      </section>
+    </section>
+
+    <section class="slide invert-example-slide" data-title="from description to policy" data-invert-example>
+      <div class="invert-specification">
+        <p class="invert-step">describe the task</p>
+        <div class="invert-spec-visual">
+          <img src="assets/opening/invert-task-description.png" alt="four cup waypoints—start, lift, invert, and place—with reusable human hand–object interactions assigned at lift and invert">
+        </div>
+        <p class="invert-task-name">invert the cup</p>
+      </div>
+      <div class="invert-flow" aria-hidden="true"><span></span></div>
+      <div class="invert-result">
+        <p class="invert-step">a physically executable policy</p>
+        <div class="invert-video-frame">
+          <video id="invert-example-video" src="assets/highres-4x/examples/invert_cup.mp4" muted playsinline preload="auto"></video>
+        </div>
+        <p class="invert-provenance"><strong>single task policy</strong><span aria-hidden="true">.</span> rollout from simulation</p>
+      </div>
+    </section>
+
+    <section class="slide capability-bridge-slide" data-title="diversity and control">
+      <h1>a simple, composable task description can capture</h1>
+      <div class="capability-bridge-split">
+        <section class="diversity-half">
+          <h2>diverse tasks and objects</h2>
+          <div class="diversity-grid-preview">
+            <img src="assets/opening/diversity-grid.png" alt="a dense mosaic of dexterous policy rollouts across different tasks and objects">
+          </div>
+        </section>
+
+        <section class="control-half">
+          <h2>and gives you <span>control</span> over</h2>
+          <div class="control-preview-grid">
+            <article class="control-preview-axis">
+              <h3>goal poses</h3>
+              <div class="control-preview-pair">
+                <figure><video data-control-preview muted loop playsinline preload="auto" src="assets/opening/control-previews/goal-045.mp4"></video><figcaption>45°</figcaption></figure>
+                <figure><video data-control-preview muted loop playsinline preload="auto" src="assets/opening/control-previews/goal-120.mp4"></video><figcaption>120°</figcaption></figure>
+              </div>
+            </article>
+            <article class="control-preview-axis">
+              <h3>interactions</h3>
+              <div class="control-preview-pair">
+                <figure><video data-control-preview muted loop playsinline preload="auto" src="assets/opening/control-previews/interaction-side.mp4"></video><figcaption>side</figcaption></figure>
+                <figure><video data-control-preview muted loop playsinline preload="auto" src="assets/opening/control-previews/interaction-top.mp4"></video><figcaption>top</figcaption></figure>
+              </div>
+            </article>
+            <article class="control-preview-axis">
+              <h3>task strategies</h3>
+              <div class="control-preview-pair">
+                <figure><video data-control-preview muted loop playsinline preload="auto" src="assets/opening/control-previews/strategy-pick.mp4"></video><figcaption>pick + place</figcaption></figure>
+                <figure><video data-control-preview muted loop playsinline preload="auto" src="assets/opening/control-previews/strategy-push.mp4"></video><figcaption>push</figcaption></figure>
+              </div>
+            </article>
+            <article class="control-preview-axis">
+              <h3>phase timings</h3>
+              <div class="control-preview-pair">
+                <figure><video data-control-preview muted loop playsinline preload="auto" src="assets/opening/control-previews/timing-slow.mp4"></video><figcaption>slow</figcaption></figure>
+                <figure><video data-control-preview muted loop playsinline preload="auto" src="assets/opening/control-previews/timing-fast.mp4"></video><figcaption>fast</figcaption></figure>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="slide diversity-title-slide" data-title="many dexterous behaviors">
+      <h1 data-letter-reveal aria-label="one framework. many dexterous behaviors."><span class="letter-part">one framework.</span><br><span class="letter-part is-blue">many dexterous behaviors.</span></h1>
+    </section>
+
+    <section class="slide task-reel-slide" data-title="Task diversity" data-task-reel>
       <div class="task-reel-media" aria-hidden="true">
         <div class="task-reel-stage is-visible" id="task-reel-a"></div>
         <div class="task-reel-stage" id="task-reel-b"></div>
@@ -20,7 +103,13 @@
       <div class="task-reel-caption">
         <p class="task-reel-marker" id="task-reel-marker">Object reorientation</p>
         <h1 id="task-reel-name">Invert cup</h1>
+        <p class="policy-provenance"><strong>Single task policy</strong><span aria-hidden="true">.</span> rollout from simulation</p>
       </div>
+      <p class="task-reel-credit" id="task-reel-credit" hidden></p>
+    </section>
+
+    <section class="slide real-world-teaser-slide" data-title="grasping" data-real-world>
+      <video id="real-world-teaser-video" src="assets/real-world/real-world-grid.mp4?v=grasping-title" muted playsinline preload="auto" aria-label="High-resolution grid of synchronized grasping evaluations with a mug, mustard bottle, cup, and lego-block"></video>
     </section>
 
     <section class="slide title-slide finale-slide" data-title="DexLink" data-mosaic="finale">
@@ -98,7 +187,7 @@
 
   <div class="review-chrome">
     <div class="progress" id="progress" aria-hidden="true"></div>
-    <div class="slide-status"><span id="position">1 / 2</span><span id="slide-title">The task world</span></div>
+    <div class="slide-status"><span id="position">1 / 8</span><span id="slide-title">dexlink</span></div>
     <button class="nav-button previous" id="previous" type="button" aria-label="Previous slide">←</button>
     <button class="nav-button next" id="next" type="button" aria-label="Next slide">→</button>
   </div>

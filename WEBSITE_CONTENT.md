@@ -10,7 +10,7 @@ This document is the editable source of truth for the first website revision. Th
 - Embed media directly in the website. A visitor should not need to open a video browser or external gallery.
 - Never use an untrained timestep-0 checkpoint. Every policy video copied from the revision bundle must have a strictly positive checkpoint timestep in `revision/data/revision_policy_video_manifest_20260924.csv`.
 - Use muted, looping previews; retain native video controls so a visitor can pause or inspect a behavior.
-- The project overview is an HTML slide deck embedded in the page. It must support arrow-key and on-screen navigation and use animated media for motion examples.
+- The project overview is the finalized teaser video embedded directly in the page. Keep the standalone HTML presentation in `presentation/` for possible later reuse, but do not embed it on the homepage.
 - Use a restrained academic visual system: white backgrounds, black text, blue accents, thin borders, and no decorative circles or abstract background shapes.
 - Use fixed third-person policy views (`rollout_fixed.mp4`) throughout the experiment galleries and deck.
 - Use the paper's terminology and descriptive tone. Headings should name the method stage or experiment rather than state a promotional claim.
@@ -33,16 +33,18 @@ The page should make three ideas immediately visible:
 - A compact, abstract-like project summary using the paper's wording.
 - No hero diagram, eyebrow, call-to-action buttons, or paper-PDF link.
 - No navigation bar, jump links, or footer; the website is a continuous top-to-bottom document.
-- Place the slide deck immediately after the title and summary, without a separate method heading.
+- Place the teaser video immediately after the title and summary, without a separate method heading.
 - No authors or affiliations.
 
 ### Favicon studies
 
 The website favicon uses the hand-free block and opacity-graded waypoint mark. The larger hand–block PNG supplied for the project is shown beside the page title as the method icon. `favicon-options.html` retains the earlier design studies for reference.
 
-### 2. Interactive HTML presentation
+### 2. Teaser video
 
-The deck replaces the old overview/method video. It should be embedded at 16:9 and also open as a standalone page.
+Embed `tweet/dexlink-teaser.mp4` at 16:9 with muted autoplay, looping, inline mobile playback, and native controls.
+
+The previous interactive HTML presentation remains available in `presentation/` for possible later reuse, but is not shown on the homepage. It preserves the following sequence:
 
 The deck omits a title slide because the website title immediately precedes it. It follows the initial `dexLink.pdf` presentation:
 
@@ -58,7 +60,7 @@ The deck omits a title slide because the website title immediately precedes it. 
 10. **Reference construction** — pair the static reference progression with the animated constructed reference.
 11. **Residual RL** — pair the static resulting trajectory with the physically grounded policy execution.
 
-Do not include reusability, controllability, task-suite, or real-world experiment summaries in the deck; those appear directly below it on the website.
+Do not include separate reusability, controllability, or task-suite summaries in the deck; those appear directly below it on the website. The one exception is the final high-resolution real-world grid, which closes the teaser's sequence of video evidence before the title card.
 
 Navigation: Left/Right or PageUp/PageDown, on-screen previous/next buttons, slide counter, progress marks, and a full-screen/standalone link.
 
@@ -125,7 +127,7 @@ Show these as individual policy examples, without the earlier qualitative-compos
 
 #### E. Real world
 
-Embed the existing real-world video showing mug, mustard bottle, cup, and block lifts. Keep the claim narrow: preliminary sim-to-real evidence for four objects, including two unseen target instances.
+Embed the high-resolution 1×4 real-world grid showing the matched original mug, mustard bottle, cup, and lego-block evaluation takes. Keep the claim narrow: preliminary sim-to-real evidence for four objects, including two unseen target instances. The same grid is the teaser's final video, immediately before its closing DexLink title card.
 
 ### 5. Scope note
 
@@ -148,7 +150,7 @@ Keep one compact note near the gallery:
 
 ## Resolved source inputs
 
-The corrected PDF paths omit the `PhD_v2` directory. The 26-page final paper and 13-page initial slide deck were found under `/mnt/external/Downloads/`. The paper is used as a wording reference but is not linked or staged by the website build. The revised HTML presentation preserves the original motivation and capability sequence, omits the redundant title slide, and replaces the method pages with the paper's invert-cup pipeline.
+The corrected PDF paths omit the `PhD_v2` directory. The 26-page final paper and 13-page initial slide deck were found under `/mnt/external/Downloads/`. The paper is used as a wording reference but is not linked or staged by the website build. The retained HTML presentation preserves the original motivation and capability sequence, omits the redundant title slide, and replaces the method pages with the paper's invert-cup pipeline. The homepage now uses the finalized teaser video instead.
 
 ## Follow-up asset work
 
@@ -157,8 +159,8 @@ Full reference-motion renders are not currently available for every revised scal
 ## Editorial workflow
 
 1. Edit this Markdown first.
-2. Update `index.html` and `presentation/index.html` to match the accepted text/order.
+2. Update `index.html` for homepage changes. Update `presentation/index.html` only when revising the retained standalone deck.
 3. Update `scripts/build_media.py` when an asset selection changes.
 4. Run the media builder from the repository root.
 5. Run `scripts/check_site.py` to catch missing files, old framework naming, identifying language, and timestep-0 policy assets.
-6. Preview through a local HTTP server; do not rely on `file://` for the embedded deck.
+6. Preview through a local HTTP server; do not rely on `file://` for video playback or the retained standalone deck.
