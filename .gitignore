@@ -42,3 +42,14 @@ tweet/*
 tweet/assets/*
 !tweet/assets/real-world/
 !tweet/assets/real-world/**
+
+# Selected, silent teaser exports and their self-contained public source.
+# Other local iterations, music mixes and capture caches remain excluded.
+!tweet/run-42-v7/
+tweet/run-42-v7/*
+!tweet/run-42-v7/dexlink-run42-v7.mp4
+!tweet/run-42-v9/
+tweet/run-42-v9/*
+!tweet/run-42-v9/dexlink-run42-v9.mp4
+!tweet/run-42-v9/release/
+!tweet/run-42-v9/release/**

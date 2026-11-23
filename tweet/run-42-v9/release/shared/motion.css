@@ -1,0 +1,93 @@
+/* Run 30 motion engine: one logical 1600 × 900 stage, no tile reflow. */
+.r30-stage { position: relative; overflow: hidden; isolation: isolate; background: #F5F4F1; aspect-ratio: 16 / 9; color: #27272a; }
+.r30-stage * { box-sizing: border-box; }
+.r30-logical { position: absolute; width: 1600px; height: 900px; left: 0; top: 0; transform-origin: 0 0; overflow: hidden; font-family: Inter, "Helvetica Neue", Arial, sans-serif; }
+.r30-world { position: absolute; inset: 0; transform-origin: 0 0; will-change: transform; }
+.r30-camera { position: absolute; inset: 0; transform-origin: 0 0; will-change: transform; }
+.r30-tile { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; margin: 0; transform-origin: 0 0; will-change: transform, opacity; background: #F5F4F1; overflow: hidden; }
+.r30-tile img, .r30-tile video { position: absolute; inset: 0; display: block; width: 1600px; height: 900px; object-fit: cover; background: #F5F4F1; }
+.r30-tile video { opacity: 0; z-index: 1; }
+.r30-tile video[data-present="true"] { opacity: 1; }
+.r30-tile figcaption { position: absolute; z-index: 3; left: 60px; right: 60px; bottom: 42px; text-align: left; color: #625a50; font-size: 58px; line-height: 1.08; font-weight: 400; letter-spacing: -.025em; text-shadow: 0 1px 5px #F5F4F1, 0 0 12px #F5F4F1; }
+.r30-tile .r30-label-qualifier { display: block; margin-top: 12px; font-size: .62em; letter-spacing: .01em; color: #716a62; }
+.r30-tile .r30-impact { position: absolute; z-index: 3; right: 75px; bottom: 145px; width: 33px; height: 220px; border-bottom: 4px solid #817970; }
+.r30-impact-fill { position: absolute; bottom: 0; width: 100%; height: 100%; transform-origin: center bottom; background: #537aa4; transform: scaleY(0); }
+.r30-impact-label { position: absolute; right: 58px; bottom: -4px; white-space: nowrap; font-size: 48px; font-weight: 400; color: #5b544a; text-shadow: 0 0 8px #F5F4F1; }
+.r30-impact-note { position: absolute; right: 58px; bottom: 57px; white-space: nowrap; font-size: 28px; color: #81796f; text-shadow: 0 0 8px #F5F4F1; }
+.r30-footer-wash { pointer-events: none; position: absolute; z-index: 10; left: 0; right: 0; bottom: 0; height: 148px; background: linear-gradient(to bottom, #F5F4F100, #F5F4F1f0 36%, #F5F4F1 90%); }
+.r30-intro-part { position: absolute; top: 0; left: 0; width: max-content; font-weight: 400; line-height: 1.08; letter-spacing: -.035em; transform-origin: left top; will-change: transform; white-space: nowrap; }
+.r30-intro-brand { z-index: 13; font-size: 58px; }
+.r30-intro-brand .r30-brand-word { color: #3975ae; font-size: 1.22em; }
+.r30-intro-description { z-index: 13; font-size: 44px; }
+.r30-control-line { position: absolute; z-index: 13; left: 65px; right: 65px; bottom: 37px; text-align: center; font-size: 41px; line-height: 1.15; font-weight: 400; letter-spacing: -.026em; white-space: nowrap; will-change: transform; }
+.r30-axis-word { color: #3975ae; }
+.r30-type-cursor { display: inline-block; width: 2px; height: .9em; margin-left: 5px; vertical-align: -.04em; background: #3975ae; }
+.r30-credit { position: absolute; z-index: 15; right: 32px; bottom: 116px; color: #736e66; font-size: 17px; letter-spacing: .01em; line-height: 1.2; text-shadow: 0 0 8px #F5F4F1; }
+.r30-rate { position: absolute; z-index: 15; right: 26px; top: 24px; color: #7b756d; font-size: 19px; letter-spacing: .03em; }
+.r30-final-video { position: absolute; z-index: 8; inset: 0; width: 1600px; height: 900px; object-fit: cover; opacity: 0; background: #F5F4F1; }
+.r30-final-title { position: absolute; z-index: 19; width: 1600px; height: 900px; display: flex; flex-direction: column; justify-content: center; align-items: center; pointer-events: none; opacity: 0; background: radial-gradient(ellipse at center, #F5F4F1de 0%, #F5F4F1a3 21%, #F5F4F100 57%); }
+.r30-final-title h1 { margin: 0; font-size: 150px; font-weight: 600; letter-spacing: -.065em; line-height: 1.02; color: #3975ae; }
+.r30-final-title p { margin: 19px 0 0; max-width: 1000px; text-align: center; font-size: 35px; line-height: 1.2; font-weight: 400; color: #57554f; letter-spacing: -.02em; }
+.r30-phase-label { position: absolute; z-index: 16; left: 34px; top: 25px; color: #777168; font-size: 17px; letter-spacing: .02em; }
+.r30-stage[data-clean="true"] .r30-phase-label { display: none; }
+body.clean .r30-phase-label { display: none; }
+.r30-debug-controls { font: 14px/1.4 system-ui, sans-serif; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; padding: 12px 0; }
+.r30-debug-controls button, .r30-debug-controls select { font: inherit; padding: 6px 12px; background: #fff; border: 1px solid #d7d0c7; border-radius: 4px; color: #5b554e; }
+.r30-debug-controls input { flex: 1; min-width: 200px; accent-color: #3975ae; }
+
+/* Run 30's physical layout, with a larger regular-weight type hierarchy. */
+.r30-logical { font-family: 'DexLink Sans', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+.r30-intro-brand { font-size: 78px; letter-spacing: -.025em; }
+.r30-intro-brand .r30-brand-word { font-size: 1.16em; font-weight: 500; }
+.r30-intro-description { font-size: 56px; letter-spacing: -.018em; }
+.r30-control-line { left: 55px; right: 55px; bottom: 29px; font-size: 60px; line-height: 1.06; letter-spacing: -.024em; display: flex; justify-content: center; align-items: baseline; gap: 16px; }
+.r30-axis-word { min-width: 490px; text-align: left; }
+.r30-type-cursor { flex: none; }
+.r32-composition-line { bottom: 17px; flex-direction: column; align-items: center; gap: 7px; }
+.r32-composition-line .r32-control-prefix { font-size: 60px; }
+.r32-composition-line .r30-axis-word { min-width: 0; font-size: 52px; text-align: center; }
+.r32-composition-line .r30-type-cursor { display: none; }
+.r30-footer-wash { height: 198px; }
+.r30-tile figcaption { font-weight: 400; letter-spacing: -.018em; line-height: 1.06; }
+.r30-impact-label { font-size: 112px; }
+.r30-impact-note { font-size: 36px; bottom: 112px; }
+.r30-credit { font-size: 40px; bottom: 84px; }
+.r30-rate { font-size: 40px; }
+.r30-final-title { background: none; }
+.r30-final-title::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, #F5F4F1ed 0%, #F5F4F1b3 23%, #F5F4F100 59%); opacity: var(--pop,0); }
+.r30-final-title h1 { position: absolute; left: 50%; top: 50%; font-size: 160px; font-weight: 500; letter-spacing: -.045em; transform-origin: center; }
+.r30-final-title p { position: absolute; left: 50%; top: calc(50% + 105px); width: 1120px; margin: 0; font-size: 46px; max-width: none; line-height: 1.16; }
+.r32-capture-master { position: absolute; inset: 0; width: 1600px; height: 900px; object-fit: cover; z-index: 1; }
+.r30-world { z-index: 2; }
+
+/* Run33 keeps the nominal film footprint fixed while real RGBA padding may
+ * extend naturally into a neighboring tile's empty image area. */
+.r30-tile { overflow: visible; background: transparent; }
+.r30-tile img, .r30-tile video { background: transparent; }
+.r33-intro-fragment { position: absolute; left: 0; top: 0; display: block; width: max-content; white-space: nowrap; transform-origin: 0 0; will-change: transform, opacity; }
+.r33-introducing { font-size: 78px; }
+.r30-intro-brand .r30-brand-word { font-size: 90.48px; font-weight: 400; }
+.r33-framework, .r33-generating { font-size: 56px; }
+.r33-allows { font-size: 60px; }
+.r30-control-line { font-weight: 400; }
+.r30-credit { display: none; }
+.r32-composition-line .r32-control-prefix { font-size: 54px; }
+
+/* Run39: larger peak annotations on a shared0–8N scale. The moving bar tip
+ * reaches the fixed numerical annotation; native pose/render scaling is intact. */
+.r30-tile .r30-impact { width: 66px; height: 520px; }
+.r30-impact-note { right: 98px; font-size: 72px; line-height: 1.05; }
+.r30-impact-label { right: 98px; line-height: 1; }
+.r32-composition-line .r32-control-prefix { text-align: left; }
+.r32-composition-line .r32-control-prefix[data-typing="true"]::after {
+  content: ''; display: inline-block; width: 2px; height: .85em;
+  background: currentColor; margin-left: 5px; vertical-align: -.02em;
+}
+
+/* Natural inline sentence spacing; only the outer line keeps a stable width. */
+.r30-control-line:not(.r32-composition-line) { display: block; right: auto; text-align: left; }
+.r30-control-line:not(.r32-composition-line) .r32-control-prefix,
+.r30-control-line:not(.r32-composition-line) .r30-axis-word { display: inline; width: auto; min-width: 0; }
+.r30-control-line:not(.r32-composition-line) .r30-type-cursor { position: absolute; left: 0; bottom: 3px; }
+.r37-action-word { display: inline; opacity: 0; }
+.r37-action-separator { color: #706964; }

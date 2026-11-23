@@ -1,6 +1,19 @@
 # DexLink project website: content and build specification
 
-This document is the editable source of truth for the first website revision. The HTML should be updated after the text, ordering, or asset selections here change.
+This document records the website content and its current visual direction. The HTML should be updated after the text, ordering, or asset selections here change.
+
+## Current refresh — November 2026
+
+- Match the accepted teaser: IBM Plex Sans; background `#F5F4F1`; DexLink gradient `#292421` to `#493B33`; subtitle `#544F4B`; section headings `#3F3631`; secondary text `#706964`; accent `#A65A2A`.
+- Use the accepted transparent, brown hand-and-waypoint sticker for the title and site icon.
+- The latest silent teaser is run-42-v9, based on the selected run-42-v7. Its pause says “RL policies learned without per-task reward engineering”; the message types at 1.5× speed and camera motion resumes after a 0.25-second reading pause. Preserve earlier tweet iterations.
+- Place the teaser first, followed by the expanded task carousel, then the experiment sections. The task gallery replaces the small Additional Examples section and includes the 150 saved task/object configurations in the teaser collection, with semantic labels and category filters.
+- Show the current studio renders with the accepted object colors and matte grey hand materials. Preserve the recorded trajectories, the bounded support under stacked blocks, and the transparent drawer frame. Use complete render bounds, including shadows.
+- Keep the source-template/reference/policy distinction in experimental galleries. Never substitute a learned-policy frame for a source template or an intermediate reference.
+- Use a light carousel for the task collection: one large center demo, two progressively smaller neighbors on each side, and only visible clips playing. Preserve the earlier pan/zoom implementation locally for future review. Support swipe/drag, arrow controls, category/search filters, and enlarged playback.
+- Blend the source-template stills into the stone background; preserve the original image content and poses.
+- Publish the selected tweet video and a self-contained browser preview; keep render caches, absolute source paths and earlier local experiments out of the deployment.
+- Commit and push the requested website and teaser changes using the `dex-link` account through the `github-dexhoi` key, with SSH connection sharing disabled to prevent reusing another account's connection.
 
 ## Non-negotiable requirements
 
@@ -11,7 +24,7 @@ This document is the editable source of truth for the first website revision. Th
 - Never use an untrained timestep-0 checkpoint. Every policy video copied from the revision bundle must have a strictly positive checkpoint timestep in `revision/data/revision_policy_video_manifest_20260924.csv`.
 - Use muted, looping previews; retain native video controls so a visitor can pause or inspect a behavior.
 - The project overview is the finalized teaser video embedded directly in the page. Keep the standalone HTML presentation in `presentation/` for possible later reuse, but do not embed it on the homepage.
-- Use a restrained academic visual system: white backgrounds, black text, blue accents, thin borders, and no decorative circles or abstract background shapes.
+- Use the accepted warm academic visual system described above, with thin borders and no decorative background shapes.
 - Use fixed third-person policy views (`rollout_fixed.mp4`) throughout the experiment galleries and deck.
 - Use the paper's terminology and descriptive tone. Headings should name the method stage or experiment rather than state a promotional claim.
 
@@ -42,7 +55,7 @@ The website favicon uses the hand-free block and opacity-graded waypoint mark. T
 
 ### 2. Teaser video
 
-Embed `tweet/dexlink-teaser.mp4` at 16:9 with muted autoplay, looping, inline mobile playback, and native controls.
+Embed the latest silent run-42 teaser at 16:9 with muted autoplay, looping, inline mobile playback, and native controls. The current selected export is `tweet/run-42-v9/dexlink-run42-v8.mp4`.
 
 The previous interactive HTML presentation remains available in `presentation/` for possible later reuse, but is not shown on the homepage. It preserves the following sequence:
 
@@ -164,3 +177,11 @@ Full reference-motion renders are not currently available for every revised scal
 4. Run the media builder from the repository root.
 5. Run `scripts/check_site.py` to catch missing files, old framework naming, identifying language, and timestep-0 policy assets.
 6. Preview through a local HTTP server; do not rely on `file://` for video playback or the retained standalone deck.
+
+## Preserved evaluation clips
+
+The ketchup-300 and mixer-300 dense-tracking evaluations retain their original
+rollout videos, as explicitly selected by the user: no matching native
+trajectories exist in the new collection. Do not substitute another task or
+checkpoint for either evaluation. Other matched policy previews use the new
+materials; intermediate references are re-rendered from reference states.

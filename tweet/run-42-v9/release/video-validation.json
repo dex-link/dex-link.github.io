@@ -1,0 +1,42 @@
+{
+  "run": "run-42-v9",
+  "video": "../dexlink-run42-v9.mp4",
+  "duration": 49.291666666666664,
+  "frames": 1183,
+  "fps": 24,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "bytes": 14260164,
+  "sha256": "83640d605d99b5b60f6b10cb99661f5f7a5504c9ac01fb8088403d45726df0b6",
+  "codec": "H.264",
+  "pix_fmt": "yuv420p",
+  "crf": 15,
+  "full_decode_passed": true,
+  "no_black_frames": true,
+  "no_flat_grey_frames": true,
+  "all_frame_clocks_and_presentation_checked": true,
+  "pause_seconds": 2.083333333333333,
+  "verified_frozen_frames": 50,
+  "source_hold_time": 8,
+  "diversity_caption_absent_on_all_post_pause_frames": true,
+  "control_caption_visible": true,
+  "composition_keywords": [
+    "compose",
+    "monolithic"
+  ],
+  "composition_keyword_color": "#A65A2A",
+  "composition_skills_color": "#3F3631",
+  "composition_skills_neutral": true,
+  "composition_typing_preserved": true,
+  "live_freeze_and_resume_passed": true,
+  "reading_pause_seconds": 0.25,
+  "transition_message": "RL policies learned without per-task reward engineering",
+  "render_method": "isolated frame-by-frame HTML capture; no desktop recorder",
+  "phone_views": 4,
+  "v5_sources_and_mp4_unchanged": true,
+  "run39_unchanged": true,
+  "previous_teaser_sources_unchanged": true,
+  "status": "ready-for-review"
+}

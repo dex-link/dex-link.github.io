@@ -27,8 +27,16 @@ ALLOWED_PUBLIC_TEXT = (
     "https://github.com/meenalparakh/dexlink.git",
 )
 MEDIA_PATTERN = re.compile(
-    r"(?P<path>(?:\.\./)?(?:presentation/|tweet/)?assets/[A-Za-z0-9_./-]+\.(?:png|gif|mp4|ttf)|real_execution\.mp4|paper\.pdf)"
+    r"(?P<path>(?:\.\./)*(?:presentation/|tweet/)?assets/[A-Za-z0-9_./-]+\.(?:png|webp|gif|mp4|webm|woff2|ttf)|real_execution\.mp4|paper\.pdf)"
 )
+
+
+def public_text_files() -> tuple[Path, ...]:
+    """Check deployed files, without walking years of ignored local drafts."""
+    roots = [SITE_ROOT / name for name in ("index.html", "styles.css", "site.js", "task-gallery.js")]
+    release = SITE_ROOT / "tweet/run-42-v9/release"
+    roots.extend(path for path in release.rglob("*") if path.is_file() and path.suffix in PUBLIC_TEXT_SUFFIXES)
+    return tuple(roots)
 
 
 def load_build_module():
@@ -43,13 +51,7 @@ def load_build_module():
 
 
 def check_text() -> None:
-    text_files = tuple(
-        sorted(
-            path
-            for path in SITE_ROOT.rglob("*")
-            if path.is_file() and path.suffix.lower() in PUBLIC_TEXT_SUFFIXES
-        )
-    )
+    text_files = public_text_files()
     if not text_files:
         raise FileNotFoundError(
             f"No public website text files found under {SITE_ROOT}."
@@ -70,13 +72,7 @@ def check_text() -> None:
 
 def check_media_references() -> None:
     missing: list[Path] = []
-    text_files = tuple(
-        sorted(
-            path
-            for path in SITE_ROOT.rglob("*")
-            if path.is_file() and path.suffix.lower() in PUBLIC_TEXT_SUFFIXES
-        )
-    )
+    text_files = public_text_files()
     for path in text_files:
         text = path.read_text()
         for match in MEDIA_PATTERN.finditer(text):
@@ -86,6 +82,21 @@ def check_media_references() -> None:
     if missing:
         formatted = "\n".join(f"- {path}" for path in sorted(set(missing)))
         raise FileNotFoundError(f"Website references missing media:\n{formatted}")
+
+
+def check_gallery() -> None:
+    import json
+    catalog = json.loads((SITE_ROOT / "assets/renders/catalog.json").read_text())
+    tasks = catalog["tasks"]
+    assert len(tasks) == 150 and len({task["id"] for task in tasks}) == 150
+    for task in tasks:
+        assert all((SITE_ROOT / task[field]).is_file() for field in ("video", "poster")), task["id"]
+        assert task["label"] and task["duration"] > 0
+    # Workstation paths and render caches must not enter the deployed metadata.
+    release = SITE_ROOT / "tweet/run-42-v9/release"
+    for path in [SITE_ROOT / "assets/renders/catalog.json", *release.rglob("*.json")]:
+        text = path.read_text()
+        assert "/home/" not in text and "/mnt/" not in text, path
 
 
 def check_policy_checkpoints() -> None:
@@ -105,6 +116,7 @@ def main() -> None:
     check_text()
     check_media_references()
     check_policy_checkpoints()
+    check_gallery()
     print(
         "Website checks passed: text, media references, anonymity, and declared "
         "positive checkpoints."

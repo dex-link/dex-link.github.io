@@ -15,7 +15,7 @@ const scaleTasks = [
     title: "Mug · handle grasp",
     source: "assets/templates/scale_sources/mug_handle_source.png",
     anchor: "assets/templates/scale_targets/mug_handle.png",
-    clips: [["0.70×", "assets/rollouts/scale/mug_handle_070.mp4"], ["1.00×", "assets/rollouts/scale/mug_handle_100.mp4"], ["1.25×", "assets/rollouts/scale/mug_handle_125.mp4"]],
+    clips: [["0.70×", "assets/rollouts/scale/mug_handle_070.mp4"], ["1.00×", "assets/rollouts/scale/mug_handle_100.mp4"]],
   },
   {
     title: "Mug · side grasp",
@@ -165,8 +165,36 @@ const denseTrackingTasks = [
   },
 ];
 
+const studioRenders = new Map();
+const policyAliases = {
+  cup_045_seed52: 'cup-045-seed52', cup_090: 'cup-090', cup_120: 'cup-120',
+  strategy_pick: 'strategy-pick', strategy_push: 'strategy-push',
+  hammer_slow: 'hammer-slow', hammer_fast: 'hammer-fast',
+  open_notebook: 'open-notebook', stack_blocks: 'stack-blocks',
+  banana_handover: 'banana-handover', mug_grasp_change: 'mug-grasp-change',
+  apple_camera_exact: 'apple-camera-exact', apple_camera_transferred: 'apple-camera-transferred',
+  apple_mouse_exact: 'apple-mouse-exact', apple_mouse_transferred: 'apple-mouse-transferred',
+  hammer_wineglass_exact: 'hammer-wineglass-exact', hammer_wineglass_transferred: 'hammer-wineglass-transferred',
+  trigger_sprayer_exact: 'trigger-sprayer-exact', trigger_sprayer_transferred: 'trigger-sprayer-transferred',
+};
+function mediaAttributes(src) {
+  let render;
+  if (src.startsWith('assets/rollouts/')) {
+    const key = src.split('/').at(-1).replace(/\.mp4$/, '');
+    render = studioRenders.get(policyAliases[key] || key.replaceAll('_', '-'));
+  } else if (src.startsWith('assets/references/')) {
+    const key = src.split('/').at(-1).replace(/\.mp4$/, '');
+    const references = new Set(['cup_045','cup_090','cup_120','strategy_pick','strategy_push','hammer_slow','hammer_fast','bottle_side','bottle_top','open_notebook','stack_blocks','banana_handover','mug_grasp_change']);
+    if (references.has(key)) render = { video: `assets/references/studio/${key}.mp4` };
+  } else if (src.startsWith('assets/dense-tracking/') && src.includes('_rollout')) {
+    const key = src.split('/').at(-1).replace('_rollout.mp4', '');
+    const ids = {'ketchup-100':'ketchup-100','box-200':'box','mixer-170':'mixer','notebook-300':'notebook-transfer','waffleiron-300':'waffleiron-transfer'};
+    render = studioRenders.get(ids[key]);
+  }
+  return `muted loop playsinline controls preload="none" data-autoplay data-src="${render?.video || src}"${render?.poster ? ` poster="${render.poster}"` : ''}`;
+}
 function video(src, label, className = "") {
-  return `<div class="clip ${className}"><span>${label}</span><video muted loop playsinline controls preload="metadata" data-autoplay src="${src}"></video></div>`;
+  return `<div class="clip ${className}"><span>${label}</span><video ${mediaAttributes(src)}></video></div>`;
 }
 
 function renderScaleCards() {
@@ -207,7 +235,7 @@ function renderControlCards() {
 
 function renderTaskSource(source, title) {
   if (source.kind === "video") {
-    return `<div class="media-panel"><span>${source.label}</span><video muted loop playsinline controls preload="metadata" data-autoplay src="${source.path}"></video></div>`;
+    return `<div class="media-panel"><span>${source.label}</span><video ${mediaAttributes(source.path)}></video></div>`;
   }
   if (source.kind === "image-pair") {
     return `<div class="media-panel"><span>${source.label}</span><div class="task-template-pair">${source.images.map(([label, path]) => `<figure><img src="${path}" alt="${label} source template for ${title}"><figcaption>${label}</figcaption></figure>`).join("")}</div></div>`;
@@ -224,26 +252,13 @@ function renderTaskSpanCards() {
       <div class="task-card-head"><div><h3>${task.title}</h3><p>${task.type}</p></div></div>
       <div class="media-triptych">
         ${renderTaskSource(task.source, task.title)}
-        <div class="media-panel"><span>Constructed reference</span><video muted loop playsinline controls preload="metadata" data-autoplay src="assets/references/${task.key}.mp4"></video></div>
+        <div class="media-panel"><span>Constructed reference</span><video ${mediaAttributes(`assets/references/${task.key}.mp4`)}></video></div>
         <div class="media-panel">${video(`assets/rollouts/tasks/${task.key}.mp4`, "Grounded policy")}</div>
       </div>
     </article>
   `).join("");
 }
 
-function renderExamples() {
-  const examples = [
-    { title: "Invert cup", note: "Reorient the cup with wrist movement", src: "assets/examples/invert_cup.mp4" },
-    { title: "Erase the board", note: "Moving the eraser across the board.", src: "assets/examples/erase_board.mp4" },
-    { title: "Operate dispenser", note: "Lift the dispenser and press its pump twice.", src: "assets/examples/dispenser.mp4" },
-    { title: "Open drawer", note: "", src: "assets/examples/open_drawer.mp4" },
-    { title: "Stack YCB cups", note: "Place a cup inside another cup.", src: "assets/examples/stack_ycb_cups.mp4" },
-    { title: "Mount cylinder · 7 mm", note: "Mounting with 7 mm radial clearance.", src: "assets/examples/mounting_7mm.mp4" },
-  ];
-  document.querySelector("#example-grid").innerHTML = examples.map((task) => `
-    <article class="example-card"><video muted loop playsinline controls preload="metadata" data-autoplay src="${task.src}"></video><h3>${task.title}</h3><p>${task.note}</p></article>
-  `).join("");
-}
 
 function renderDenseTracking() {
   document.querySelector("#dense-tracking-grid").innerHTML = denseTrackingTasks.map((task) => `
@@ -261,17 +276,33 @@ function activateVisibleVideos() {
   const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
       const media = entry.target;
-      if (entry.isIntersecting) media.play().catch(() => {});
+      if (entry.isIntersecting) {
+        if (media.dataset.src && !media.getAttribute('src')) media.src = media.dataset.src;
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) media.play().catch(() => {});
+      }
       else media.pause();
     }
   }, { rootMargin: "180px 0px", threshold: 0.15 });
   document.querySelectorAll("video[data-autoplay]").forEach((media) => observer.observe(media));
 }
 
-renderScaleCards();
-renderTransferCards();
-renderControlCards();
-renderTaskSpanCards();
-renderExamples();
-renderDenseTracking();
-activateVisibleVideos();
+async function startSite() {
+  const response = await fetch('assets/renders/catalog.json');
+  if (!response.ok) throw new Error('Task render catalog could not be loaded.');
+  const catalog = await response.json();
+  catalog.tasks.forEach(task => studioRenders.set(task.id, task));
+  renderScaleCards();
+  renderTransferCards();
+  renderControlCards();
+  renderTaskSpanCards();
+  renderDenseTracking();
+  document.querySelectorAll('img:not(.method-icon):not(.resource-symbol)').forEach(image => { image.loading = 'lazy'; image.decoding = 'async'; });
+  activateVisibleVideos();
+  window.dexlinkSiteReady = true;
+}
+startSite().catch(error => {
+  console.error(error);
+  const notice = document.createElement('p'); notice.className = 'media-error';
+  notice.textContent = 'The experiment videos could not be loaded. Please reload the page.';
+  document.querySelector('#control-grid').append(notice);
+});

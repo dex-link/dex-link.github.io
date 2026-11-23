@@ -1,0 +1,2848 @@
+{
+  "schema": "dexlink_finale_mosaic_v1",
+  "count": 150,
+  "columns": 13,
+  "rows": 12,
+  "width": 1920,
+  "height": 1080,
+  "grid_width": 1872,
+  "grid_height": 972,
+  "cell_width": 144,
+  "cell_height": 81,
+  "cell_aspect_ratio": "16:9",
+  "padding_pixels": {
+    "left": 24,
+    "right": 24,
+    "top": 54,
+    "bottom": 54
+  },
+  "reserved_brand_cells": 6,
+  "background": "#f5f4f1",
+  "seconds": 3.0,
+  "fps": 24,
+  "playback_rate": 1.0,
+  "seed": 30,
+  "duplicated_examples": 0,
+  "ids_burned_into_video": false,
+  "source_manifest_sha256": "e610d9e7940e920fdaff50d4b6a47fc9020c55da36a1d922b37028c5461a132b",
+  "renderer": "PBR raster; matte grey/satin hand with inferred visual-only inner-face rubber finish; no added geometry",
+  "all_sources_saved_policy_motion": true,
+  "family_counts": {
+    "mug grasping": 12,
+    "camera grasping": 2,
+    "mouse grasping": 2,
+    "bottle grasping": 12,
+    "wineglass grasping": 3,
+    "sprayer grasping": 9,
+    "apple grasping": 1,
+    "bowl grasping": 4,
+    "doughnut grasping": 1,
+    "jug grasping": 1,
+    "pitcher grasping": 1,
+    "wiping": 5,
+    "dispenser articulation": 2,
+    "mounting": 1,
+    "drawer articulation": 1,
+    "cup nesting": 1,
+    "notebook opening": 4,
+    "block stacking": 2,
+    "bimanual handover": 2,
+    "grasp transition": 2,
+    "cup inversion": 1,
+    "lift and tilt": 2,
+    "goal pose": 3,
+    "interaction": 5,
+    "phase timing": 2,
+    "execution strategy": 2,
+    "dense object tracking": 5,
+    "peg insertion": 8,
+    "peg extraction": 6,
+    "insert and twist": 5,
+    "fitting a recess": 1,
+    "bimanual keyboard handling": 2,
+    "mug placement": 7,
+    "spoon motions": 3,
+    "bimanual plate transport": 15,
+    "masher motions": 7,
+    "mouse handling": 2,
+    "remote handling": 3,
+    "carton tilt motions": 2,
+    "faucet articulation": 1
+  },
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "reserved": false,
+      "id": "t057_b",
+      "label": "tilt and present a plate \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 0.27161936680204235
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "reserved": false,
+      "id": "t001_b",
+      "label": "insert a peg \u00b7 larger peg",
+      "family": "peg insertion",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 2.1752321178403995
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "reserved": false,
+      "id": "v2-10-lift-bottle-s01-t05",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 0.6617301081617674
+    },
+    {
+      "row": 0,
+      "col": 3,
+      "reserved": false,
+      "id": "v2-03-trigger-sprayer-manipulate",
+      "label": "change to a spraying grasp",
+      "family": "grasp transition",
+      "visual_family": "sprayer",
+      "group": "diversity",
+      "source_phase_seconds": 2.07563647457088
+    },
+    {
+      "row": 0,
+      "col": 4,
+      "reserved": false,
+      "id": "t061_a",
+      "label": "press a masher at the center",
+      "family": "masher motions",
+      "visual_family": "masher",
+      "group": "masher motions",
+      "source_phase_seconds": 2.7719734943530057
+    },
+    {
+      "row": 0,
+      "col": 5,
+      "reserved": false,
+      "id": "mug-handle-100",
+      "label": "mug handle grasp \u00b7 1.00\u00d7",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 0.5137626305222511
+    },
+    {
+      "row": 0,
+      "col": 6,
+      "reserved": false,
+      "id": "dispenser",
+      "label": "lift and press the dispenser",
+      "family": "dispenser articulation",
+      "visual_family": "dispenser articulation",
+      "group": "diversity",
+      "source_phase_seconds": 0.5489189102178594
+    },
+    {
+      "row": 0,
+      "col": 7,
+      "reserved": false,
+      "id": "t060_b",
+      "label": "carry a plate out and back \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 2.2216346907953266
+    },
+    {
+      "row": 0,
+      "col": 8,
+      "reserved": false,
+      "id": "v2-10-lift-trigger-sprayer-s03-t14",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "visual_family": "sprayer",
+      "group": "lifts",
+      "source_phase_seconds": 1.021103624564906
+    },
+    {
+      "row": 0,
+      "col": 9,
+      "reserved": false,
+      "id": "t012_a",
+      "label": "insert and twist in stages",
+      "family": "insert and twist",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 10.286347438561886
+    },
+    {
+      "row": 0,
+      "col": 10,
+      "reserved": false,
+      "id": "t055_b",
+      "label": "carry a plate through a frame \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 2.395631940540625
+    },
+    {
+      "row": 0,
+      "col": 11,
+      "reserved": false,
+      "id": "erase-board",
+      "label": "erase the board",
+      "family": "wiping",
+      "visual_family": "wiping",
+      "group": "diversity",
+      "source_phase_seconds": 2.1690039966876307
+    },
+    {
+      "row": 0,
+      "col": 12,
+      "reserved": false,
+      "id": "mug-top-transferred",
+      "label": "mug rim grasp \u00b7 reused interaction",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 1.421796933747828
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "reserved": false,
+      "id": "mug-handle-070",
+      "label": "mug handle grasp \u00b7 0.70\u00d7",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 1.405486410483718
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "reserved": false,
+      "id": "open-notebook",
+      "label": "open a notebook",
+      "family": "notebook opening",
+      "visual_family": "notebook opening",
+      "group": "diversity",
+      "source_phase_seconds": 0.6412452737761971
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "reserved": false,
+      "id": "t060_a",
+      "label": "carry a plate out and back \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 3.681406259594951
+    },
+    {
+      "row": 1,
+      "col": 3,
+      "reserved": false,
+      "id": "box",
+      "label": "track a box",
+      "family": "dense object tracking",
+      "visual_family": "dense object tracking",
+      "group": "arctic",
+      "source_phase_seconds": 1.014845568376283
+    },
+    {
+      "row": 1,
+      "col": 4,
+      "reserved": false,
+      "id": "v2-10-lift-bottle-s01-t09",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 0.4332154306272666
+    },
+    {
+      "row": 1,
+      "col": 5,
+      "reserved": false,
+      "id": "t037_a",
+      "label": "place a mug on a coaster",
+      "family": "mug placement",
+      "visual_family": "mug placement",
+      "group": "mug placement",
+      "source_phase_seconds": 4.462348610987344
+    },
+    {
+      "row": 1,
+      "col": 6,
+      "reserved": false,
+      "id": "t017_a",
+      "label": "fit a piece into a recess",
+      "family": "fitting a recess",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 4.380552136960129
+    },
+    {
+      "row": 1,
+      "col": 7,
+      "reserved": false,
+      "id": "v2-10-lift-bottle-s01-t08",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 1.3917836104519665
+    },
+    {
+      "row": 1,
+      "col": 8,
+      "reserved": false,
+      "id": "C02-GT01",
+      "label": "open a wider notebook",
+      "family": "notebook opening",
+      "visual_family": "notebook opening",
+      "group": "diversity",
+      "source_phase_seconds": 2.3439735378487967
+    },
+    {
+      "row": 1,
+      "col": 9,
+      "reserved": false,
+      "id": "t088_a",
+      "label": "tilt a carton toward two cups",
+      "family": "carton tilt motions",
+      "visual_family": "carton tilt motions",
+      "group": "object handling",
+      "source_phase_seconds": 1.3574508575936004
+    },
+    {
+      "row": 1,
+      "col": 10,
+      "reserved": false,
+      "id": "bottle-side-transferred",
+      "label": "bottle side grasp \u00b7 reused interaction",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 1.167958804871887
+    },
+    {
+      "row": 1,
+      "col": 11,
+      "reserved": false,
+      "id": "t006_b",
+      "label": "extract and reseat a peg \u00b7 larger peg",
+      "family": "peg extraction",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 9.410548063771179
+    },
+    {
+      "row": 1,
+      "col": 12,
+      "reserved": false,
+      "id": "t056_a",
+      "label": "turn a plate \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 1.3160889311111532
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "reserved": false,
+      "id": "strategy-pick",
+      "label": "pick and place a cube",
+      "family": "execution strategy",
+      "visual_family": "execution strategy",
+      "group": "control",
+      "source_phase_seconds": 0.7989599454061438
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "reserved": false,
+      "id": "v2-10-lift-bottle-s01-t02",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 0.6187441820899646
+    },
+    {
+      "row": 2,
+      "col": 2,
+      "reserved": false,
+      "id": "t040_a",
+      "label": "pass a mug through a frame",
+      "family": "mug placement",
+      "visual_family": "mug placement",
+      "group": "mug placement",
+      "source_phase_seconds": 5.202621483709663
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "reserved": false,
+      "id": "strategy-push",
+      "label": "push a cube",
+      "family": "execution strategy",
+      "visual_family": "execution strategy",
+      "group": "control",
+      "source_phase_seconds": 1.8665612636832518
+    },
+    {
+      "row": 2,
+      "col": 4,
+      "reserved": false,
+      "id": "t009_a",
+      "label": "insert and twist a keyed part",
+      "family": "insert and twist",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 4.703664233296877
+    },
+    {
+      "row": 2,
+      "col": 5,
+      "reserved": false,
+      "id": "t025_a",
+      "label": "wipe a zigzag",
+      "family": "wiping",
+      "visual_family": "wiping",
+      "group": "wiping",
+      "source_phase_seconds": 0.04235607711598277
+    },
+    {
+      "row": 2,
+      "col": 6,
+      "reserved": false,
+      "id": "v2-10-lift-trigger-sprayer-s02-t01",
+      "label": "sprayer \u00b7 base grasp",
+      "family": "sprayer grasping",
+      "visual_family": "sprayer",
+      "group": "lifts",
+      "source_phase_seconds": 0.5873052605117361
+    },
+    {
+      "row": 2,
+      "col": 7,
+      "reserved": false,
+      "id": "t038_a",
+      "label": "place a mug in a holder",
+      "family": "mug placement",
+      "visual_family": "mug placement",
+      "group": "mug placement",
+      "source_phase_seconds": 1.5943822874687612
+    },
+    {
+      "row": 2,
+      "col": 8,
+      "reserved": false,
+      "id": "t001_a",
+      "label": "insert a peg \u00b7 smaller peg",
+      "family": "peg insertion",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 9.886755781403433
+    },
+    {
+      "row": 2,
+      "col": 9,
+      "reserved": false,
+      "id": "apple",
+      "label": "grasp an apple",
+      "family": "apple grasping",
+      "visual_family": "apple grasping",
+      "group": "lifts",
+      "source_phase_seconds": 0.3807532670907676
+    },
+    {
+      "row": 2,
+      "col": 10,
+      "reserved": false,
+      "id": "C03-notebook_a",
+      "label": "open a wide notebook",
+      "family": "notebook opening",
+      "visual_family": "notebook opening",
+      "group": "diversity",
+      "source_phase_seconds": 1.3919169098274626
+    },
+    {
+      "row": 2,
+      "col": 11,
+      "reserved": false,
+      "id": "t062_a",
+      "label": "press a masher left then right",
+      "family": "masher motions",
+      "visual_family": "masher",
+      "group": "masher motions",
+      "source_phase_seconds": 0.2975459760054946
+    },
+    {
+      "row": 2,
+      "col": 12,
+      "reserved": false,
+      "id": "v2-10-lift-bottle-s02-t09",
+      "label": "bottle \u00b7 top grasp",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 0.8705109144405773
+    },
+    {
+      "row": 3,
+      "col": 0,
+      "reserved": false,
+      "id": "t054_b",
+      "label": "carry a plate over an obstacle \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 0.28088230499997735
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "reserved": false,
+      "id": "t005_b",
+      "label": "extract a seated peg \u00b7 larger peg",
+      "family": "peg extraction",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 0.5589000295537213
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "reserved": false,
+      "id": "v2-10-lift-trigger-sprayer-s03-t01",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "visual_family": "sprayer",
+      "group": "lifts",
+      "source_phase_seconds": 0.08819088301000497
+    },
+    {
+      "row": 3,
+      "col": 3,
+      "reserved": false,
+      "id": "C03-banana_handover_a",
+      "label": "hand over a curved banana",
+      "family": "bimanual handover",
+      "visual_family": "bimanual handover",
+      "group": "diversity",
+      "source_phase_seconds": 3.0822595122735947
+    },
+    {
+      "row": 3,
+      "col": 4,
+      "reserved": false,
+      "id": "t042_a",
+      "label": "present a mug",
+      "family": "mug placement",
+      "visual_family": "mug placement",
+      "group": "mug placement",
+      "source_phase_seconds": 1.7967800619080663
+    },
+    {
+      "row": 3,
+      "col": 5,
+      "reserved": false,
+      "id": "v2-10-lift-bowl-s01-t03",
+      "label": "bowl \u00b7 rim grasp",
+      "family": "bowl grasping",
+      "visual_family": "bowl grasping",
+      "group": "lifts",
+      "source_phase_seconds": 1.2775799286706995
+    },
+    {
+      "row": 3,
+      "col": 6,
+      "reserved": false,
+      "id": "mixer",
+      "label": "track a mixer",
+      "family": "dense object tracking",
+      "visual_family": "dense object tracking",
+      "group": "arctic",
+      "source_phase_seconds": 2.7647908669896424
+    },
+    {
+      "row": 3,
+      "col": 7,
+      "reserved": false,
+      "id": "t054_a",
+      "label": "carry a plate over an obstacle \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 2.003219594596885
+    },
+    {
+      "row": 3,
+      "col": 8,
+      "reserved": false,
+      "id": "mug-top-100",
+      "label": "mug top grasp \u00b7 1.00\u00d7",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 1.3543267440982163
+    },
+    {
+      "row": 3,
+      "col": 9,
+      "reserved": false,
+      "id": "t043_a",
+      "label": "transfer a mug between stands",
+      "family": "mug placement",
+      "visual_family": "mug placement",
+      "group": "mug placement",
+      "source_phase_seconds": 0.9692219599771004
+    },
+    {
+      "row": 3,
+      "col": 10,
+      "reserved": false,
+      "id": "t080_a",
+      "label": "stand a remote in a holder",
+      "family": "remote handling",
+      "visual_family": "remote handling",
+      "group": "object handling",
+      "source_phase_seconds": 1.365536255761981
+    },
+    {
+      "row": 3,
+      "col": 11,
+      "reserved": false,
+      "id": "jug-handle",
+      "label": "grasp a jug by its handle",
+      "family": "jug grasping",
+      "visual_family": "jug grasping",
+      "group": "lifts",
+      "source_phase_seconds": 0.11118876670176785
+    },
+    {
+      "row": 3,
+      "col": 12,
+      "reserved": false,
+      "id": "t010_b",
+      "label": "insert, twist and return",
+      "family": "insert and twist",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 9.562745371833444
+    },
+    {
+      "row": 4,
+      "col": 0,
+      "reserved": false,
+      "id": "v2-10-lift-trigger-sprayer-s03-t06",
+      "label": "sprayer \u00b7 base grasp",
+      "family": "sprayer grasping",
+      "visual_family": "sprayer",
+      "group": "lifts",
+      "source_phase_seconds": 1.1679303615043561
+    },
+    {
+      "row": 4,
+      "col": 1,
+      "reserved": false,
+      "id": "stack-blocks",
+      "label": "stack blocks",
+      "family": "block stacking",
+      "visual_family": "block stacking",
+      "group": "diversity",
+      "source_phase_seconds": 1.0132137791176017
+    },
+    {
+      "row": 4,
+      "col": 2,
+      "reserved": false,
+      "id": "t064_a",
+      "label": "press a masher to two depths",
+      "family": "masher motions",
+      "visual_family": "masher",
+      "group": "masher motions",
+      "source_phase_seconds": 1.2274859095923603
+    },
+    {
+      "row": 4,
+      "col": 3,
+      "reserved": false,
+      "id": "t090_a",
+      "label": "tilt a carton and return upright",
+      "family": "carton tilt motions",
+      "visual_family": "carton tilt motions",
+      "group": "object handling",
+      "source_phase_seconds": 0.9412437332503032
+    },
+    {
+      "row": 4,
+      "col": 4,
+      "reserved": false,
+      "id": "trigger-sprayer-exact",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "visual_family": "sprayer",
+      "group": "lifts",
+      "source_phase_seconds": 0.3959097075276077
+    },
+    {
+      "row": 4,
+      "col": 5,
+      "reserved": false,
+      "id": "mount",
+      "label": "mount a sleeve on a post",
+      "family": "mounting",
+      "visual_family": "mounting",
+      "group": "diversity",
+      "source_phase_seconds": 2.4190778039822662
+    },
+    {
+      "row": 4,
+      "col": 6,
+      "reserved": false,
+      "id": "t006_a",
+      "label": "extract and reseat a peg \u00b7 smaller peg",
+      "family": "peg extraction",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 13.000527849420905
+    },
+    {
+      "row": 4,
+      "col": 7,
+      "reserved": false,
+      "id": "v2-10-lift-bottle-s02-t05",
+      "label": "bottle \u00b7 top grasp",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 1.2801639013923705
+    },
+    {
+      "row": 4,
+      "col": 8,
+      "reserved": false,
+      "id": "stack-cups",
+      "label": "nest cups",
+      "family": "cup nesting",
+      "visual_family": "cup nesting",
+      "group": "diversity",
+      "source_phase_seconds": 0.6461666288184157
+    },
+    {
+      "row": 4,
+      "col": 9,
+      "reserved": false,
+      "id": "t033_b",
+      "label": "carry a keyboard between markers",
+      "family": "bimanual keyboard handling",
+      "visual_family": "bimanual keyboard handling",
+      "group": "keyboard",
+      "source_phase_seconds": 3.338593657147915
+    },
+    {
+      "row": 4,
+      "col": 10,
+      "reserved": false,
+      "id": "mug-top-125",
+      "label": "mug top grasp \u00b7 1.25\u00d7",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 1.0990275423973799
+    },
+    {
+      "row": 4,
+      "col": 11,
+      "reserved": false,
+      "id": "open-drawer",
+      "label": "open a drawer",
+      "family": "drawer articulation",
+      "visual_family": "drawer articulation",
+      "group": "diversity",
+      "source_phase_seconds": 0.4849488056109597
+    },
+    {
+      "row": 4,
+      "col": 12,
+      "reserved": false,
+      "id": "t059_a",
+      "label": "carry a plate to two stations \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 3.7695261231274344
+    },
+    {
+      "row": 5,
+      "col": 0,
+      "reserved": false,
+      "id": "t003_a",
+      "label": "insert a peg with a midway pause \u00b7 smaller peg",
+      "family": "peg insertion",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 1.047843877846996
+    },
+    {
+      "row": 5,
+      "col": 1,
+      "reserved": false,
+      "id": "notebook-transfer",
+      "label": "open a notebook \u00b7 transferred interaction",
+      "family": "dense object tracking",
+      "visual_family": "dense object tracking",
+      "group": "arctic",
+      "source_phase_seconds": 0.5905625154264271
+    },
+    {
+      "row": 5,
+      "col": 2,
+      "reserved": false,
+      "id": "hammer-slow",
+      "label": "strike a peg \u00b7 slow swing",
+      "family": "phase timing",
+      "visual_family": "phase timing",
+      "group": "control",
+      "source_phase_seconds": 0.9950992859279116
+    },
+    {
+      "row": 5,
+      "col": 3,
+      "reserved": false,
+      "id": "v2-11-lift-ycb-mug-top",
+      "label": "grasp a cup by its rim",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 1.1440582162079713
+    },
+    {
+      "row": 5,
+      "col": 4,
+      "reserved": false,
+      "id": "t047_a",
+      "label": "stir a figure-eight",
+      "family": "spoon motions",
+      "visual_family": "spoon motions",
+      "group": "spoon motions",
+      "source_phase_seconds": 5.238880021400595
+    },
+    {
+      "row": 5,
+      "col": 5,
+      "reserved": true,
+      "id": null,
+      "label": null,
+      "family": null,
+      "visual_family": null,
+      "group": null
+    },
+    {
+      "row": 5,
+      "col": 6,
+      "reserved": true,
+      "id": null,
+      "label": null,
+      "family": null,
+      "visual_family": null,
+      "group": null
+    },
+    {
+      "row": 5,
+      "col": 7,
+      "reserved": true,
+      "id": null,
+      "label": null,
+      "family": null,
+      "visual_family": null,
+      "group": null
+    },
+    {
+      "row": 5,
+      "col": 8,
+      "reserved": false,
+      "id": "t011_b",
+      "label": "insert and twist with a midway pause \u00b7 larger keyed part",
+      "family": "insert and twist",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 7.005935105941414
+    },
+    {
+      "row": 5,
+      "col": 9,
+      "reserved": false,
+      "id": "v2-10-lift-bottle-s02-t02",
+      "label": "bottle \u00b7 top grasp",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 1.0558698846337697
+    },
+    {
+      "row": 5,
+      "col": 10,
+      "reserved": false,
+      "id": "t059_b",
+      "label": "carry a plate to two stations \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 3.464971103181597
+    },
+    {
+      "row": 5,
+      "col": 11,
+      "reserved": false,
+      "id": "t045_a",
+      "label": "stir clockwise",
+      "family": "spoon motions",
+      "visual_family": "spoon motions",
+      "group": "spoon motions",
+      "source_phase_seconds": 5.168141327507328
+    },
+    {
+      "row": 5,
+      "col": 12,
+      "reserved": false,
+      "id": "apple-mouse-transferred",
+      "label": "mouse grasp \u00b7 reused interaction",
+      "family": "mouse grasping",
+      "visual_family": "mouse grasping",
+      "group": "lifts",
+      "source_phase_seconds": 0.9577083759941161
+    },
+    {
+      "row": 6,
+      "col": 0,
+      "reserved": false,
+      "id": "bottle-side-100",
+      "label": "bottle side grasp \u00b7 1.00\u00d7",
+      "family": "interaction",
+      "visual_family": "bottle",
+      "group": "control",
+      "source_phase_seconds": 0.09928410593420267
+    },
+    {
+      "row": 6,
+      "col": 1,
+      "reserved": false,
+      "id": "apple-mouse-exact",
+      "label": "mouse grasp",
+      "family": "mouse grasping",
+      "visual_family": "mouse grasping",
+      "group": "lifts",
+      "source_phase_seconds": 1.9082983485423028
+    },
+    {
+      "row": 6,
+      "col": 2,
+      "reserved": false,
+      "id": "t003_b",
+      "label": "insert a peg with a midway pause \u00b7 larger peg",
+      "family": "peg insertion",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 5.525826651176128
+    },
+    {
+      "row": 6,
+      "col": 3,
+      "reserved": false,
+      "id": "t065_a",
+      "label": "press a masher in two bowls",
+      "family": "masher motions",
+      "visual_family": "masher",
+      "group": "masher motions",
+      "source_phase_seconds": 1.1723472895100713
+    },
+    {
+      "row": 6,
+      "col": 4,
+      "reserved": false,
+      "id": "t055_a",
+      "label": "carry a plate through a frame \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 2.7258399697893765
+    },
+    {
+      "row": 6,
+      "col": 5,
+      "reserved": true,
+      "id": null,
+      "label": null,
+      "family": null,
+      "visual_family": null,
+      "group": null
+    },
+    {
+      "row": 6,
+      "col": 6,
+      "reserved": true,
+      "id": null,
+      "label": null,
+      "family": null,
+      "visual_family": null,
+      "group": null
+    },
+    {
+      "row": 6,
+      "col": 7,
+      "reserved": true,
+      "id": null,
+      "label": null,
+      "family": null,
+      "visual_family": null,
+      "group": null
+    },
+    {
+      "row": 6,
+      "col": 8,
+      "reserved": false,
+      "id": "v2-10-lift-mug-top",
+      "label": "grasp a mug by its rim",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 1.5286242406970512
+    },
+    {
+      "row": 6,
+      "col": 9,
+      "reserved": false,
+      "id": "t048_a",
+      "label": "sweep the bowl with a spoon",
+      "family": "spoon motions",
+      "visual_family": "spoon motions",
+      "group": "spoon motions",
+      "source_phase_seconds": 2.128760235529626
+    },
+    {
+      "row": 6,
+      "col": 10,
+      "reserved": false,
+      "id": "t067_a",
+      "label": "drag a masher along the bowl",
+      "family": "masher motions",
+      "visual_family": "masher",
+      "group": "masher motions",
+      "source_phase_seconds": 1.1866798847622704
+    },
+    {
+      "row": 6,
+      "col": 11,
+      "reserved": false,
+      "id": "donut",
+      "label": "grasp a doughnut",
+      "family": "doughnut grasping",
+      "visual_family": "doughnut grasping",
+      "group": "lifts",
+      "source_phase_seconds": 0.3085127577651292
+    },
+    {
+      "row": 6,
+      "col": 12,
+      "reserved": false,
+      "id": "t005_a",
+      "label": "extract a seated peg \u00b7 smaller peg",
+      "family": "peg extraction",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 2.552211420144886
+    },
+    {
+      "row": 7,
+      "col": 0,
+      "reserved": false,
+      "id": "C03-notebook_b",
+      "label": "open a compact notebook",
+      "family": "notebook opening",
+      "visual_family": "notebook opening",
+      "group": "diversity",
+      "source_phase_seconds": 0.4782299198753511
+    },
+    {
+      "row": 7,
+      "col": 1,
+      "reserved": false,
+      "id": "t023_a",
+      "label": "wipe up and down",
+      "family": "wiping",
+      "visual_family": "wiping",
+      "group": "wiping",
+      "source_phase_seconds": 3.417711874159674
+    },
+    {
+      "row": 7,
+      "col": 2,
+      "reserved": false,
+      "id": "t083_a",
+      "label": "turn and present a remote",
+      "family": "remote handling",
+      "visual_family": "remote handling",
+      "group": "object handling",
+      "source_phase_seconds": 0.35234075965126976
+    },
+    {
+      "row": 7,
+      "col": 3,
+      "reserved": false,
+      "id": "v2-03-lift-tilt-bottle",
+      "label": "lift and tilt a bottle",
+      "family": "lift and tilt",
+      "visual_family": "bottle",
+      "group": "diversity",
+      "source_phase_seconds": 1.7907256543791543
+    },
+    {
+      "row": 7,
+      "col": 4,
+      "reserved": false,
+      "id": "hammer-wineglass-exact",
+      "label": "wineglass stem grasp",
+      "family": "wineglass grasping",
+      "visual_family": "wineglass grasping",
+      "group": "lifts",
+      "source_phase_seconds": 1.0907490556128323
+    },
+    {
+      "row": 7,
+      "col": 5,
+      "reserved": false,
+      "id": "t073_a",
+      "label": "move a mouse along an L-shaped path",
+      "family": "mouse handling",
+      "visual_family": "mouse handling",
+      "group": "object handling",
+      "source_phase_seconds": 2.6461463153148848
+    },
+    {
+      "row": 7,
+      "col": 6,
+      "reserved": false,
+      "id": "t039_a",
+      "label": "carry a mug around an obstacle",
+      "family": "mug placement",
+      "visual_family": "mug placement",
+      "group": "mug placement",
+      "source_phase_seconds": 0.5389834629992645
+    },
+    {
+      "row": 7,
+      "col": 7,
+      "reserved": false,
+      "id": "v2-10-lift-bowl-s01-t07",
+      "label": "bowl \u00b7 rim grasp",
+      "family": "bowl grasping",
+      "visual_family": "bowl grasping",
+      "group": "lifts",
+      "source_phase_seconds": 1.4708836170999955
+    },
+    {
+      "row": 7,
+      "col": 8,
+      "reserved": false,
+      "id": "t056_b",
+      "label": "turn a plate \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 1.6626045316806994
+    },
+    {
+      "row": 7,
+      "col": 9,
+      "reserved": false,
+      "id": "C02-GT03",
+      "label": "turn a long faucet lever",
+      "family": "faucet articulation",
+      "visual_family": "faucet articulation",
+      "group": "diversity",
+      "source_phase_seconds": 1.9103150675655343
+    },
+    {
+      "row": 7,
+      "col": 10,
+      "reserved": false,
+      "id": "bottle-side-exact",
+      "label": "bottle side grasp",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 0.10097803641110659
+    },
+    {
+      "row": 7,
+      "col": 11,
+      "reserved": false,
+      "id": "t030_b",
+      "label": "turn a keyboard",
+      "family": "bimanual keyboard handling",
+      "visual_family": "bimanual keyboard handling",
+      "group": "keyboard",
+      "source_phase_seconds": 2.865999008257252
+    },
+    {
+      "row": 7,
+      "col": 12,
+      "reserved": false,
+      "id": "v2-11-stack-lego-blocks",
+      "label": "stack interlocking blocks",
+      "family": "block stacking",
+      "visual_family": "block stacking",
+      "group": "diversity",
+      "source_phase_seconds": 4.341740866773762
+    },
+    {
+      "row": 8,
+      "col": 0,
+      "reserved": false,
+      "id": "mug-top-070",
+      "label": "mug top grasp \u00b7 0.70\u00d7",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 1.1698369961231947
+    },
+    {
+      "row": 8,
+      "col": 1,
+      "reserved": false,
+      "id": "t004_b",
+      "label": "insert a peg in stages \u00b7 larger peg",
+      "family": "peg insertion",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 0.06157446439222743
+    },
+    {
+      "row": 8,
+      "col": 2,
+      "reserved": false,
+      "id": "cup-090",
+      "label": "tilt a cup \u00b7 90\u00b0",
+      "family": "goal pose",
+      "visual_family": "goal pose",
+      "group": "control",
+      "source_phase_seconds": 0.6648219643005481
+    },
+    {
+      "row": 8,
+      "col": 3,
+      "reserved": false,
+      "id": "mug-top-exact",
+      "label": "mug rim grasp",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 1.3657266842201352
+    },
+    {
+      "row": 8,
+      "col": 4,
+      "reserved": false,
+      "id": "waffleiron-transfer",
+      "label": "open a waffle iron \u00b7 transferred interaction",
+      "family": "dense object tracking",
+      "visual_family": "dense object tracking",
+      "group": "arctic",
+      "source_phase_seconds": 4.402149508241564
+    },
+    {
+      "row": 8,
+      "col": 5,
+      "reserved": false,
+      "id": "t058_a",
+      "label": "lower a held plate onto a support",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 3.0583101384108886
+    },
+    {
+      "row": 8,
+      "col": 6,
+      "reserved": false,
+      "id": "v2-10-lift-trigger-sprayer-s03-t15",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "visual_family": "sprayer",
+      "group": "lifts",
+      "source_phase_seconds": 1.2897073718098304
+    },
+    {
+      "row": 8,
+      "col": 7,
+      "reserved": false,
+      "id": "t002_a",
+      "label": "insert and withdraw a peg \u00b7 smaller peg",
+      "family": "peg insertion",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 13.456261597961808
+    },
+    {
+      "row": 8,
+      "col": 8,
+      "reserved": false,
+      "id": "bottle-top-100",
+      "label": "bottle top grasp \u00b7 1.00\u00d7",
+      "family": "interaction",
+      "visual_family": "bottle",
+      "group": "control",
+      "source_phase_seconds": 1.472127909772098
+    },
+    {
+      "row": 8,
+      "col": 9,
+      "reserved": false,
+      "id": "mug-side-100",
+      "label": "mug side grasp \u00b7 1.00\u00d7",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 0.7206417215056717
+    },
+    {
+      "row": 8,
+      "col": 10,
+      "reserved": false,
+      "id": "t004_a",
+      "label": "insert a peg in stages \u00b7 smaller peg",
+      "family": "peg insertion",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 2.0705513689511768
+    },
+    {
+      "row": 8,
+      "col": 11,
+      "reserved": false,
+      "id": "hammer-fast",
+      "label": "strike a peg \u00b7 fast swing",
+      "family": "phase timing",
+      "visual_family": "phase timing",
+      "group": "control",
+      "source_phase_seconds": 0.2113214885951796
+    },
+    {
+      "row": 8,
+      "col": 12,
+      "reserved": false,
+      "id": "trigger-sprayer-transferred",
+      "label": "sprayer grasp \u00b7 reused interaction",
+      "family": "sprayer grasping",
+      "visual_family": "sprayer",
+      "group": "lifts",
+      "source_phase_seconds": 0.8606808790937066
+    },
+    {
+      "row": 9,
+      "col": 0,
+      "reserved": false,
+      "id": "bottle-top-125",
+      "label": "bottle top grasp \u00b7 1.25\u00d7",
+      "family": "interaction",
+      "visual_family": "bottle",
+      "group": "control",
+      "source_phase_seconds": 0.7298474479466677
+    },
+    {
+      "row": 9,
+      "col": 1,
+      "reserved": false,
+      "id": "C02-GT04",
+      "label": "grasp an elliptical bottle",
+      "family": "bottle grasping",
+      "visual_family": "bottle grasping",
+      "group": "diversity",
+      "source_phase_seconds": 0.6471272393440207
+    },
+    {
+      "row": 9,
+      "col": 2,
+      "reserved": false,
+      "id": "apple-camera-transferred",
+      "label": "camera grasp \u00b7 reused interaction",
+      "family": "camera grasping",
+      "visual_family": "camera grasping",
+      "group": "lifts",
+      "source_phase_seconds": 1.6926400293596089
+    },
+    {
+      "row": 9,
+      "col": 3,
+      "reserved": false,
+      "id": "t053_b",
+      "label": "carry a plate level \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 1.3866515619447455
+    },
+    {
+      "row": 9,
+      "col": 4,
+      "reserved": false,
+      "id": "t068_a",
+      "label": "press and withdraw a masher repeatedly",
+      "family": "masher motions",
+      "visual_family": "masher",
+      "group": "masher motions",
+      "source_phase_seconds": 5.810874931009797
+    },
+    {
+      "row": 9,
+      "col": 5,
+      "reserved": false,
+      "id": "mug-side-070",
+      "label": "mug side grasp \u00b7 0.70\u00d7",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 0.3939409055747092
+    },
+    {
+      "row": 9,
+      "col": 6,
+      "reserved": false,
+      "id": "bottle-top-070",
+      "label": "bottle top grasp \u00b7 0.70\u00d7",
+      "family": "interaction",
+      "visual_family": "bottle",
+      "group": "control",
+      "source_phase_seconds": 0.2395439394749701
+    },
+    {
+      "row": 9,
+      "col": 7,
+      "reserved": false,
+      "id": "t057_a",
+      "label": "tilt and present a plate \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 1.580591975391144
+    },
+    {
+      "row": 9,
+      "col": 8,
+      "reserved": false,
+      "id": "v2-10-lift-bowl-s01-t01",
+      "label": "bowl \u00b7 rim grasp",
+      "family": "bowl grasping",
+      "visual_family": "bowl grasping",
+      "group": "lifts",
+      "source_phase_seconds": 1.4252586596800636
+    },
+    {
+      "row": 9,
+      "col": 9,
+      "reserved": false,
+      "id": "t022_a",
+      "label": "wipe left to right",
+      "family": "wiping",
+      "visual_family": "wiping",
+      "group": "wiping",
+      "source_phase_seconds": 2.807422059471719
+    },
+    {
+      "row": 9,
+      "col": 10,
+      "reserved": false,
+      "id": "invert-cup",
+      "label": "invert a cup",
+      "family": "cup inversion",
+      "visual_family": "cup inversion",
+      "group": "diversity",
+      "source_phase_seconds": 0.6964309299364686
+    },
+    {
+      "row": 9,
+      "col": 11,
+      "reserved": false,
+      "id": "v2-10-lift-bottle-s01-t01",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 0.06836460437625647
+    },
+    {
+      "row": 9,
+      "col": 12,
+      "reserved": false,
+      "id": "t008_a",
+      "label": "extract a peg in stages",
+      "family": "peg extraction",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 2.9357980312779546
+    },
+    {
+      "row": 10,
+      "col": 0,
+      "reserved": false,
+      "id": "t053_a",
+      "label": "carry a plate level \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "visual_family": "plate transport",
+      "group": "bimanual plate transport",
+      "source_phase_seconds": 2.69086721498752
+    },
+    {
+      "row": 10,
+      "col": 1,
+      "reserved": false,
+      "id": "mug-side-125",
+      "label": "mug side grasp \u00b7 1.25\u00d7",
+      "family": "mug grasping",
+      "visual_family": "mug",
+      "group": "lifts",
+      "source_phase_seconds": 0.7416247585788369
+    },
+    {
+      "row": 10,
+      "col": 2,
+      "reserved": false,
+      "id": "t041_a",
+      "label": "turn the mug handle forward",
+      "family": "mug placement",
+      "visual_family": "mug placement",
+      "group": "mug placement",
+      "source_phase_seconds": 5.820676257368177
+    },
+    {
+      "row": 10,
+      "col": 3,
+      "reserved": false,
+      "id": "v2-03-dispenser-press-twice",
+      "label": "press a dispenser twice",
+      "family": "dispenser articulation",
+      "visual_family": "dispenser articulation",
+      "group": "diversity",
+      "source_phase_seconds": 0.6474289790882419
+    },
+    {
+      "row": 10,
+      "col": 4,
+      "reserved": false,
+      "id": "v2-10-lift-trigger-sprayer-s02-t14",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "visual_family": "sprayer",
+      "group": "lifts",
+      "source_phase_seconds": 1.2224497731464605
+    },
+    {
+      "row": 10,
+      "col": 5,
+      "reserved": false,
+      "id": "t084_a",
+      "label": "turn a remote out and back",
+      "family": "remote handling",
+      "visual_family": "remote handling",
+      "group": "object handling",
+      "source_phase_seconds": 0.035595910070696846
+    },
+    {
+      "row": 10,
+      "col": 6,
+      "reserved": false,
+      "id": "banana-handover",
+      "label": "hand over a banana",
+      "family": "bimanual handover",
+      "visual_family": "bimanual handover",
+      "group": "diversity",
+      "source_phase_seconds": 0.7910618007105464
+    },
+    {
+      "row": 10,
+      "col": 7,
+      "reserved": false,
+      "id": "v2-11-lift-ycb-pitcher",
+      "label": "grasp a pitcher",
+      "family": "pitcher grasping",
+      "visual_family": "pitcher grasping",
+      "group": "lifts",
+      "source_phase_seconds": 0.7205260269499074
+    },
+    {
+      "row": 10,
+      "col": 8,
+      "reserved": false,
+      "id": "t011_a",
+      "label": "insert and twist with a midway pause \u00b7 smaller keyed part",
+      "family": "insert and twist",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 11.400083620537771
+    },
+    {
+      "row": 10,
+      "col": 9,
+      "reserved": false,
+      "id": "t069_a",
+      "label": "inspect and replace a mouse",
+      "family": "mouse handling",
+      "visual_family": "mouse handling",
+      "group": "object handling",
+      "source_phase_seconds": 4.513507909112377
+    },
+    {
+      "row": 10,
+      "col": 10,
+      "reserved": false,
+      "id": "v2-10-lift-trigger-sprayer-s03-t05",
+      "label": "sprayer \u00b7 base grasp",
+      "family": "sprayer grasping",
+      "visual_family": "sprayer",
+      "group": "lifts",
+      "source_phase_seconds": 0.013399819533030193
+    },
+    {
+      "row": 10,
+      "col": 11,
+      "reserved": false,
+      "id": "ketchup-100",
+      "label": "track a ketchup bottle",
+      "family": "dense object tracking",
+      "visual_family": "dense object tracking",
+      "group": "arctic",
+      "source_phase_seconds": 0.34609390034650767
+    },
+    {
+      "row": 10,
+      "col": 12,
+      "reserved": false,
+      "id": "cup-120",
+      "label": "tilt a cup \u00b7 120\u00b0",
+      "family": "goal pose",
+      "visual_family": "goal pose",
+      "group": "control",
+      "source_phase_seconds": 0.23870241028877598
+    },
+    {
+      "row": 11,
+      "col": 0,
+      "reserved": false,
+      "id": "apple-camera-exact",
+      "label": "camera grasp",
+      "family": "camera grasping",
+      "visual_family": "camera grasping",
+      "group": "lifts",
+      "source_phase_seconds": 1.964072301518172
+    },
+    {
+      "row": 11,
+      "col": 1,
+      "reserved": false,
+      "id": "t002_b",
+      "label": "insert and withdraw a peg \u00b7 larger peg",
+      "family": "peg insertion",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 8.764206044996778
+    },
+    {
+      "row": 11,
+      "col": 2,
+      "reserved": false,
+      "id": "cup-045-seed52",
+      "label": "tilt a cup \u00b7 45\u00b0",
+      "family": "goal pose",
+      "visual_family": "goal pose",
+      "group": "control",
+      "source_phase_seconds": 1.6266338041362665
+    },
+    {
+      "row": 11,
+      "col": 3,
+      "reserved": false,
+      "id": "hammer-wineglass-transferred",
+      "label": "wineglass stem grasp \u00b7 reused interaction",
+      "family": "wineglass grasping",
+      "visual_family": "wineglass grasping",
+      "group": "lifts",
+      "source_phase_seconds": 1.6031591105274856
+    },
+    {
+      "row": 11,
+      "col": 4,
+      "reserved": false,
+      "id": "t007_b",
+      "label": "extract a peg with a midway pause",
+      "family": "peg extraction",
+      "visual_family": "peg and recess assembly",
+      "group": "assembly",
+      "source_phase_seconds": 8.096024859696627
+    },
+    {
+      "row": 11,
+      "col": 5,
+      "reserved": false,
+      "id": "bottle-side-070",
+      "label": "bottle side grasp \u00b7 0.70\u00d7",
+      "family": "interaction",
+      "visual_family": "bottle",
+      "group": "control",
+      "source_phase_seconds": 1.0095196906477213
+    },
+    {
+      "row": 11,
+      "col": 6,
+      "reserved": false,
+      "id": "v2-10-lift-wineglass-stem",
+      "label": "grasp a wineglass by its stem",
+      "family": "wineglass grasping",
+      "visual_family": "wineglass grasping",
+      "group": "lifts",
+      "source_phase_seconds": 0.4611987294629216
+    },
+    {
+      "row": 11,
+      "col": 7,
+      "reserved": false,
+      "id": "t024_a",
+      "label": "wipe out and back",
+      "family": "wiping",
+      "visual_family": "wiping",
+      "group": "wiping",
+      "source_phase_seconds": 2.3012664108731165
+    },
+    {
+      "row": 11,
+      "col": 8,
+      "reserved": false,
+      "id": "v2-03-lift-tilt-cup",
+      "label": "lift and tilt a cup",
+      "family": "lift and tilt",
+      "visual_family": "lift and tilt",
+      "group": "diversity",
+      "source_phase_seconds": 2.233629292420422
+    },
+    {
+      "row": 11,
+      "col": 9,
+      "reserved": false,
+      "id": "bowl",
+      "label": "grasp a bowl",
+      "family": "bowl grasping",
+      "visual_family": "bowl grasping",
+      "group": "lifts",
+      "source_phase_seconds": 1.418933344927306
+    },
+    {
+      "row": 11,
+      "col": 10,
+      "reserved": false,
+      "id": "t066_a",
+      "label": "turn then press a masher",
+      "family": "masher motions",
+      "visual_family": "masher",
+      "group": "masher motions",
+      "source_phase_seconds": 4.1455755089797695
+    },
+    {
+      "row": 11,
+      "col": 11,
+      "reserved": false,
+      "id": "mug-grasp-change",
+      "label": "change the mug grasp",
+      "family": "grasp transition",
+      "visual_family": "mug",
+      "group": "diversity",
+      "source_phase_seconds": 0.057376888852256044
+    },
+    {
+      "row": 11,
+      "col": 12,
+      "reserved": false,
+      "id": "mustard-bottle",
+      "label": "grasp a mustard bottle",
+      "family": "bottle grasping",
+      "visual_family": "bottle",
+      "group": "lifts",
+      "source_phase_seconds": 0.22372042449812096
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t057_b",
+      "x": 0.0125,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t001_b",
+      "x": 0.0875,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t05",
+      "x": 0.1625,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-03-trigger-sprayer-manipulate",
+      "x": 0.2375,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t061_a",
+      "x": 0.3125,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-handle-100",
+      "x": 0.3875,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "dispenser",
+      "x": 0.4625,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t060_b",
+      "x": 0.5375,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t14",
+      "x": 0.6125,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t012_a",
+      "x": 0.6875,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t055_b",
+      "x": 0.7625,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "erase-board",
+      "x": 0.8375,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-top-transferred",
+      "x": 0.9125,
+      "y": 0.05,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-handle-070",
+      "x": 0.0125,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "open-notebook",
+      "x": 0.0875,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t060_a",
+      "x": 0.1625,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "box",
+      "x": 0.2375,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t09",
+      "x": 0.3125,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t037_a",
+      "x": 0.3875,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t017_a",
+      "x": 0.4625,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t08",
+      "x": 0.5375,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "C02-GT01",
+      "x": 0.6125,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t088_a",
+      "x": 0.6875,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "bottle-side-transferred",
+      "x": 0.7625,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t006_b",
+      "x": 0.8375,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t056_a",
+      "x": 0.9125,
+      "y": 0.125,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "strategy-pick",
+      "x": 0.0125,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t02",
+      "x": 0.0875,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t040_a",
+      "x": 0.1625,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "strategy-push",
+      "x": 0.2375,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t009_a",
+      "x": 0.3125,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t025_a",
+      "x": 0.3875,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s02-t01",
+      "x": 0.4625,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t038_a",
+      "x": 0.5375,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t001_a",
+      "x": 0.6125,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "apple",
+      "x": 0.6875,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "C03-notebook_a",
+      "x": 0.7625,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t062_a",
+      "x": 0.8375,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bottle-s02-t09",
+      "x": 0.9125,
+      "y": 0.2,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t054_b",
+      "x": 0.0125,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t005_b",
+      "x": 0.0875,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t01",
+      "x": 0.1625,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "C03-banana_handover_a",
+      "x": 0.2375,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t042_a",
+      "x": 0.3125,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bowl-s01-t03",
+      "x": 0.3875,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mixer",
+      "x": 0.4625,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t054_a",
+      "x": 0.5375,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-top-100",
+      "x": 0.6125,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t043_a",
+      "x": 0.6875,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t080_a",
+      "x": 0.7625,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "jug-handle",
+      "x": 0.8375,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t010_b",
+      "x": 0.9125,
+      "y": 0.275,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t06",
+      "x": 0.0125,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "stack-blocks",
+      "x": 0.0875,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t064_a",
+      "x": 0.1625,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t090_a",
+      "x": 0.2375,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "trigger-sprayer-exact",
+      "x": 0.3125,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mount",
+      "x": 0.3875,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t006_a",
+      "x": 0.4625,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bottle-s02-t05",
+      "x": 0.5375,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "stack-cups",
+      "x": 0.6125,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t033_b",
+      "x": 0.6875,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-top-125",
+      "x": 0.7625,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "open-drawer",
+      "x": 0.8375,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t059_a",
+      "x": 0.9125,
+      "y": 0.35,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t003_a",
+      "x": 0.0125,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "notebook-transfer",
+      "x": 0.0875,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "hammer-slow",
+      "x": 0.1625,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-11-lift-ycb-mug-top",
+      "x": 0.2375,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t047_a",
+      "x": 0.3125,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t011_b",
+      "x": 0.6125,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bottle-s02-t02",
+      "x": 0.6875,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t059_b",
+      "x": 0.7625,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t045_a",
+      "x": 0.8375,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "apple-mouse-transferred",
+      "x": 0.9125,
+      "y": 0.425,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "bottle-side-100",
+      "x": 0.0125,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "apple-mouse-exact",
+      "x": 0.0875,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t003_b",
+      "x": 0.1625,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t065_a",
+      "x": 0.2375,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t055_a",
+      "x": 0.3125,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-mug-top",
+      "x": 0.6125,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t048_a",
+      "x": 0.6875,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t067_a",
+      "x": 0.7625,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "donut",
+      "x": 0.8375,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t005_a",
+      "x": 0.9125,
+      "y": 0.5,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "C03-notebook_b",
+      "x": 0.0125,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t023_a",
+      "x": 0.0875,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t083_a",
+      "x": 0.1625,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-03-lift-tilt-bottle",
+      "x": 0.2375,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "hammer-wineglass-exact",
+      "x": 0.3125,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t073_a",
+      "x": 0.3875,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t039_a",
+      "x": 0.4625,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bowl-s01-t07",
+      "x": 0.5375,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t056_b",
+      "x": 0.6125,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "C02-GT03",
+      "x": 0.6875,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "bottle-side-exact",
+      "x": 0.7625,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t030_b",
+      "x": 0.8375,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-11-stack-lego-blocks",
+      "x": 0.9125,
+      "y": 0.575,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-top-070",
+      "x": 0.0125,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t004_b",
+      "x": 0.0875,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "cup-090",
+      "x": 0.1625,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-top-exact",
+      "x": 0.2375,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "waffleiron-transfer",
+      "x": 0.3125,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t058_a",
+      "x": 0.3875,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t15",
+      "x": 0.4625,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t002_a",
+      "x": 0.5375,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "bottle-top-100",
+      "x": 0.6125,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-side-100",
+      "x": 0.6875,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t004_a",
+      "x": 0.7625,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "hammer-fast",
+      "x": 0.8375,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "trigger-sprayer-transferred",
+      "x": 0.9125,
+      "y": 0.65,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "bottle-top-125",
+      "x": 0.0125,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "C02-GT04",
+      "x": 0.0875,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "apple-camera-transferred",
+      "x": 0.1625,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t053_b",
+      "x": 0.2375,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t068_a",
+      "x": 0.3125,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-side-070",
+      "x": 0.3875,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "bottle-top-070",
+      "x": 0.4625,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t057_a",
+      "x": 0.5375,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bowl-s01-t01",
+      "x": 0.6125,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t022_a",
+      "x": 0.6875,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "invert-cup",
+      "x": 0.7625,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t01",
+      "x": 0.8375,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t008_a",
+      "x": 0.9125,
+      "y": 0.725,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t053_a",
+      "x": 0.0125,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-side-125",
+      "x": 0.0875,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t041_a",
+      "x": 0.1625,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-03-dispenser-press-twice",
+      "x": 0.2375,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s02-t14",
+      "x": 0.3125,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t084_a",
+      "x": 0.3875,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "banana-handover",
+      "x": 0.4625,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-11-lift-ycb-pitcher",
+      "x": 0.5375,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t011_a",
+      "x": 0.6125,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t069_a",
+      "x": 0.6875,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t05",
+      "x": 0.7625,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "ketchup-100",
+      "x": 0.8375,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "cup-120",
+      "x": 0.9125,
+      "y": 0.8,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "apple-camera-exact",
+      "x": 0.0125,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t002_b",
+      "x": 0.0875,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "cup-045-seed52",
+      "x": 0.1625,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "hammer-wineglass-transferred",
+      "x": 0.2375,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t007_b",
+      "x": 0.3125,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "bottle-side-070",
+      "x": 0.3875,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-10-lift-wineglass-stem",
+      "x": 0.4625,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t024_a",
+      "x": 0.5375,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "v2-03-lift-tilt-cup",
+      "x": 0.6125,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "bowl",
+      "x": 0.6875,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "t066_a",
+      "x": 0.7625,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mug-grasp-change",
+      "x": 0.8375,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    },
+    {
+      "id": "mustard-bottle",
+      "x": 0.9125,
+      "y": 0.875,
+      "width": 0.075,
+      "height": 0.075
+    }
+  ],
+  "output": "offline/all-tasks.mp4",
+  "poster": "offline/poster.jpg",
+  "validation": {
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "24/1",
+    "duration": "2.000000",
+    "nb_frames": "48"
+  },
+  "source_renderer": "run33 padded true RGBA with shadow catcher",
+  "alpha_spills_across_cells": true,
+  "nominal_positions_preserved": true
+}

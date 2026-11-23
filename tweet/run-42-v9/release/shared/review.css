@@ -1,0 +1,135 @@
+@font-face { font-family: 'DexLink Sans'; src: url('../fonts/Lato-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'DexLink Sans'; src: url('../fonts/Lato-Medium.ttf') format('truetype'); font-weight: 500 600; font-display: swap; }
+@font-face { font-family: 'DexLink Sans'; src: url('../fonts/Lato-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'DexLink Numerals'; src: url('../fonts/Lato-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+:root { color-scheme: light; font-family: 'DexLink Sans', ui-sans-serif, system-ui, sans-serif; background: #F5F4F1; color: #35332f; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1800px; margin: auto; }
+#stage-shell { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; background: #F5F4F1; }
+#stage { position: absolute; inset: 0; }
+.r30-logical { font-family: 'DexLink Sans', Helvetica, Arial, sans-serif; }
+#loading { position: absolute; inset: 45% 0 auto; text-align: center; font-size: 20px; color: #716b64; pointer-events: none; }
+#method-layer { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; pointer-events: none; visibility: hidden; overflow: hidden; z-index: 20; }
+.explain-scene { position: absolute; inset: 0; padding: 58px 72px; background: #F5F4F1; will-change: transform; }
+.explain-scene h1 { font-size: 64px; line-height: 1.17; font-weight: 400; margin: 0; letter-spacing: -.025em; }
+.explain-scene em { color: #3877a8; font-style: normal; }
+.contract-visual { position: relative; display: grid; grid-template-columns: 1.1fr 75px 1fr; align-items: center; gap: 12px; margin-top: 62px; }
+.waypoint-visual { position: relative; width: 100%; aspect-ratio: 2.25; }
+.waypoint-visual img { position: absolute; width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+.contract-input { align-self: start; padding-top: 18px; }
+.contract-input p { margin: 18px 0 0; font-size: 48px; color: #615b54; text-align: center; }
+.contract-input #template-note { font-size: 48px; line-height: 1.15; }
+.contract-arrow { color: #7e91a0; font-size: 45px; text-align: center; }
+.contract-output p { font-size: 54px; margin: 0 0 18px; text-align: center; }
+.contract-output video { width: 100%; height: 360px; object-fit: cover; mix-blend-mode: multiply; }
+.simulation-note { display: block; font-size: 40px; line-height: 1.2; text-align: center; color: #716b64; margin-top: 8px; }
+.policy-disclosure { position: absolute; z-index: 14; left: 34px; top: 25px; color: #716b64; font-size: 42px; line-height: 1.2; opacity: 0; pointer-events: none; transition: opacity .35s; }
+.pipeline { display: grid; grid-template-columns: 1fr 35px 1fr 35px 1fr 35px 1fr; align-items: center; gap: 10px; margin-top: 76px; }
+.pipeline article { text-align: center; align-self: start; will-change: transform,opacity; }
+.pipeline img, .pipeline video { width: 100%; height: 280px; object-fit: contain; display: block; mix-blend-mode: multiply; }
+.pipeline h2 { font-size: 52px; font-weight: 400; color: #3877a8; margin: 16px 0 12px; }
+.pipeline p { font-size: 48px; line-height: 1.18; color: #615b54; margin: 0; }
+.pipeline article:nth-of-type(3) p { font-size: 44px; }
+.contract-output video, .pipeline video { mix-blend-mode: normal; }
+.pipeline > span { font-size: 29px; color: #95a1aa; padding-bottom: 75px; }
+#real-layer { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; pointer-events: none; visibility: hidden; overflow: hidden; z-index: 19; background: #F5F4F1; will-change: transform; }
+#real-layer h1 { margin: 32px 30px 0; text-align: center; font-size: 76px; line-height: 1.12; font-weight: 400; letter-spacing: -.025em; }
+#real-layer h1 em { color: #3877a8; font-style: normal; }
+.real-subtitle { font-size: 42px; margin: 6px 0; text-align: center; color: #68635d; }
+#real-policy { position: absolute; left: 60px; top: 168px; width: 1480px; height: 616px; object-fit: contain; }
+.real-object-labels { position: absolute; left: 60px; right: 60px; top: 796px; display: grid; grid-template-columns: repeat(4,1fr); text-align: center; font-size: 48px; line-height: 1.1; }
+.real-pace { position: absolute; left: 0; right: 0; bottom: 5px; margin: 0; text-align: center; font-size: 40px; color: #716b64; }
+.review-controls { padding: 18px 24px 28px; font-size: 14px; color: #6b655d; }
+.transport { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+button, select { background: transparent; border: 1px solid #c7c5bc; border-radius: 5px; font: inherit; padding: 6px 12px; color: #486378; }
+button { cursor: pointer; }
+#scrub { flex: 1; min-width: 150px; accent-color: #4a7b9e; }
+.review-controls p { margin: 12px 0; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; }
+a { color: #486d88; }
+details { margin-top: 18px; max-width: 100ch; }
+body.clean main { max-width: none; }
+body.clean .review-controls { display: none; }
+body.clean #stage-shell { width: 100vw; height: 100vh; aspect-ratio: auto; }
+@media (max-width: 680px) { .review-controls { padding: 12px; } .transport { gap: 8px; } #scrub { flex-basis: 100%; } }
+
+/* One method scene: specify expands, then the remaining phases unfold. */
+.pipeline article { position: relative; overflow: visible; }
+.render-window { position: relative; width: 100%; height: 280px; overflow: visible; }
+.pipeline .render-window img, .pipeline .render-window video { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: contain; }
+.pipeline .render-window video { background: transparent; mix-blend-mode: normal; }
+.pipeline h2, .pipeline p { position: relative; z-index: 3; }
+.pipeline [data-arrow] { position: relative; z-index: 4; opacity: 0; }
+#specify-detail { position: absolute; left: 500px; right: 72px; top: 185px; z-index: 5; opacity: 0; background: #F5F4F1; }
+#specify-detail h2 { margin: 0; font-size: 48px; line-height: 1.17; font-weight: 400; letter-spacing: -.02em; }
+#specify-detail .waypoint-visual { margin-top: 18px; height: 330px; aspect-ratio: auto; }
+#specify-detail p { text-align: center; color: #615b54; font-size: 44px; margin: 14px 0 0; line-height: 1.15; }
+#specify-detail #template-note { font-size: 40px; margin-top: 12px; }
+#real-policy { top: 65px; }
+.real-object-labels { top: 705px; }
+.real-speeds { position: absolute; left: 60px; right: 60px; top: 620px; display: grid; grid-template-columns: repeat(4,1fr); font-size: 40px; line-height: 1.1; color: #4d4841; }
+.real-speeds span { justify-self: end; margin-right: 24px; padding: 5px 8px; background: #ffffffc9; }
+.real-message { position: absolute; left: 55px; right: 55px; bottom: 29px; margin: 0; text-align: center; font-size: 60px; line-height: 1.06; letter-spacing: -.024em; }
+.real-message em { color: #3975ae; font-style: normal; }
+.pipeline h2 { display: flex; justify-content: center; align-items: baseline; gap: 12px; }
+.pipeline h2 .stage-number { font-family: 'DexLink Numerals', 'DexLink Sans', sans-serif; font-size: 70px; line-height: 1; font-weight: 700; }
+#real-message-ink { display: inline-block; text-align: left; white-space: nowrap; }
+#real-type-caret { display: inline-block; width: 2px; height: .85em; margin-left: 4px; vertical-align: -.02em; background: #3975ae; }
+
+/* Palette-only variant; native object/hand colors and all layout are shared. */
+.r30-intro-brand .r30-brand-word,
+.r30-final-title h1 {
+  background: linear-gradient(90deg, #292421 0%, #493B33 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Run39 palette roles. Keep the native object/hand materials untouched. */
+:root, .r30-stage, .r30-logical { color: #3F3631; }
+.r33-introducing, .r33-allows, .r30-control-line,
+.explain-scene h1, .pipeline h2, .pipeline h2 .stage-number,
+.real-message, .real-object-labels, .r30-impact-label { color: #3F3631; }
+.r33-framework, .r33-generating, .r30-final-title p,
+.pipeline p, #specify-detail h2, #specify-detail p { color: #544F4B; }
+.r30-axis-word, .explain-scene em, .real-message em,
+.r30-intro-part:not(.r30-intro-brand), a { color: #A65A2A; }
+.pipeline h2 span { color: #A65A2A; }
+.r30-tile figcaption, .r30-tile .r30-label-qualifier, .r30-impact-note,
+.policy-disclosure, .simulation-note, .real-speeds, .r30-rate,
+#specify-detail #template-note, #specify-detail .example-name,
+.review-controls, #loading { color: #706964; }
+.r30-impact-fill, .r30-type-cursor, #real-type-caret { background: #A65A2A; }
+.pipeline > [data-arrow] { color: #706964; }
+button, select { color: #3F3631; }
+#scrub { accent-color: #A65A2A; }
+
+/* True bold brand faces; semantic highlights use the warmer, clearer accent. */
+.r30-intro-brand .r30-brand-word, .r30-final-title h1 { font-weight: 700; }
+.policy-disclosure { left: auto; right: 34px; top: 25px; text-align: right; }
+.r30-rate { top: 86px; right: 34px; }
+
+/* Reserve the full line boxes while characters are typed, including the empty
+ * state. Images/captions therefore stay anchored throughout construction. */
+#method-heading { min-height: 75px; white-space: nowrap; }
+#specify-detail h2 { min-height: 113px; }
+.method-typed-line { display: inline-block; min-height: 1.17em; white-space: nowrap; }
+.method-type-caret { display: inline-block; width: 2px; height: .85em;
+  margin-left: 4px; vertical-align: -.02em; background: #A65A2A; visibility: hidden; }
+[data-typing="true"] > .method-type-caret { visibility: visible; }
+
+/* A centered signature grows, then the wordmark drops into its text column. */
+.r39-brand-lockup { position: absolute; left: 50%; top: 50%; width: max-content;
+  height: 320px; display: flex; align-items: center; gap: 40px; transform-origin: center; }
+.r39-brand-icon { display: block; width: auto; height: 260px; flex: none; }
+.r39-brand-divider { width: 3px; height: 320px; flex: none;
+  border-radius: 2px; background: #493B33; opacity: .8; }
+.r39-brand-text { position: relative; height: 320px; width: max-content; }
+.r39-brand-lockup h1 { position: absolute; left: 0; top: 0; margin: 0;
+  width: max-content; transform-origin: 0 0; opacity: 0; }
+.r39-brand-lockup .r39-brand-subtitle { position: relative; left: 0; top: 0;
+  width: max-content; max-width: none; margin: 0; text-align: left;
+  font-size: 46px; line-height: 1.2; opacity: 1; }
+.r39-brand-subtitle span { display: block; white-space: nowrap; }

@@ -1,0 +1,118 @@
+{
+  "label": "run42-v9 \u00b7 faster RL message with quarter-second hold",
+  "segments": [
+    {
+      "id": "full-grid-introduction",
+      "kind": "opener",
+      "seconds": 5
+    },
+    {
+      "id": "diversity",
+      "kind": "source",
+      "source_start": 2.55,
+      "source_end": 8
+    },
+    {
+      "id": "rl-training-message",
+      "kind": "hold",
+      "seconds": 2.083333333333333,
+      "source_start": 8,
+      "source_end": 8
+    },
+    {
+      "id": "control-handoff",
+      "kind": "bridge",
+      "seconds": 3.25
+    },
+    {
+      "id": "control-composition",
+      "kind": "source",
+      "source_start": 10.75,
+      "source_end": 27.25
+    },
+    {
+      "id": "deployment",
+      "kind": "source",
+      "source_start": 27.25,
+      "source_end": 33.75
+    },
+    {
+      "id": "method",
+      "kind": "source",
+      "source_start": 33.75,
+      "source_end": 42.25
+    },
+    {
+      "id": "end",
+      "kind": "source",
+      "source_start": 42.25,
+      "source_end": 44.25
+    }
+  ],
+  "description": "Only the central pause message: type at 1.5x, then hold 0.25s. All other content and timing unchanged.",
+  "id": "run-42-v9",
+  "status": "published",
+  "font": "IBM Plex Sans",
+  "font_trial": false,
+  "frames": 1183,
+  "duration": 49.291666666666664,
+  "selected_components": {
+    "opening": "run-37-v1",
+    "control_handoff": "run-37-v2",
+    "font": "run-37-f2",
+    "deployment": "after control and composition",
+    "final_icon": "../assets/dexlink-icon-sticker.png",
+    "final_icon_animation": "Icon, espresso divider and left-aligned two-line subtitle enlarge at center; DexLink drops from the top edge and pushes the subtitle down, sharing its left margin."
+  },
+  "delivery": "HTML preview and requested1080p MP4 export",
+  "opening_seconds": 5,
+  "opening": {
+    "title": "introducing DexLink",
+    "purpose": "for generating diverse dexterous behaviors in simulation",
+    "points": [],
+    "subtitle_animation": {
+      "style": "typed",
+      "start_seconds": 0.15,
+      "duration_seconds": 2.1,
+      "title": "already present",
+      "cursor": "fixed at right edge; typed letters extend left"
+    },
+    "accent": {
+      "word": "diverse",
+      "color": "#A65A2A"
+    }
+  },
+  "sticker_text": "RL policies trained in simulation",
+  "tag_style": "plain-box",
+  "source": "run-42-v8",
+  "sticker_scope": "Simulation examples only; absent throughout the opening, hardware, method references and closing.",
+  "sticker_font": "Roboto Mono, 32px at1600\u00d7900; smaller than the previous 40px tag.",
+  "tag_font": "Roboto Mono",
+  "tag_background_opacity": 0.3,
+  "transition_message": {
+    "text": "RL policies learned without per-task reward engineering",
+    "lines": [
+      "RL policies learned",
+      "without per-task reward engineering"
+    ],
+    "seconds": 2.083333333333333,
+    "source_time": 8,
+    "start_seconds": 10.45,
+    "typing": [
+      {
+        "start": 0.09999999999999999,
+        "seconds": 0.7999999999999999
+      },
+      {
+        "start": 0.9,
+        "seconds": 0.9333333333333332
+      }
+    ],
+    "fade_out_start": 2.083333333333333,
+    "fade_out_seconds": 0.22,
+    "resume": "Resume existing camera bridge after typing and the 0.25-second hold.",
+    "typing_speed_factor": 1.5,
+    "reading_pause_seconds": 0.25
+  },
+  "hide_diversity_caption_after_pause": true
+}

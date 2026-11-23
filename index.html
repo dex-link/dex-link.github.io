@@ -6,8 +6,11 @@
   <meta name="description" content="DexLink synthesizes physically grounded dexterous behaviors from sparse, reusable hand–object interaction templates.">
   <meta name="color-scheme" content="light">
   <title>DexLink · Dexterous demonstrations from chained hand–object poses</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=teaser-embed">
+  <meta name="theme-color" content="#F5F4F1">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=studio-gallery-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -29,8 +32,8 @@
 
   <header class="hero" id="top">
     <div class="hero-title">
-      <img class="method-icon" src="assets/method-icon.png" alt="A hand manipulating a block along a waypoint trajectory">
-      <h1><span class="title-name">DexLink:</span> <span class="title-description">Synthesizing Dexterous Demonstrations from Chained Hand–Object Poses</span></h1>
+      <img class="method-icon" src="assets/dexlink-icon.png" width="150" height="114" alt="A hand manipulating a block along a waypoint trajectory">
+      <h1><span class="title-name">DexLink</span><span class="title-description">Synthesizing Dexterous Demonstrations<br class="desktop-break"> from Chained Hand–Object Poses</span></h1>
     </div>
     <nav class="resource-links" aria-label="Paper resources">
       <span class="resource-link is-pending" aria-disabled="true" title="ArXiv link coming soon">arxiv</span>
@@ -51,16 +54,39 @@
     <section class="method-section" id="method" aria-label="DexLink teaser video">
       <div class="section-shell">
         <div class="teaser-embed">
-          <video muted autoplay loop playsinline controls preload="auto" data-autoplay aria-label="DexLink task-diversity teaser" src="tweet/dexlink-teaser.mp4?v=run-5-invert-label"></video>
+          <video muted autoplay loop playsinline controls preload="auto" data-autoplay poster="assets/teaser-poster.webp" aria-label="DexLink: diverse dexterous behaviors, controlled generation, and simulation reinforcement learning" src="tweet/run-42-v9/dexlink-run42-v9.mp4"></video>
         </div>
       </div>
     </section>
 
+    <section class="task-explorer-section section-shell" id="examples" aria-labelledby="explorer-title">
+      <div class="section-heading explorer-heading">
+        <div><p class="eyebrow">RL policies trained in simulation</p><h2 id="explorer-title">Explore the behaviors</h2><p>Tasks, objects, and compositions. Swipe through the collection or choose a category.</p></div>
+        <p class="explorer-count" id="explorer-count" aria-live="polite"></p>
+      </div>
+      <div class="explorer-toolbar" aria-label="Task gallery controls">
+        <div class="explorer-filters">
+          <label for="task-category" class="visually-hidden">Task category</label>
+          <select id="task-category"><option value="all">All behaviors</option><option value="diversity">Everyday tasks</option><option value="lifts">Objects and grasps</option><option value="control">Controlled generation</option><option value="assembly">Insertion and extraction</option><option value="bimanual plate transport">Bimanual transport</option><option value="other">Placement and tool use</option><option value="arctic">Dense object tracking</option></select>
+          <label for="task-search" class="visually-hidden">Find a behavior</label>
+          <input id="task-search" type="search" placeholder="Find a behavior…" autocomplete="off">
+        </div>
+        <div class="explorer-actions">
+          <button id="gallery-prev" type="button" aria-label="Previous task">←</button><output id="gallery-position" aria-label="Current task">1 / 150</output><button id="gallery-next" type="button" aria-label="Next task">→</button><button id="gallery-pause" type="button" aria-pressed="false">Pause</button>
+        </div>
+      </div>
+      <div class="task-viewport task-carousel" id="task-viewport" tabindex="0" aria-roledescription="carousel" aria-label="Task collection. Swipe, drag, or use the left and right arrow keys. Select the center task to watch it larger.">
+        <div class="task-world" id="task-world"></div><p class="gallery-loading" id="gallery-loading">Loading the task collection…</p>
+      </div>
+      <div class="explorer-footnote"><p>Swipe or drag · use the arrows · select the center demo to watch it larger</p></div>
+      <noscript><p>Enable JavaScript to explore the task collection. The teaser above shows the same behaviors.</p></noscript>
+    </section>
+
     <nav class="section-index section-shell" aria-label="Project sections">
+      <a href="#examples">Task gallery</a>
       <a href="#control">Controlled Synthesis</a>
       <a href="#tasks">Task Span</a>
       <a href="#dense-tracking">Dense Object Tracking</a>
-      <a href="#examples">Additional Examples</a>
       <a href="#reuse">Geometry Robustness</a>
       <a href="#real-world">Real World</a>
     </nav>
@@ -92,13 +118,6 @@
       </div>
     </section>
 
-    <section class="gallery-section section-shell" id="examples" aria-labelledby="examples-title">
-      <div class="section-heading">
-        <h2 id="examples-title">Additional task examples</h2>
-      </div>
-      <div class="example-grid" id="example-grid"></div>
-    </section>
-
     <section class="gallery-section section-shell" id="reuse" aria-labelledby="reuse-title">
       <div class="section-heading">
         <h2 id="reuse-title">Interaction-template reuse across geometry</h2>
@@ -120,7 +139,7 @@
     <section class="real-section" id="real-world" aria-labelledby="real-title">
       <div class="section-shell real-grid">
         <div class="real-copy">
-          <h2 id="real-title">grasping</h2>
+          <h2 id="real-title">Zero-shot sim-to-real</h2>
           <p>Point-cloud policies trained in simulation lift a mug and mustard bottle seen during training, and transfer to an unseen cup and lego-block.</p>
         </div>
         <div class="real-video">
@@ -130,6 +149,11 @@
     </section>
   </main>
 
-  <script src="site.js?v=source-media"></script>
+  <dialog class="task-dialog" id="task-dialog" aria-labelledby="task-dialog-title">
+    <div class="task-dialog-heading"><div><p class="eyebrow">RL policy trained in simulation</p><h2 id="task-dialog-title"></h2></div><button type="button" id="task-dialog-close" aria-label="Close task video">×</button></div>
+    <video id="task-dialog-video" muted loop playsinline controls preload="none"></video><p id="task-dialog-credit"></p>
+  </dialog>
+  <script src="site.js?v=studio-gallery-1" defer></script>
+  <script src="task-gallery.js?v=studio-gallery-1" defer></script>
 </body>
 </html>
