@@ -10,7 +10,7 @@
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=studio-gallery-1">
+  <link rel="stylesheet" href="styles.css?v=release-authors-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -35,6 +35,12 @@
       <img class="method-icon" src="assets/dexlink-icon.png" width="150" height="114" alt="A hand manipulating a block along a waypoint trajectory">
       <h1><span class="title-name">DexLink</span><span class="title-description">Synthesizing Dexterous Behaviors<br class="desktop-break"> from Chained Hand–Object Poses</span></h1>
     </div>
+    <p class="hero-authors" aria-label="Authors">
+      <a href="https://meenalparakh.github.io" target="_blank" rel="noopener noreferrer">Meenal Parakh</a>
+      <a href="https://deepsworld.github.io/" target="_blank" rel="noopener noreferrer">Deep Patel</a>
+      <a href="https://beininghan.github.io/" target="_blank" rel="noopener noreferrer">Beining Han</a>
+      <a href="https://www.cs.princeton.edu/~jiadeng/" target="_blank" rel="noopener noreferrer">Jia Deng</a>
+    </p>
     <nav class="resource-links" aria-label="Paper resources">
       <span class="resource-link is-pending" aria-disabled="true" title="ArXiv link coming soon">arxiv</span>
       <span class="resource-separator" aria-hidden="true">·</span>
@@ -54,7 +60,7 @@
     <section class="method-section" id="method" aria-label="DexLink teaser video">
       <div class="section-shell">
         <div class="teaser-embed">
-          <video muted autoplay loop playsinline controls preload="auto" data-autoplay poster="assets/teaser-poster.webp" aria-label="DexLink: diverse dexterous behaviors, controlled generation, and simulation reinforcement learning" src="tweet/run-43-v4/dexlink-run43-v4.mp4"></video>
+          <video id="project-teaser" muted playsinline controls preload="metadata" poster="assets/teaser-poster.webp" aria-label="DexLink: diverse dexterous behaviors, controlled generation, and simulation reinforcement learning" src="tweet/run-43-v4/dexlink-run43-v4.mp4"></video>
         </div>
       </div>
     </section>
@@ -153,7 +159,7 @@
     <div class="task-dialog-heading"><div><p class="eyebrow">RL policy trained in simulation</p><h2 id="task-dialog-title"></h2></div><button type="button" id="task-dialog-close" aria-label="Close task video">×</button></div>
     <video id="task-dialog-video" muted loop playsinline controls preload="none"></video><p id="task-dialog-credit"></p>
   </dialog>
-  <script src="site.js?v=studio-gallery-1" defer></script>
+  <script src="site.js?v=visible-teaser-1" defer></script>
   <script src="task-gallery.js?v=studio-gallery-1" defer></script>
 </body>
 </html>

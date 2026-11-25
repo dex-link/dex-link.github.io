@@ -286,6 +286,33 @@ function activateVisibleVideos() {
   document.querySelectorAll("video[data-autoplay]").forEach((media) => observer.observe(media));
 }
 
+function activateTeaser() {
+  const teaser = document.querySelector('#project-teaser');
+  let inView = false;
+  let resumeWhenVisible = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function updatePlayback() {
+    if (!inView || document.hidden) teaser.pause();
+    else if (resumeWhenVisible && !teaser.ended) teaser.play().catch(() => {});
+  }
+
+  // A manual pause stays paused. Visibility pauses preserve the playback
+  // position and resume intent, while a completed teaser stays on its end frame.
+  teaser.addEventListener('pause', () => {
+    if (inView && !document.hidden && !teaser.ended) resumeWhenVisible = false;
+  });
+  teaser.addEventListener('play', () => {
+    resumeWhenVisible = true;
+    updatePlayback();
+  });
+  teaser.addEventListener('ended', () => { resumeWhenVisible = false; });
+  new IntersectionObserver(([entry]) => {
+    inView = entry.isIntersecting && entry.intersectionRatio >= 0.01;
+    updatePlayback();
+  }, { rootMargin: '0px', threshold: 0.01 }).observe(teaser);
+  document.addEventListener('visibilitychange', updatePlayback);
+}
+
 async function startSite() {
   const response = await fetch('assets/renders/catalog.json');
   if (!response.ok) throw new Error('Task render catalog could not be loaded.');
@@ -300,6 +327,7 @@ async function startSite() {
   activateVisibleVideos();
   window.dexlinkSiteReady = true;
 }
+activateTeaser();
 startSite().catch(error => {
   console.error(error);
   const notice = document.createElement('p'); notice.className = 'media-error';

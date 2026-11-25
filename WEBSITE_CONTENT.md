@@ -18,11 +18,11 @@ This document records the website content and its current visual direction. The 
 ## Non-negotiable requirements
 
 - Use the framework name **DexLink** everywhere. Do not use the legacy framework name.
-- Keep the website fully anonymous: no author names, affiliations, personal links, acknowledgements, or identifying metadata.
+- Show the four authors in order (Meenal Parakh, Deep Patel, Beining Han, Jia Deng), in a single row below the title, linked to their supplied personal websites. Keep local usernames and workstation paths out of deployed metadata.
 - Present the project through the task specification and qualitative behaviors. Do not reproduce every paper result or turn the page into a second paper.
 - Embed media directly in the website. A visitor should not need to open a video browser or external gallery.
 - Never use an untrained timestep-0 checkpoint. Every policy video copied from the revision bundle must have a strictly positive checkpoint timestep in `revision/data/revision_policy_video_manifest_20260924.csv`.
-- Use muted, looping previews; retain native video controls so a visitor can pause or inspect a behavior.
+- Use muted, looping previews in the experiment galleries. The main teaser plays once, only while visible, pauses offscreen or in a background tab, and resumes from its position on return. After completion, hold the last frame; retain native controls for replay or inspection.
 - The project overview is the finalized teaser video embedded directly in the page. Keep the standalone HTML presentation in `presentation/` for possible later reuse, but do not embed it on the homepage.
 - Use the accepted warm academic visual system described above, with thin borders and no decorative background shapes.
 - Use fixed third-person policy views (`rollout_fixed.mp4`) throughout the experiment galleries and deck.
@@ -47,7 +47,7 @@ The page should make three ideas immediately visible:
 - No hero diagram, eyebrow, call-to-action buttons, or paper-PDF link.
 - No navigation bar, jump links, or footer; the website is a continuous top-to-bottom document.
 - Place the teaser video immediately after the title and summary, without a separate method heading.
-- No authors or affiliations.
+- Include the linked author row beneath the title; do not add affiliations.
 
 ### Favicon studies
 
@@ -55,7 +55,7 @@ The website favicon uses the hand-free block and opacity-graded waypoint mark. T
 
 ### 2. Teaser video
 
-Embed the selected silent teaser at 16:9 with muted autoplay, looping, inline mobile playback, and native controls. The current export is `tweet/run-43-v4/dexlink-run43-v4.mp4`, with its self-contained editable preview in `tweet/run-43-v4/release/`.
+Embed the selected silent teaser at 16:9 with muted playback while in view, inline mobile playback, and native controls. Do not loop or restart it on return to view. The current export is `tweet/run-43-v4/dexlink-run43-v4.mp4`, with its self-contained editable preview in `tweet/run-43-v4/release/`.
 
 The previous interactive HTML presentation remains available in `presentation/` for possible later reuse, but is not shown on the homepage. It preserves the following sequence:
 

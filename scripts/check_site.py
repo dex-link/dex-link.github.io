@@ -1,4 +1,4 @@
-"""Run lightweight integrity and anonymity checks for the DexLink website."""
+"""Check public content, media integrity and source metadata for the website."""
 
 from __future__ import annotations
 
@@ -25,6 +25,11 @@ BANNED_PATTERNS = (
 )
 ALLOWED_PUBLIC_TEXT = (
     "https://github.com/meenalparakh/dexlink.git",
+    "Meenal Parakh",
+    "https://meenalparakh.github.io",
+    "https://deepsworld.github.io/",
+    "https://beininghan.github.io/",
+    "https://www.cs.princeton.edu/~jiadeng/",
 )
 MEDIA_PATTERN = re.compile(
     r"(?P<path>(?:\.\./)*(?:presentation/|tweet/)?assets/[A-Za-z0-9_./-]+\.(?:png|webp|gif|mp4|webm|woff2|ttf)|real_execution\.mp4|paper\.pdf)"
@@ -118,7 +123,7 @@ def main() -> None:
     check_policy_checkpoints()
     check_gallery()
     print(
-        "Website checks passed: text, media references, anonymity, and declared "
+        "Website checks passed: public text, media references, metadata, and declared "
         "positive checkpoints."
     )
 
