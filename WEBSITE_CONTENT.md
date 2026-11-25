@@ -44,10 +44,12 @@ The page should make three ideas immediately visible:
 
 - Title: **DexLink: Synthesizing Dexterous Behaviors from Chained Hand–Object Poses**
 - A compact, abstract-like project summary using the paper's wording.
-- No hero diagram, eyebrow, call-to-action buttons, or paper-PDF link.
+- Center the icon and DexLink name above the full-width subtitle. Keep the subtitle on one line on desktop and allow it to wrap on phones.
+- Below the author row, show only “paper (pdf)” and “code.” Both the resource row and side rail link to the published `paper.pdf`; omit arXiv until its identifier is available and omit supplementary.
 - No navigation bar, jump links, or footer; the website is a continuous top-to-bottom document.
 - Place the teaser video immediately after the title and summary, without a separate method heading.
 - Include the linked author row beneath the title; do not add affiliations.
+- The released PDF is copied unchanged from `/mnt/external/Downloads/p_arxiv_dexlink (1).pdf` to `paper.pdf`.
 
 ### Favicon studies
 
@@ -163,7 +165,7 @@ Keep one compact note near the gallery:
 
 ## Resolved source inputs
 
-The corrected PDF paths omit the `PhD_v2` directory. The 26-page final paper and 13-page initial slide deck were found under `/mnt/external/Downloads/`. The paper is used as a wording reference but is not linked or staged by the website build. The retained HTML presentation preserves the original motivation and capability sequence, omits the redundant title slide, and replaces the method pages with the paper's invert-cup pipeline. The homepage now uses the finalized teaser video instead.
+The corrected PDF paths omit the `PhD_v2` directory. The 26-page final paper and 13-page initial slide deck were found under `/mnt/external/Downloads/`. Those earlier files were used as wording references; the current release links the supplied 24-page `p_arxiv_dexlink (1).pdf` as `paper.pdf`. The retained HTML presentation preserves the original motivation and capability sequence, omits the redundant title slide, and replaces the method pages with the paper's invert-cup pipeline. The homepage now uses the finalized teaser video instead.
 
 ## Follow-up asset work
 
