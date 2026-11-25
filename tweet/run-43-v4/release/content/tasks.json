@@ -1,0 +1,1801 @@
+{
+  "schema": "dexlink_teaser_run39_v1",
+  "tasks": [
+    {
+      "id": "mug-handle-070",
+      "label": "mug handle grasp \u00b7 0.70\u00d7",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-handle-100",
+      "label": "mug handle grasp \u00b7 1.00\u00d7",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-side-070",
+      "label": "mug side grasp \u00b7 0.70\u00d7",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-side-100",
+      "label": "mug side grasp \u00b7 1.00\u00d7",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-side-125",
+      "label": "mug side grasp \u00b7 1.25\u00d7",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-top-070",
+      "label": "mug top grasp \u00b7 0.70\u00d7",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-top-100",
+      "label": "mug top grasp \u00b7 1.00\u00d7",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-top-125",
+      "label": "mug top grasp \u00b7 1.25\u00d7",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-top-exact",
+      "label": "mug rim grasp",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-top-transferred",
+      "label": "mug rim grasp \u00b7 reused interaction",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "apple-camera-exact",
+      "label": "camera grasp",
+      "family": "camera grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "apple-camera-transferred",
+      "label": "camera grasp \u00b7 reused interaction",
+      "family": "camera grasping",
+      "group": "lifts",
+      "diversity_representative": true,
+      "representative_index": 29,
+      "source_credit": ""
+    },
+    {
+      "id": "apple-mouse-exact",
+      "label": "mouse grasp",
+      "family": "mouse grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "apple-mouse-transferred",
+      "label": "mouse grasp \u00b7 reused interaction",
+      "family": "mouse grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "bottle-side-exact",
+      "label": "bottle side grasp",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "bottle-side-transferred",
+      "label": "bottle side grasp \u00b7 reused interaction",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "hammer-wineglass-exact",
+      "label": "wineglass stem grasp",
+      "family": "wineglass grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "hammer-wineglass-transferred",
+      "label": "wineglass stem grasp \u00b7 reused interaction",
+      "family": "wineglass grasping",
+      "group": "lifts",
+      "diversity_representative": true,
+      "representative_index": 30,
+      "source_credit": ""
+    },
+    {
+      "id": "trigger-sprayer-exact",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "trigger-sprayer-transferred",
+      "label": "sprayer grasp \u00b7 reused interaction",
+      "family": "sprayer grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "apple",
+      "label": "grasp an apple",
+      "family": "apple grasping",
+      "group": "lifts",
+      "diversity_representative": true,
+      "representative_index": 26,
+      "source_credit": ""
+    },
+    {
+      "id": "bowl",
+      "label": "grasp a bowl",
+      "family": "bowl grasping",
+      "group": "lifts",
+      "diversity_representative": true,
+      "representative_index": 28,
+      "source_credit": ""
+    },
+    {
+      "id": "donut",
+      "label": "grasp a doughnut",
+      "family": "doughnut grasping",
+      "group": "lifts",
+      "diversity_representative": true,
+      "representative_index": 27,
+      "source_credit": ""
+    },
+    {
+      "id": "jug-handle",
+      "label": "grasp a jug by its handle",
+      "family": "jug grasping",
+      "group": "lifts",
+      "diversity_representative": true,
+      "representative_index": 31,
+      "source_credit": ""
+    },
+    {
+      "id": "mustard-bottle",
+      "label": "grasp a mustard bottle",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t01",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t02",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t05",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t08",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bottle-s01-t09",
+      "label": "bottle \u00b7 body grasp",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bottle-s02-t02",
+      "label": "bottle \u00b7 top grasp",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bottle-s02-t05",
+      "label": "bottle \u00b7 top grasp",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bottle-s02-t09",
+      "label": "bottle \u00b7 top grasp",
+      "family": "bottle grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bowl-s01-t01",
+      "label": "bowl \u00b7 rim grasp",
+      "family": "bowl grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bowl-s01-t03",
+      "label": "bowl \u00b7 rim grasp",
+      "family": "bowl grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-bowl-s01-t07",
+      "label": "bowl \u00b7 rim grasp",
+      "family": "bowl grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-mug-top",
+      "label": "grasp a mug by its rim",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s02-t01",
+      "label": "sprayer \u00b7 base grasp",
+      "family": "sprayer grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s02-t14",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t01",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t05",
+      "label": "sprayer \u00b7 base grasp",
+      "family": "sprayer grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t06",
+      "label": "sprayer \u00b7 base grasp",
+      "family": "sprayer grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t14",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-trigger-sprayer-s03-t15",
+      "label": "sprayer \u00b7 body grasp",
+      "family": "sprayer grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-10-lift-wineglass-stem",
+      "label": "grasp a wineglass by its stem",
+      "family": "wineglass grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-11-lift-ycb-mug-top",
+      "label": "grasp a cup by its rim",
+      "family": "mug grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-11-lift-ycb-pitcher",
+      "label": "grasp a pitcher",
+      "family": "pitcher grasping",
+      "group": "lifts",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "erase-board",
+      "label": "erase the board",
+      "family": "wiping",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 0,
+      "source_credit": ""
+    },
+    {
+      "id": "dispenser",
+      "label": "lift and press the dispenser",
+      "family": "dispenser articulation",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 5,
+      "source_credit": ""
+    },
+    {
+      "id": "mount",
+      "label": "mount a sleeve on a post",
+      "family": "mounting",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 2,
+      "source_credit": ""
+    },
+    {
+      "id": "open-drawer",
+      "label": "open a drawer",
+      "family": "drawer articulation",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 4,
+      "source_credit": ""
+    },
+    {
+      "id": "stack-cups",
+      "label": "nest cups",
+      "family": "cup nesting",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 7,
+      "source_credit": ""
+    },
+    {
+      "id": "open-notebook",
+      "label": "open a notebook",
+      "family": "notebook opening",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 6,
+      "source_credit": ""
+    },
+    {
+      "id": "stack-blocks",
+      "label": "stack blocks",
+      "family": "block stacking",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 3,
+      "source_credit": ""
+    },
+    {
+      "id": "banana-handover",
+      "label": "hand over a banana",
+      "family": "bimanual handover",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 1,
+      "source_credit": ""
+    },
+    {
+      "id": "mug-grasp-change",
+      "label": "change the mug grasp",
+      "family": "grasp transition",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 9,
+      "source_credit": ""
+    },
+    {
+      "id": "invert-cup",
+      "label": "invert a cup",
+      "family": "cup inversion",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 8,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-03-dispenser-press-twice",
+      "label": "press a dispenser twice",
+      "family": "dispenser articulation",
+      "group": "diversity",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-03-lift-tilt-bottle",
+      "label": "lift and tilt a bottle",
+      "family": "lift and tilt",
+      "group": "diversity",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-03-lift-tilt-cup",
+      "label": "lift and tilt a cup",
+      "family": "lift and tilt",
+      "group": "diversity",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-03-trigger-sprayer-manipulate",
+      "label": "change to a spraying grasp",
+      "family": "grasp transition",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 10,
+      "source_credit": ""
+    },
+    {
+      "id": "v2-11-stack-lego-blocks",
+      "label": "stack interlocking blocks",
+      "family": "block stacking",
+      "group": "diversity",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "cup-045-seed52",
+      "label": "tilt a cup \u00b7 45\u00b0",
+      "family": "goal pose",
+      "group": "control",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "cup-090",
+      "label": "tilt a cup \u00b7 90\u00b0",
+      "family": "goal pose",
+      "group": "control",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "cup-120",
+      "label": "tilt a cup \u00b7 120\u00b0",
+      "family": "goal pose",
+      "group": "control",
+      "diversity_representative": true,
+      "representative_index": 13,
+      "source_credit": ""
+    },
+    {
+      "id": "bottle-side-070",
+      "label": "bottle side grasp \u00b7 0.70\u00d7",
+      "family": "interaction",
+      "group": "control",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "bottle-side-100",
+      "label": "bottle side grasp \u00b7 1.00\u00d7",
+      "family": "interaction",
+      "group": "control",
+      "diversity_representative": true,
+      "representative_index": 32,
+      "source_credit": ""
+    },
+    {
+      "id": "bottle-top-070",
+      "label": "bottle top grasp \u00b7 0.70\u00d7",
+      "family": "interaction",
+      "group": "control",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "bottle-top-100",
+      "label": "bottle top grasp \u00b7 1.00\u00d7",
+      "family": "interaction",
+      "group": "control",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "bottle-top-125",
+      "label": "bottle top grasp \u00b7 1.25\u00d7",
+      "family": "interaction",
+      "group": "control",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "hammer-fast",
+      "label": "strike a peg \u00b7 fast swing",
+      "family": "phase timing",
+      "group": "control",
+      "diversity_representative": true,
+      "representative_index": 11,
+      "source_credit": ""
+    },
+    {
+      "id": "hammer-slow",
+      "label": "strike a peg \u00b7 slow swing",
+      "family": "phase timing",
+      "group": "control",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "strategy-pick",
+      "label": "pick and place a cube",
+      "family": "execution strategy",
+      "group": "control",
+      "diversity_representative": true,
+      "representative_index": 12,
+      "source_credit": ""
+    },
+    {
+      "id": "strategy-push",
+      "label": "push a cube",
+      "family": "execution strategy",
+      "group": "control",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "ketchup-100",
+      "label": "track a ketchup bottle",
+      "family": "dense object tracking",
+      "group": "arctic",
+      "diversity_representative": true,
+      "representative_index": 33,
+      "source_credit": "Source demonstration: ARCTIC Dataset"
+    },
+    {
+      "id": "box",
+      "label": "track a box",
+      "family": "dense object tracking",
+      "group": "arctic",
+      "diversity_representative": true,
+      "representative_index": 34,
+      "source_credit": "Source demonstration: ARCTIC Dataset"
+    },
+    {
+      "id": "mixer",
+      "label": "track a mixer",
+      "family": "dense object tracking",
+      "group": "arctic",
+      "diversity_representative": true,
+      "representative_index": 35,
+      "source_credit": "Source demonstration: ARCTIC Dataset"
+    },
+    {
+      "id": "notebook-transfer",
+      "label": "open a notebook \u00b7 transferred interaction",
+      "family": "dense object tracking",
+      "group": "arctic",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": "Source demonstration: ARCTIC Dataset"
+    },
+    {
+      "id": "waffleiron-transfer",
+      "label": "open a waffle iron \u00b7 transferred interaction",
+      "family": "dense object tracking",
+      "group": "arctic",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": "Source demonstration: ARCTIC Dataset"
+    },
+    {
+      "id": "t001_a",
+      "label": "insert a peg \u00b7 smaller peg",
+      "family": "peg insertion",
+      "group": "assembly",
+      "diversity_representative": true,
+      "representative_index": 14,
+      "source_credit": ""
+    },
+    {
+      "id": "t001_b",
+      "label": "insert a peg \u00b7 larger peg",
+      "family": "peg insertion",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t002_a",
+      "label": "insert and withdraw a peg \u00b7 smaller peg",
+      "family": "peg insertion",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t002_b",
+      "label": "insert and withdraw a peg \u00b7 larger peg",
+      "family": "peg insertion",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t003_a",
+      "label": "insert a peg with a midway pause \u00b7 smaller peg",
+      "family": "peg insertion",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t003_b",
+      "label": "insert a peg with a midway pause \u00b7 larger peg",
+      "family": "peg insertion",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t004_a",
+      "label": "insert a peg in stages \u00b7 smaller peg",
+      "family": "peg insertion",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t004_b",
+      "label": "insert a peg in stages \u00b7 larger peg",
+      "family": "peg insertion",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t005_a",
+      "label": "extract a seated peg \u00b7 smaller peg",
+      "family": "peg extraction",
+      "group": "assembly",
+      "diversity_representative": true,
+      "representative_index": 15,
+      "source_credit": ""
+    },
+    {
+      "id": "t005_b",
+      "label": "extract a seated peg \u00b7 larger peg",
+      "family": "peg extraction",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t006_a",
+      "label": "extract and reseat a peg \u00b7 smaller peg",
+      "family": "peg extraction",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t006_b",
+      "label": "extract and reseat a peg \u00b7 larger peg",
+      "family": "peg extraction",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t007_b",
+      "label": "extract a peg with a midway pause",
+      "family": "peg extraction",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t008_a",
+      "label": "extract a peg in stages",
+      "family": "peg extraction",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t009_a",
+      "label": "insert and twist a keyed part",
+      "family": "insert and twist",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t010_b",
+      "label": "insert, twist and return",
+      "family": "insert and twist",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t011_a",
+      "label": "insert and twist with a midway pause \u00b7 smaller keyed part",
+      "family": "insert and twist",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t011_b",
+      "label": "insert and twist with a midway pause \u00b7 larger keyed part",
+      "family": "insert and twist",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t012_a",
+      "label": "insert and twist in stages",
+      "family": "insert and twist",
+      "group": "assembly",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t017_a",
+      "label": "fit a piece into a recess",
+      "family": "fitting a recess",
+      "group": "assembly",
+      "diversity_representative": true,
+      "representative_index": 16,
+      "source_credit": ""
+    },
+    {
+      "id": "t022_a",
+      "label": "wipe left to right",
+      "family": "wiping",
+      "group": "wiping",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t023_a",
+      "label": "wipe up and down",
+      "family": "wiping",
+      "group": "wiping",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t024_a",
+      "label": "wipe out and back",
+      "family": "wiping",
+      "group": "wiping",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t025_a",
+      "label": "wipe a zigzag",
+      "family": "wiping",
+      "group": "wiping",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t030_b",
+      "label": "turn a keyboard",
+      "family": "bimanual keyboard handling",
+      "group": "keyboard",
+      "diversity_representative": true,
+      "representative_index": 17,
+      "source_credit": ""
+    },
+    {
+      "id": "t033_b",
+      "label": "carry a keyboard between markers",
+      "family": "bimanual keyboard handling",
+      "group": "keyboard",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t037_a",
+      "label": "place a mug on a coaster",
+      "family": "mug placement",
+      "group": "mug placement",
+      "diversity_representative": true,
+      "representative_index": 18,
+      "source_credit": ""
+    },
+    {
+      "id": "t038_a",
+      "label": "place a mug in a holder",
+      "family": "mug placement",
+      "group": "mug placement",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t039_a",
+      "label": "carry a mug around an obstacle",
+      "family": "mug placement",
+      "group": "mug placement",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t040_a",
+      "label": "pass a mug through a frame",
+      "family": "mug placement",
+      "group": "mug placement",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t041_a",
+      "label": "turn the mug handle forward",
+      "family": "mug placement",
+      "group": "mug placement",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t042_a",
+      "label": "present a mug",
+      "family": "mug placement",
+      "group": "mug placement",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t043_a",
+      "label": "transfer a mug between stands",
+      "family": "mug placement",
+      "group": "mug placement",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t045_a",
+      "label": "stir clockwise",
+      "family": "spoon motions",
+      "group": "spoon motions",
+      "diversity_representative": true,
+      "representative_index": 19,
+      "source_credit": ""
+    },
+    {
+      "id": "t047_a",
+      "label": "stir a figure-eight",
+      "family": "spoon motions",
+      "group": "spoon motions",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t048_a",
+      "label": "sweep the bowl with a spoon",
+      "family": "spoon motions",
+      "group": "spoon motions",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t053_a",
+      "label": "carry a plate level \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": true,
+      "representative_index": 20,
+      "source_credit": ""
+    },
+    {
+      "id": "t053_b",
+      "label": "carry a plate level \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t054_a",
+      "label": "carry a plate over an obstacle \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t054_b",
+      "label": "carry a plate over an obstacle \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t055_a",
+      "label": "carry a plate through a frame \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t055_b",
+      "label": "carry a plate through a frame \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t056_a",
+      "label": "turn a plate \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t056_b",
+      "label": "turn a plate \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t057_a",
+      "label": "tilt and present a plate \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t057_b",
+      "label": "tilt and present a plate \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t058_a",
+      "label": "lower a held plate onto a support",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t059_a",
+      "label": "carry a plate to two stations \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t059_b",
+      "label": "carry a plate to two stations \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t060_a",
+      "label": "carry a plate out and back \u00b7 larger plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t060_b",
+      "label": "carry a plate out and back \u00b7 smaller plate",
+      "family": "bimanual plate transport",
+      "group": "bimanual plate transport",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t061_a",
+      "label": "press a masher at the center",
+      "family": "masher motions",
+      "group": "masher motions",
+      "diversity_representative": true,
+      "representative_index": 21,
+      "source_credit": ""
+    },
+    {
+      "id": "t062_a",
+      "label": "press a masher left then right",
+      "family": "masher motions",
+      "group": "masher motions",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t064_a",
+      "label": "press a masher to two depths",
+      "family": "masher motions",
+      "group": "masher motions",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t065_a",
+      "label": "press a masher in two bowls",
+      "family": "masher motions",
+      "group": "masher motions",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t066_a",
+      "label": "turn then press a masher",
+      "family": "masher motions",
+      "group": "masher motions",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t067_a",
+      "label": "drag a masher along the bowl",
+      "family": "masher motions",
+      "group": "masher motions",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t068_a",
+      "label": "press and withdraw a masher repeatedly",
+      "family": "masher motions",
+      "group": "masher motions",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t069_a",
+      "label": "inspect and replace a mouse",
+      "family": "mouse handling",
+      "group": "object handling",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t073_a",
+      "label": "move a mouse along an L-shaped path",
+      "family": "mouse handling",
+      "group": "object handling",
+      "diversity_representative": true,
+      "representative_index": 22,
+      "source_credit": ""
+    },
+    {
+      "id": "t080_a",
+      "label": "stand a remote in a holder",
+      "family": "remote handling",
+      "group": "object handling",
+      "diversity_representative": true,
+      "representative_index": 23,
+      "source_credit": ""
+    },
+    {
+      "id": "t083_a",
+      "label": "turn and present a remote",
+      "family": "remote handling",
+      "group": "object handling",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t084_a",
+      "label": "turn a remote out and back",
+      "family": "remote handling",
+      "group": "object handling",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "t088_a",
+      "label": "tilt a carton toward two cups",
+      "family": "carton tilt motions",
+      "group": "object handling",
+      "diversity_representative": true,
+      "representative_index": 24,
+      "source_credit": ""
+    },
+    {
+      "id": "t090_a",
+      "label": "tilt a carton and return upright",
+      "family": "carton tilt motions",
+      "group": "object handling",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "C03-notebook_a",
+      "label": "open a wide notebook",
+      "family": "notebook opening",
+      "group": "diversity",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "C03-notebook_b",
+      "label": "open a compact notebook",
+      "family": "notebook opening",
+      "group": "diversity",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "C03-banana_handover_a",
+      "label": "hand over a curved banana",
+      "family": "bimanual handover",
+      "group": "diversity",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "C02-GT01",
+      "label": "open a wider notebook",
+      "family": "notebook opening",
+      "group": "diversity",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    },
+    {
+      "id": "C02-GT03",
+      "label": "turn a long faucet lever",
+      "family": "faucet articulation",
+      "group": "diversity",
+      "diversity_representative": true,
+      "representative_index": 25,
+      "source_credit": ""
+    },
+    {
+      "id": "C02-GT04",
+      "label": "grasp an elliptical bottle",
+      "family": "bottle grasping",
+      "group": "diversity",
+      "diversity_representative": false,
+      "representative_index": null,
+      "source_credit": ""
+    }
+  ],
+  "representative_order": [
+    "erase-board",
+    "banana-handover",
+    "mount",
+    "stack-blocks",
+    "open-drawer",
+    "dispenser",
+    "open-notebook",
+    "stack-cups",
+    "invert-cup",
+    "mug-grasp-change",
+    "v2-03-trigger-sprayer-manipulate",
+    "hammer-fast",
+    "strategy-pick",
+    "cup-120",
+    "t001_a",
+    "t005_a",
+    "t017_a",
+    "t030_b",
+    "t037_a",
+    "t045_a",
+    "t053_a",
+    "t061_a",
+    "t073_a",
+    "t080_a",
+    "t088_a",
+    "C02-GT03",
+    "apple",
+    "donut",
+    "bowl",
+    "apple-camera-transferred",
+    "hammer-wineglass-transferred",
+    "jug-handle",
+    "bottle-side-100",
+    "ketchup-100",
+    "box",
+    "mixer"
+  ],
+  "expansion_counts": [
+    1,
+    4,
+    16,
+    36
+  ],
+  "variations": [
+    {
+      "id": "goal",
+      "title": "choose the goal pose",
+      "typed_axis": "goal pose",
+      "task_ids": [
+        "cup-045-seed52",
+        "cup-120"
+      ],
+      "variant_labels": [
+        "45\u00b0 tilt",
+        "120\u00b0 tilt"
+      ],
+      "seconds": 2.25,
+      "columns": 2,
+      "presentation": "zoom from the representative tile; keep established grid behind the view",
+      "playback_rate": 2.0,
+      "policy_scope": "separately grounded task policies",
+      "anchor_id": "cup-120",
+      "playback_mode": "synchronized",
+      "kind": "control",
+      "loop": true
+    },
+    {
+      "id": "interaction",
+      "title": "choose the interaction",
+      "typed_axis": "interaction",
+      "task_ids": [
+        "bottle-side-100",
+        "bottle-top-100"
+      ],
+      "variant_labels": [
+        "body grasp",
+        "neck grasp"
+      ],
+      "seconds": 1.45,
+      "columns": 2,
+      "presentation": "zoom from the representative tile; keep established grid behind the view",
+      "playback_rate": 2.0,
+      "policy_scope": "separately grounded task policies",
+      "anchor_id": "bottle-side-100",
+      "playback_mode": "synchronized",
+      "kind": "control"
+    },
+    {
+      "id": "timing",
+      "title": "choose phase timing",
+      "typed_axis": "phase timing",
+      "task_ids": [
+        "hammer-slow",
+        "hammer-fast"
+      ],
+      "variant_labels": [
+        "slow swing \u00b7 ~4 N",
+        "fast swing \u00b7 ~7.5 N"
+      ],
+      "seconds": 3.75,
+      "columns": 2,
+      "presentation": "zoom from the representative tile; keep established grid behind the view",
+      "playback_rate": 2.0,
+      "policy_scope": "separately grounded task policies",
+      "anchor_id": "hammer-fast",
+      "playback_mode": "sequential; first holds its last frame while second runs",
+      "impact_annotation": {
+        "source": "../../writeups/p-arxiv-dexlink/main.tex:424",
+        "values_newtons": [
+          4.0,
+          7.5
+        ],
+        "jump_at": "last frames of each strike",
+        "note": "Paper comparison, not a measured live force signal from these rendered episodes."
+      },
+      "kind": "control"
+    },
+    {
+      "id": "strategy",
+      "title": "choose the execution strategy",
+      "typed_axis": "execution strategy",
+      "task_ids": [
+        "strategy-push",
+        "strategy-pick"
+      ],
+      "variant_labels": [
+        "push",
+        "pick + place"
+      ],
+      "seconds": 2.8,
+      "columns": 2,
+      "presentation": "zoom from the representative tile; keep established grid behind the view",
+      "playback_rate": 2.0,
+      "policy_scope": "separately grounded task policies",
+      "anchor_id": "strategy-pick",
+      "playback_mode": "sequential; first holds its last frame while second runs",
+      "kind": "control"
+    },
+    {
+      "id": "peg-composition",
+      "title": "compose peg-handling sequences",
+      "typed_axis": "grasp \u00b7 insert \u00b7 extract \u00b7 place",
+      "task_ids": [
+        "t001_a",
+        "t001_b",
+        "t002_a",
+        "t002_b",
+        "t003_a",
+        "t003_b",
+        "t004_a",
+        "t004_b",
+        "t005_a",
+        "t005_b",
+        "t006_a",
+        "t006_b",
+        "t007_b",
+        "t008_a"
+      ],
+      "variant_labels": [
+        "insert \u00b7 smaller peg",
+        "insert \u00b7 larger peg",
+        "insert + withdraw \u00b7 smaller peg",
+        "insert + withdraw \u00b7 larger peg",
+        "pause midway \u00b7 smaller peg",
+        "pause midway \u00b7 larger peg",
+        "insert in stages \u00b7 smaller peg",
+        "insert in stages \u00b7 larger peg",
+        "extract \u00b7 smaller peg",
+        "extract \u00b7 larger peg",
+        "extract + reseat \u00b7 smaller peg",
+        "extract + reseat \u00b7 larger peg",
+        "pause midway",
+        "extract in stages"
+      ],
+      "seconds": 5.5,
+      "columns": 5,
+      "presentation": "zoom from the representative tile; keep established grid behind the view",
+      "playback_rate": 2.0,
+      "policy_scope": "separately grounded task policies",
+      "anchor_id": "t001_a",
+      "playback_mode": "parallel variation overview",
+      "scope_note": "Four motion programs \u00d7 two geometry instances; not eight independent skills.",
+      "kind": "composition",
+      "time_compressed": true,
+      "semantic_actions": [
+        "grasp",
+        "insert",
+        "extract",
+        "place"
+      ]
+    },
+    {
+      "id": "bimanual",
+      "title": "compose bimanual behaviors",
+      "typed_axis": "lift \u00b7 carry \u00b7 turn \u00b7 place",
+      "task_ids": [
+        "t053_a",
+        "t054_a",
+        "t055_a",
+        "t056_a",
+        "t057_a",
+        "t058_a",
+        "t059_a",
+        "t060_a"
+      ],
+      "variant_labels": [
+        "carry level",
+        "over an obstacle",
+        "through a frame",
+        "quarter turn",
+        "tilt + present",
+        "lower onto a support",
+        "two stations",
+        "out + back"
+      ],
+      "seconds": 3.0,
+      "columns": 4,
+      "presentation": "zoom from the representative tile; keep established grid behind the view",
+      "playback_rate": 2.0,
+      "policy_scope": "separately grounded task policies",
+      "anchor_id": "t053_a",
+      "playback_mode": "parallel variation overview",
+      "scope_note": "Eight task programs on the same plate family; one geometry per program keeps compositions legible.",
+      "kind": "composition",
+      "time_compressed": true,
+      "semantic_actions": [
+        "lift",
+        "carry",
+        "turn",
+        "place"
+      ]
+    }
+  ],
+  "optional_variations": [
+    {
+      "id": "wiping",
+      "title": "compose surface coverage",
+      "typed_axis": "wiping pattern",
+      "task_ids": [
+        "t022_a",
+        "t023_a",
+        "t024_a",
+        "t025_a"
+      ],
+      "variant_labels": [
+        "left to right",
+        "up + down",
+        "out + back",
+        "zigzag"
+      ],
+      "seconds": 3.0,
+      "columns": 2,
+      "presentation": "zoom from the representative tile; keep established grid behind the view",
+      "playback_rate": 2.0,
+      "policy_scope": "separately grounded task policies",
+      "anchor_id": "erase-board",
+      "playback_mode": "parallel",
+      "scope_note": "Whole saved setups rotated flat only for display; source gravity/evaluation not rerun."
+    },
+    {
+      "id": "mug-compositions",
+      "title": "compose mug placement",
+      "typed_axis": "placement route",
+      "task_ids": [
+        "t037_a",
+        "t038_a",
+        "t039_a",
+        "t040_a",
+        "t041_a",
+        "t042_a",
+        "t043_a"
+      ],
+      "variant_labels": [
+        "on a coaster",
+        "inside a holder",
+        "around an obstacle",
+        "through a frame",
+        "handle forward",
+        "present the opening",
+        "between stands"
+      ],
+      "seconds": 3.0,
+      "columns": 4,
+      "presentation": "zoom from the representative tile; keep established grid behind the view",
+      "playback_rate": 2.0,
+      "policy_scope": "separately grounded task policies",
+      "anchor_id": "t037_a",
+      "playback_mode": "parallel"
+    },
+    {
+      "id": "masher",
+      "title": "compose tool motions",
+      "typed_axis": "pressing pattern",
+      "task_ids": [
+        "t061_a",
+        "t062_a",
+        "t064_a",
+        "t065_a",
+        "t066_a",
+        "t067_a",
+        "t068_a"
+      ],
+      "variant_labels": [
+        "center press",
+        "left + right",
+        "two depths",
+        "two bowls",
+        "turn + press",
+        "trace a line",
+        "press + withdraw"
+      ],
+      "seconds": 3.0,
+      "columns": 4,
+      "presentation": "zoom from the representative tile; keep established grid behind the view",
+      "playback_rate": 2.0,
+      "policy_scope": "separately grounded task policies",
+      "anchor_id": "t061_a",
+      "playback_mode": "parallel"
+    }
+  ],
+  "priority_render_ids": [
+    "v2-03-trigger-sprayer-manipulate",
+    "bottle-top-100",
+    "t001_a",
+    "t001_b",
+    "t002_a",
+    "t002_b",
+    "t003_a",
+    "t003_b",
+    "t004_a",
+    "t004_b",
+    "t005_a",
+    "t005_b",
+    "t006_a",
+    "t006_b",
+    "t007_b",
+    "t008_a",
+    "t017_a",
+    "t030_b",
+    "t037_a",
+    "t045_a",
+    "t053_a",
+    "t054_a",
+    "t055_a",
+    "t056_a",
+    "t057_a",
+    "t058_a",
+    "t059_a",
+    "t060_a",
+    "t061_a",
+    "t073_a",
+    "t080_a",
+    "t088_a",
+    "C02-GT03"
+  ],
+  "render_asset_policy": "Prefer media/{id}.mp4 when rendered; existing video is a temporary layout fallback. Never silently show a still as a playing policy.",
+  "intro": "introducing DexLink, a generator of diverse dexterous behaviors.",
+  "control_prefix": "DexLink provides control over ",
+  "policy_disclosure": "simulation rollouts",
+  "timing": {
+    "total_seconds": 44.25,
+    "first_section_seconds": 27.25,
+    "method_seconds": 8.5,
+    "finale_seconds": 2.0,
+    "introduction_seconds": 2.0,
+    "single_demo_seconds": 2.1,
+    "grid_expansion_seconds": [
+      1.35,
+      1.35,
+      1.4
+    ],
+    "diversity_hold_seconds": 5.5,
+    "variations_seconds": 18.75,
+    "input_output_seconds": 5.0,
+    "method_overview_seconds": 8.5,
+    "finale_title_delay_seconds": 0.0,
+    "finale_title_reveal_seconds": 1.0,
+    "caution": "Target timings. Do not truncate the sequential hammer/strategy execution to force a number; extend the cut if required by selected source durations.",
+    "controlStart": 8.5,
+    "controlEnd": 27.25,
+    "realStart": 27.25,
+    "realEnd": 33.75,
+    "methodStart": 33.75,
+    "methodMiddle": 37.6,
+    "finaleStart": 42.25,
+    "real_world_seconds": 6.5,
+    "grid_mode": "continuous",
+    "grid_broaden_start": 2.55,
+    "grid_broaden_end": 9.0,
+    "expansion_handoff": "constant logarithmic pullback; control begins0.5s before hypothetical full-grid completion",
+    "method_typing": {
+      "heading": [
+        0.65,
+        1.15
+      ],
+      "specify": [
+        1.15,
+        1.45
+      ],
+      "specify_hold_seconds": 0.5,
+      "waypoints": [
+        1.95,
+        2.65
+      ],
+      "interactions": [
+        2.65,
+        3.55
+      ],
+      "reference_start": 5.0,
+      "policy_start": 5.7
+    }
+  },
+  "method_assets": {
+    "waypoints": "../assets/opening/invert-object-waypoints-aligned.png",
+    "interactions": "../assets/opening/invert-interactions-overlay-aligned.png",
+    "policy": "../assets/highres-4x/examples/invert_cup.mp4",
+    "retarget": "../../presentation-v2/assets/method/invert-anchor-02.png",
+    "reference": "../../assets/references/invert_cup.mp4"
+  },
+  "claims": {
+    "setups": 150,
+    "new_library_instances": 65,
+    "new_library_designs": 51,
+    "representative_count": 36,
+    "representatives_are": "visual representatives across object, interaction and task type; not an independent-skill benchmark",
+    "no_claims": [
+      "one generalist policy",
+      "150 distinct skills",
+      "success on every episode",
+      "new physics evaluation of rotated wiping setups",
+      "liquid simulation for carton tilts"
+    ]
+  },
+  "composition_prefix": "compose interactions across objects and tasks into continuous, multi-step behaviors.",
+  "palette": {
+    "background": "#F5F4F1",
+    "dexlink_gradient": [
+      "#292421",
+      "#493B33"
+    ],
+    "subtitle": "#544F4B",
+    "section_heading": "#3F3631",
+    "sub_caption": "#706964",
+    "highlight": "#A65A2A"
+  }
+}

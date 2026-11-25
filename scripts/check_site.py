@@ -34,7 +34,7 @@ MEDIA_PATTERN = re.compile(
 def public_text_files() -> tuple[Path, ...]:
     """Check deployed files, without walking years of ignored local drafts."""
     roots = [SITE_ROOT / name for name in ("index.html", "styles.css", "site.js", "task-gallery.js")]
-    release = SITE_ROOT / "tweet/run-42-v9/release"
+    release = SITE_ROOT / "tweet/run-43-v4/release"
     roots.extend(path for path in release.rglob("*") if path.is_file() and path.suffix in PUBLIC_TEXT_SUFFIXES)
     return tuple(roots)
 
@@ -93,7 +93,7 @@ def check_gallery() -> None:
         assert all((SITE_ROOT / task[field]).is_file() for field in ("video", "poster")), task["id"]
         assert task["label"] and task["duration"] > 0
     # Workstation paths and render caches must not enter the deployed metadata.
-    release = SITE_ROOT / "tweet/run-42-v9/release"
+    release = SITE_ROOT / "tweet/run-43-v4/release"
     for path in [SITE_ROOT / "assets/renders/catalog.json", *release.rglob("*.json")]:
         text = path.read_text()
         assert "/home/" not in text and "/mnt/" not in text, path

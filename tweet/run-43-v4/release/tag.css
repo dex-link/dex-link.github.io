@@ -1,0 +1,43 @@
+@font-face{
+  font-family:'Roboto Mono';src:url('fonts/RobotoMono-Variable.ttf') format('truetype');
+  font-style:normal;font-weight:100 700;font-display:swap;
+}
+.r42-example-tag{
+  position:absolute;left:0;top:0;z-index:17;box-sizing:border-box;
+  width:max-content;padding:8px 14px;border:1px solid #C5B7A8;border-radius:4px;
+  background:rgb(238 233 225 / .3);color:#80674F;box-shadow:none;
+  font:400 32px/1.2 'Roboto Mono',monospace;letter-spacing:-.018em;
+  white-space:nowrap;pointer-events:none;
+}
+.r42-v5-simulation-word{display:inline-block;white-space:pre;vertical-align:top;overflow:hidden}
+.r42-v5-diverse-word{color:#A65A2A}
+.r42-composition-keyword{color:#A65A2A}
+.r32-composition-line .r30-axis-word{color:inherit}
+.r42-v5-subtitle-caret{
+  position:absolute;left:0;top:0;z-index:14;width:2px;height:50px;
+  background:#A65A2A;pointer-events:none;transform-origin:0 0;
+}
+.r42-hold-message{position:absolute;inset:0;z-index:16;pointer-events:none;visibility:hidden;opacity:0}
+.r42-hold-wash{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse at center,#F5F4F1fc 0%,#F5F4F1f2 29%,#F5F4F1b3 49%,#F5F4F100 79%);
+}
+.r42-hold-copy{position:absolute;inset:0}
+.r42-hold-line{
+  position:absolute;margin:0;height:75px;
+  font:400 62px/1.2 'IBM Plex Sans',Arial,sans-serif;letter-spacing:-.018em;color:#544F4B;
+}
+.r42-hold-accent{color:#A65A2A}
+.r42-hold-ink{position:absolute;right:0;top:0;white-space:pre}
+.r43-settling-piece::before{content:'•';position:absolute;left:-36px;top:0;font-size:.65em;line-height:1.85}
+.r42-hold-caret{position:absolute;right:-8px;top:8px;width:2px;height:56px;background:currentColor}
+
+/* Keep the longer template note readable without a task-name row. */
+#specify-detail #template-note{font-size:38px;line-height:1.2;margin-top:18px;max-width:100%}
+#specify-detail .waypoint-visual{height:350px}
+#specify-detail .waypoint-visual img{mix-blend-mode:multiply}
+.r42-example-tag{display:none!important}
+
+/* Keep the composition sentence on one line at the largest size that fits. */
+.r32-composition-line .r32-control-prefix{width:1490px!important;max-width:1490px;font-size:var(--composition-font-size,40px);letter-spacing:-.024em;white-space:nowrap;line-height:1.1;text-align:left}
+.r32-composition-line .r30-axis-word{font-size:var(--composition-font-size,40px)}

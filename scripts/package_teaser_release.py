@@ -5,8 +5,10 @@ copied into one release. Public metadata omits workstation paths and caches.
 The accepted local runs and their capture receipts remain untouched.
 """
 from pathlib import Path
+import argparse
 import hashlib
 import json
+import re
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,9 +21,21 @@ def copy(source, destination):
     target = OUT / destination
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(ROOT / source, target)
+    if target.suffix == '.txt':
+        # Preserve license wording while normalizing copied line endings.
+        target.write_text('\n'.join(line.rstrip() for line in target.read_text().splitlines()) + '\n')
 
 
 def main():
+    global SOURCE, OUT
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--run', default='run-43-v4', help='Selected local teaser folder.')
+    args = parser.parse_args()
+    if not re.fullmatch(r'run-\d+-v\d+', args.run):
+        parser.error('Expected a selected run such as run-43-v4.')
+    SOURCE = TWEET / args.run
+    OUT = SOURCE / 'release'
+    movie = 'dexlink-' + args.run.replace('run-', 'run', 1) + '.mp4'
     OUT.mkdir(exist_ok=True)
     replacements = {
         "../run-39/": "shared/",
@@ -33,6 +47,7 @@ def main():
         "../run-31/real-world.mp4": "media/real-world.mp4",
         "../assets/dexlink-icon-sticker.png": "images/icon.png",
         "../assets/opening/": "images/",
+        "../run-43/assets/": "images/",
         "../run-42-v4/fonts/RobotoMono-Variable.ttf": "fonts/RobotoMono-Variable.ttf",
         "method/stills.json": "data/stills.json",
     }
@@ -41,15 +56,11 @@ def main():
         for old, new in replacements.items(): text = text.replace(old, new)
         text = text.replace('../run-42/player.css', 'player.css')
         text = text.replace('../../favicon.svg', '../../../assets/favicon.png')
-        text = text.replace('href="dexlink-run39.mp4"', 'href="../dexlink-run42-v9.mp4"')
-        text = text.replace('href="dexlink-run42-v9.mp4"', 'href="../dexlink-run42-v9.mp4"')
-        text = text.replace('href="../run-42/"', 'href="../../../"').replace('compare run42 variants', 'project website')
-        text = text.replace('href="../run-42-v8/"', 'href="../dexlink-run42-v9.mp4"').replace('previous v8', 'silent video')
-        text = text.replace('href="shared/"', 'href="../../../"').replace('approved run39', 'DexLink')
-        text = text.replace('href="../run-36/"', 'href="../../../"')
-        text = text.replace('href="../runs.html"', 'href="../../../"')
-        text = text.replace('v7 · frozen RL message', 'v9 · concise RL message, faster typing and a quarter-second hold')
-        (OUT / source.name).write_text(text)
+        if source.suffix == '.html':
+            text = re.sub(r'<nav>.*?</nav>',
+                          f'<nav><a href="../{movie}">silent MP4</a><a href="../../../">project website</a></nav>',
+                          text, flags=re.DOTALL)
+        (OUT / source.name).write_text('\n'.join(line.rstrip() for line in text.splitlines()).rstrip() + '\n')
     for name in ["motion.js", "motion.css", "story.js", "story.css", "font.css", "review.css"]:
         text = (TWEET / "run-39" / name).read_text()
         for old, new in replacements.items(): text = text.replace(old, new)
@@ -82,6 +93,9 @@ def main():
         "tweet/run-33/method/reference.webm":"media/reference.webm",
         "tweet/run-33/method/reference.png":"media/reference.png",
     }
+    if (TWEET / 'run-43/assets/waypoints.svg').exists() and args.run.startswith('run-43-'):
+        for name in ('waypoints.svg', 'interactions.svg'):
+            copies['tweet/run-43/assets/' + name] = 'images/' + name
     for source, target in copies.items(): copy(source, target)
     player_css = OUT / "player.css"
     player_css.write_text(player_css.read_text().replace("../run-37/fonts/", "fonts/"))
@@ -93,7 +107,7 @@ def main():
     (OUT / "content").mkdir(exist_ok=True)
     (OUT / "content/tasks.json").write_text(json.dumps(content, indent=2) + "\n")
     original = json.loads((TWEET / "run-36/media/manifest.json").read_text())
-    media_fields = ["id", "width", "height", "nominal_width", "nominal_height", "nominal_rect", "content_rect", "fps", "frame_count", "duration", "premultiplied"]
+    media_fields = ["id", "width", "height", "nominal_width", "nominal_height", "nominal_rect", "content_rect", "fps", "frame_count", "duration", "premultiplied", "nominal_focal_y_pixels"]
     public = {"tasks": {}}
     for key, entry in original["tasks"].items():
         chosen = entry.get("featured") or entry
@@ -106,6 +120,12 @@ def main():
     stills = json.loads((TWEET / "run-39/method/stills.json").read_text())["images"]
     for entry in stills.values(): entry["src"] = "shared/" + entry["src"]
     (OUT / "data/stills.json").write_text(json.dumps({"images":stills}, indent=2) + "\n")
+    (OUT / 'README.md').write_text(
+        '# DexLink selected teaser\n\n'
+        'Synthesizing Dexterous Behaviors from Chained Hand–Object Poses.\n\n'
+        f'The silent video is `../{movie}`. Serve the repository over HTTP '
+        'to open this editable preview. It uses the published native task '
+        'renders under `assets/renders/native/`; no local render caches are needed.\n')
     receipt = {str(p.relative_to(OUT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in OUT.rglob('*') if p.is_file() and p.name != 'release-files.json'}
     (OUT / "release-files.json").write_text(json.dumps(receipt, indent=2) + "\n")
     print(f"Packaged {len(receipt)} release files: {OUT}")

@@ -1,0 +1,30 @@
+{
+  "images": {
+    "specify": {
+      "src": "shared/method/specify.png",
+      "width": 2160,
+      "height": 1680,
+      "nominal_rect": {
+        "x": 540,
+        "y": 420,
+        "width": 1080,
+        "height": 840
+      },
+      "sha256": "9a1b55d72db53712201b334c1e38abfcb0b04c62087832295300341850e92c24",
+      "border_alpha_max": 0
+    },
+    "retarget": {
+      "src": "shared/method/retarget.png",
+      "width": 2160,
+      "height": 1680,
+      "nominal_rect": {
+        "x": 540,
+        "y": 420,
+        "width": 1080,
+        "height": 840
+      },
+      "sha256": "aa9ef9f38c7145586e4ae1f12eac17ff84cad3a08f7ccb5fd08f7812a1a0a881",
+      "border_alpha_max": 0
+    }
+  }
+}

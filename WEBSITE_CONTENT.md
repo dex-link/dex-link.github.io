@@ -6,7 +6,7 @@ This document records the website content and its current visual direction. The 
 
 - Match the accepted teaser: IBM Plex Sans; background `#F5F4F1`; DexLink gradient `#292421` to `#493B33`; subtitle `#544F4B`; section headings `#3F3631`; secondary text `#706964`; accent `#A65A2A`.
 - Use the accepted transparent, brown hand-and-waypoint sticker for the title and site icon.
-- The latest silent teaser is run-42-v9, based on the selected run-42-v7. Its pause says “RL policies learned without per-task reward engineering”; the message types at 1.5× speed and camera motion resumes after a 0.25-second reading pause. Preserve earlier tweet iterations.
+- The selected silent teaser is run-43-v4. It retains the approved opening, staircase shared-recipe message, control and composition examples, real-world deployment, and method sequence. The final title reads “Synthesizing Dexterous Behaviors from Chained Hand–Object Poses.” Preserve earlier tweet iterations and keep thread drafts local.
 - Place the teaser first, followed by the expanded task carousel, then the experiment sections. The task gallery replaces the small Additional Examples section and includes the 150 saved task/object configurations in the teaser collection, with semantic labels and category filters.
 - Show the current studio renders with the accepted object colors and matte grey hand materials. Preserve the recorded trajectories, the bounded support under stacked blocks, and the transparent drawer frame. Use complete render bounds, including shadows.
 - Keep the source-template/reference/policy distinction in experimental galleries. Never substitute a learned-policy frame for a source template or an intermediate reference.
@@ -42,7 +42,7 @@ The page should make three ideas immediately visible:
 
 ### 1. Title and abstract
 
-- Title: **DexLink: Synthesizing Dexterous Demonstrations from Chained Hand–Object Poses**
+- Title: **DexLink: Synthesizing Dexterous Behaviors from Chained Hand–Object Poses**
 - A compact, abstract-like project summary using the paper's wording.
 - No hero diagram, eyebrow, call-to-action buttons, or paper-PDF link.
 - No navigation bar, jump links, or footer; the website is a continuous top-to-bottom document.
@@ -55,7 +55,7 @@ The website favicon uses the hand-free block and opacity-graded waypoint mark. T
 
 ### 2. Teaser video
 
-Embed the latest silent run-42 teaser at 16:9 with muted autoplay, looping, inline mobile playback, and native controls. The current selected export is `tweet/run-42-v9/dexlink-run42-v8.mp4`.
+Embed the selected silent teaser at 16:9 with muted autoplay, looping, inline mobile playback, and native controls. The current export is `tweet/run-43-v4/dexlink-run43-v4.mp4`, with its self-contained editable preview in `tweet/run-43-v4/release/`.
 
 The previous interactive HTML presentation remains available in `presentation/` for possible later reuse, but is not shown on the homepage. It preserves the following sequence:
 

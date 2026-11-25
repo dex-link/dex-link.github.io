@@ -36,7 +36,9 @@ def main():
             assert page.evaluate('getComputedStyle(document.body).backgroundColor') == 'rgb(245, 244, 241)'
             assert 'IBM Plex Sans' in page.evaluate('getComputedStyle(document.body).fontFamily')
             assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
-            assert page.locator('.teaser-embed video').get_attribute('src') == 'tweet/run-42-v9/dexlink-run42-v9.mp4'
+            assert page.locator('.teaser-embed video').get_attribute('src') == 'tweet/run-43-v4/dexlink-run43-v4.mp4'
+            assert page.locator('h1 .title-description').inner_text().replace('\n', ' ') == 'Synthesizing Dexterous Behaviors from Chained Hand–Object Poses'
+            assert 'demonstrations' not in page.title().lower()
             page.screenshot(path=str(OUT/'desktop-hero.png'))
             page.locator('#explorer-title').scroll_into_view_if_needed()
             page.locator('#task-viewport').scroll_into_view_if_needed()
@@ -101,11 +103,12 @@ def main():
             release=browser.new_page(viewport={'width':1600,'height':900})
             release.on('pageerror',lambda e:errors.append(str(e)))
             release.on('response',lambda r:missing.append(r.url)if r.status>=400 else None)
-            release.goto(base+'/tweet/run-42-v9/release/?clean=1',wait_until='domcontentloaded')
+            release.goto(base+'/tweet/run-43-v4/release/?clean=1',wait_until='domcontentloaded')
             release.wait_for_function('window.run42Ready===true',timeout=120000)
             for time in [0,11.9,12.54,17,28,36,41,48.5]:
                 release.evaluate('t=>run42Seek(t)',time)
                 assert abs(release.evaluate('run42State().time')-time)<.001
+            assert release.evaluate("document.querySelector('iframe').contentWindow.run39Motion.finalSubtitle.textContent") == 'synthesizing dexterous behaviors fromchained hand–object poses'
             release.screenshot(path=str(OUT/'release-ending.png')); release.close(); browser.close()
     finally:
         server.shutdown(); server.server_close()

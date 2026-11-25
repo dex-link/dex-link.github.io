@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DexLink · run 39 · falling wordmark signature</title>
+  <link rel="icon" href="../../../assets/favicon.png" type="image/svg+xml">
+  <link rel="stylesheet" href="shared/motion.css">
+  <link rel="stylesheet" href="shared/review.css">
+  <link rel="stylesheet" href="shared/story.css">
+  <link rel="stylesheet" href="shared/font.css">
+</head>
+<body>
+  <main>
+    <div id="stage-shell">
+      <div id="stage" aria-label="DexLink teaser: diversity, controlled variations and how it works"></div>
+      <div id="method-layer" aria-hidden="true">
+        <section id="pipeline-scene" class="explain-scene">
+          <h1 id="method-heading" aria-label="how DexLink works"><span data-type-text="how ">how </span><em data-type-text="DexLink">DexLink</em><span data-type-text=" works"> works</span><i class="method-type-caret" aria-hidden="true"></i></h1>
+          <div class="pipeline">
+            <article data-method-step="0"><div class="render-window"><img id="specify-render" src="shared/method/specify.png" alt="Ceramic cup object waypoint"></div><h2><b class="stage-number">1.</b><span>specify</span></h2><p>waypoints +<br>interactions</p></article>
+            <span data-arrow="1" aria-hidden="true">→</span>
+            <article data-method-step="1"><div class="render-window"><img id="retarget-render" src="shared/method/retarget.png" alt="Matte grey robot hand adapted to the ceramic cup"></div><h2><b class="stage-number">2.</b><span>retarget</span></h2><p>adapt to<br>new objects</p></article>
+            <span data-arrow="2" aria-hidden="true">→</span>
+            <article data-method-step="2"><div class="render-window"><video id="reference-policy" muted playsinline preload="auto"></video></div><h2><b class="stage-number">3.</b><span>link</span></h2><p style="font-size:48px">chain an<br>intermediate reference</p></article>
+            <span data-arrow="3" aria-hidden="true">→</span>
+            <article data-method-step="3"><div class="render-window"><video id="grounded-policy" muted playsinline preload="auto"></video></div><h2><b class="stage-number">4.</b><span>ground</span></h2><p>refine with<br>residual RL</p></article>
+          </div>
+          <aside id="specify-detail">
+            <h2><span id="waypoint-text" class="method-typed-line" aria-label="compose object waypoints"><span data-type-text="compose ">compose </span><em data-type-text="object waypoints">object waypoints</em><i class="method-type-caret" aria-hidden="true"></i></span><br><span id="template-text" class="method-typed-line" aria-label="with reusable hand–object interactions"><span data-type-text="with reusable ">with reusable </span><em data-type-text="hand–object interactions">hand–object interactions</em><i class="method-type-caret" aria-hidden="true"></i></span></h2>
+            <div class="waypoint-visual">
+              <img id="waypoints" src="images/waypoints.svg" alt="Object waypoints: start, lift, invert and place">
+              <img id="interaction-overlay" src="images/interactions.svg" alt="Hand–object interaction templates added to selected waypoints">
+            </div>
+
+            <p id="template-note">interaction templates may belong to a different object</p>
+          </aside>
+        </section>
+      </div>
+      <section id="real-layer" aria-hidden="true">
+        <video id="real-policy" src="media/real-world.mp4" muted playsinline preload="auto"></video>
+        <div class="real-speeds"><span>8×</span><span>5×</span><span>8×</span><span>8×</span></div>
+        <div class="real-object-labels"><span>mug</span><span>mustard bottle</span><span>cup</span><span>block</span></div>
+        <p class="real-message"><span id="real-message-ink"><span id="real-message-prefix">policies deployed </span><em id="real-message-transfer">zero-shot sim-to-real.</em><i id="real-type-caret" aria-hidden="true"></i></span></p>
+      </section>
+      <p id="loading">preparing the policy collection…</p>
+    </div>
+    <section class="review-controls" aria-label="Teaser playback and timing">
+      <div class="transport">
+        <button id="play" type="button">play</button><button id="restart" type="button">restart</button>
+        <span id="time">0.0 / 44.3 s</span>
+        <input id="scrub" aria-label="Seek teaser" type="range" min="0" max="44.25" step="0.01" value="0">
+        <label>camera <select id="easing"><option value="camera">A · restrained</option><option value="glide">B · flowing</option></select></label>
+      </div>
+      <p id="status">space: play/pause · arrow keys: next/previous beat · drag the timeline to inspect transitions</p>
+      <nav><a href="../dexlink-run43-v4.mp4">silent MP4</a><a href="../../../">project website</a></nav>
+      <details><summary>scope and provenance</summary><p>Selected saved policy rollouts; 150 setups include geometry and program variants. Each task has its own monolithic policy for the full sequence. Hardware footage demonstrates grasping transfer. Expanded RGBA rendering changes presentation only, preserving trajectories, object geometry and nominal scale. LINK shows the actual intermediate reference. Source dataset and saved-episode provenance remain in the collection records.</p></details>
+    </section>
+  </main>
+  <script src="shared/motion.js"></script>
+  <script src="shared/story.js"></script>
+  <script src="hold-story.js"></script>
+  <script src="review.js"></script>
+</body>
+</html>

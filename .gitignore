@@ -53,3 +53,10 @@ tweet/run-42-v9/*
 !tweet/run-42-v9/dexlink-run42-v9.mp4
 !tweet/run-42-v9/release/
 !tweet/run-42-v9/release/**
+
+# Selected release: behaviors title and the final run-43-v4 teaser.
+!tweet/run-43-v4/
+tweet/run-43-v4/*
+!tweet/run-43-v4/dexlink-run43-v4.mp4
+!tweet/run-43-v4/release/
+!tweet/run-43-v4/release/**

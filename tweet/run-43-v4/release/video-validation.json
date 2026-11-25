@@ -1,0 +1,23 @@
+{
+  "status": "validated",
+  "title": "DexLink: Synthesizing Dexterous Behaviors from Chained Hand\u2013Object Poses",
+  "sha256": "e534d30a2e813f84ae0e9091453c1471b80cb06197aedd0f2a32c241cc154d06",
+  "bytes": 14017218,
+  "duration": 49.291666666666664,
+  "frames": 1183,
+  "fps": 24,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "silent": true,
+  "deterministic_frame_capture": true,
+  "presentation_clocks_checked": true,
+  "full_decode": true,
+  "no_black_frames": true,
+  "only_final_title_changed": true,
+  "timing_and_other_captions_preserved": true,
+  "earlier_variants_preserved": true,
+  "pre_ending_max_sample_difference": 0.09471643518518519,
+  "capture_receipt_sha256": "15a31dd90ffe24bf1092fe3ab6e6f03032a0c6453845e4e23038054fd6cfb4dc"
+}

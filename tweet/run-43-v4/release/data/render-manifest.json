@@ -1,0 +1,3930 @@
+{
+  "tasks": {
+    "banana-handover": {
+      "id": "banana-handover",
+      "width": 3840,
+      "height": 2160,
+      "nominal_width": 1920,
+      "nominal_height": 1080,
+      "nominal_rect": {
+        "x": 960,
+        "y": 540,
+        "width": 1920,
+        "height": 1080
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 38,
+      "duration": 1.5833333333333333,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 1406.748094934653,
+      "src": "../../../assets/renders/native/banana-handover.webm",
+      "poster": "../../../assets/renders/native/banana-handover.png"
+    },
+    "erase-board": {
+      "id": "erase-board",
+      "width": 3840,
+      "height": 2160,
+      "nominal_width": 1920,
+      "nominal_height": 1080,
+      "nominal_rect": {
+        "x": 960,
+        "y": 540,
+        "width": 1920,
+        "height": 1080
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 104,
+      "duration": 4.333333333333333,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 1406.748094934653,
+      "src": "../../../assets/renders/native/erase-board.webm",
+      "poster": "../../../assets/renders/native/erase-board.png"
+    },
+    "mount": {
+      "id": "mount",
+      "width": 3840,
+      "height": 2160,
+      "nominal_width": 1920,
+      "nominal_height": 1080,
+      "nominal_rect": {
+        "x": 960,
+        "y": 540,
+        "width": 1920,
+        "height": 1080
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 70,
+      "duration": 2.9166666666666665,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 1406.748094934653,
+      "src": "../../../assets/renders/native/mount.webm",
+      "poster": "../../../assets/renders/native/mount.png"
+    },
+    "open-drawer": {
+      "id": "open-drawer",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 44,
+      "duration": 1.8333333333333333,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/open-drawer.webm",
+      "poster": "../../../assets/renders/native/open-drawer.png"
+    },
+    "dispenser": {
+      "id": "dispenser",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 73,
+      "duration": 3.0416666666666665,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/dispenser.webm",
+      "poster": "../../../assets/renders/native/dispenser.png"
+    },
+    "open-notebook": {
+      "id": "open-notebook",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 55,
+      "duration": 2.2916666666666665,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/open-notebook.webm",
+      "poster": "../../../assets/renders/native/open-notebook.png"
+    },
+    "stack-blocks": {
+      "id": "stack-blocks",
+      "width": 3840,
+      "height": 2160,
+      "nominal_width": 1920,
+      "nominal_height": 1080,
+      "nominal_rect": {
+        "x": 960,
+        "y": 540,
+        "width": 1920,
+        "height": 1080
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 127,
+      "duration": 5.291666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 1406.748094934653,
+      "src": "../../../assets/renders/native/stack-blocks.webm",
+      "poster": "../../../assets/renders/native/stack-blocks.png"
+    },
+    "stack-cups": {
+      "id": "stack-cups",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 85,
+      "duration": 3.5416666666666665,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/stack-cups.webm",
+      "poster": "../../../assets/renders/native/stack-cups.png"
+    },
+    "invert-cup": {
+      "id": "invert-cup",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 69,
+      "duration": 2.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/invert-cup.webm",
+      "poster": "../../../assets/renders/native/invert-cup.png"
+    },
+    "v2-03-trigger-sprayer-manipulate": {
+      "id": "v2-03-trigger-sprayer-manipulate",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 52,
+      "duration": 2.1666666666666665,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/v2-03-trigger-sprayer-manipulate.webm",
+      "poster": "../../../assets/renders/native/v2-03-trigger-sprayer-manipulate.png"
+    },
+    "mug-grasp-change": {
+      "id": "mug-grasp-change",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 68,
+      "duration": 2.8333333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/mug-grasp-change.webm",
+      "poster": "../../../assets/renders/native/mug-grasp-change.png"
+    },
+    "strategy-pick": {
+      "id": "strategy-pick",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 52,
+      "duration": 2.1666666666666665,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/strategy-pick.webm",
+      "poster": "../../../assets/renders/native/strategy-pick.png"
+    },
+    "cup-120": {
+      "id": "cup-120",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 56,
+      "duration": 2.3333333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/cup-120.webm",
+      "poster": "../../../assets/renders/native/cup-120.png"
+    },
+    "hammer-fast": {
+      "id": "hammer-fast",
+      "width": 3200,
+      "height": 1800,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 960,
+        "y": 540,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 71,
+      "duration": 2.9583333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/hammer-fast.webm",
+      "poster": "../../../assets/renders/native/hammer-fast.png"
+    },
+    "t005_a": {
+      "id": "t005_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 176,
+      "duration": 7.333333333333333,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t005_a.webm",
+      "poster": "../../../assets/renders/native/t005_a.png"
+    },
+    "t001_a": {
+      "id": "t001_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 296,
+      "duration": 12.333333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t001_a.webm",
+      "poster": "../../../assets/renders/native/t001_a.png"
+    },
+    "t017_a": {
+      "id": "t017_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 200,
+      "duration": 8.333333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t017_a.webm",
+      "poster": "../../../assets/renders/native/t017_a.png"
+    },
+    "t030_b": {
+      "id": "t030_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 110,
+      "duration": 4.583333333333333,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t030_b.webm",
+      "poster": "../../../assets/renders/native/t030_b.png"
+    },
+    "t037_a": {
+      "id": "t037_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 127,
+      "duration": 5.291666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t037_a.webm",
+      "poster": "../../../assets/renders/native/t037_a.png"
+    },
+    "t045_a": {
+      "id": "t045_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 194,
+      "duration": 8.083333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t045_a.webm",
+      "poster": "../../../assets/renders/native/t045_a.png"
+    },
+    "t053_a": {
+      "id": "t053_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t053_a.webm",
+      "poster": "../../../assets/renders/native/t053_a.png"
+    },
+    "t061_a": {
+      "id": "t061_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t061_a.webm",
+      "poster": "../../../assets/renders/native/t061_a.png"
+    },
+    "t073_a": {
+      "id": "t073_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 127,
+      "duration": 5.291666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t073_a.webm",
+      "poster": "../../../assets/renders/native/t073_a.png"
+    },
+    "t080_a": {
+      "id": "t080_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 160,
+      "duration": 6.666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t080_a.webm",
+      "poster": "../../../assets/renders/native/t080_a.png"
+    },
+    "C02-GT03": {
+      "id": "C02-GT03",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 51,
+      "duration": 2.125,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/C02-GT03.webm",
+      "poster": "../../../assets/renders/native/C02-GT03.png"
+    },
+    "t088_a": {
+      "id": "t088_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 127,
+      "duration": 5.291666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t088_a.webm",
+      "poster": "../../../assets/renders/native/t088_a.png"
+    },
+    "apple": {
+      "id": "apple",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/apple.webm",
+      "poster": "../../../assets/renders/native/apple.png"
+    },
+    "donut": {
+      "id": "donut",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/donut.webm",
+      "poster": "../../../assets/renders/native/donut.png"
+    },
+    "bowl": {
+      "id": "bowl",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/bowl.webm",
+      "poster": "../../../assets/renders/native/bowl.png"
+    },
+    "apple-camera-transferred": {
+      "id": "apple-camera-transferred",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/apple-camera-transferred.webm",
+      "poster": "../../../assets/renders/native/apple-camera-transferred.png"
+    },
+    "hammer-wineglass-transferred": {
+      "id": "hammer-wineglass-transferred",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/hammer-wineglass-transferred.webm",
+      "poster": "../../../assets/renders/native/hammer-wineglass-transferred.png"
+    },
+    "jug-handle": {
+      "id": "jug-handle",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/jug-handle.webm",
+      "poster": "../../../assets/renders/native/jug-handle.png"
+    },
+    "bottle-side-100": {
+      "id": "bottle-side-100",
+      "width": 3200,
+      "height": 1800,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 960,
+        "y": 540,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/bottle-side-100.webm",
+      "poster": "../../../assets/renders/native/bottle-side-100.png"
+    },
+    "ketchup-100": {
+      "id": "ketchup-100",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 80,
+      "duration": 3.3333333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/ketchup-100.webm",
+      "poster": "../../../assets/renders/native/ketchup-100.png"
+    },
+    "box": {
+      "id": "box",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 160,
+      "duration": 6.666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/box.webm",
+      "poster": "../../../assets/renders/native/box.png"
+    },
+    "cup-045-seed52": {
+      "id": "cup-045-seed52",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 56,
+      "duration": 2.3333333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/cup-045-seed52.webm",
+      "poster": "../../../assets/renders/native/cup-045-seed52.png"
+    },
+    "bottle-top-100": {
+      "id": "bottle-top-100",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/bottle-top-100.webm",
+      "poster": "../../../assets/renders/native/bottle-top-100.png"
+    },
+    "hammer-slow": {
+      "id": "hammer-slow",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 83,
+      "duration": 3.4583333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/hammer-slow.webm",
+      "poster": "../../../assets/renders/native/hammer-slow.png"
+    },
+    "mixer": {
+      "id": "mixer",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 136,
+      "duration": 5.666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mixer.webm",
+      "poster": "../../../assets/renders/native/mixer.png"
+    },
+    "strategy-push": {
+      "id": "strategy-push",
+      "width": 2560,
+      "height": 1440,
+      "nominal_width": 1280,
+      "nominal_height": 720,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 1280,
+        "height": 720
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 52,
+      "duration": 2.1666666666666665,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 937.8320632897686,
+      "src": "../../../assets/renders/native/strategy-push.webm",
+      "poster": "../../../assets/renders/native/strategy-push.png"
+    },
+    "t001_b": {
+      "id": "t001_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 308,
+      "duration": 12.833333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t001_b.webm",
+      "poster": "../../../assets/renders/native/t001_b.png"
+    },
+    "t002_a": {
+      "id": "t002_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 584,
+      "duration": 24.333333333333332,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t002_a.webm",
+      "poster": "../../../assets/renders/native/t002_a.png"
+    },
+    "t002_b": {
+      "id": "t002_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 608,
+      "duration": 25.333333333333332,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t002_b.webm",
+      "poster": "../../../assets/renders/native/t002_b.png"
+    },
+    "t003_a": {
+      "id": "t003_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 320,
+      "duration": 13.333333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t003_a.webm",
+      "poster": "../../../assets/renders/native/t003_a.png"
+    },
+    "t003_b": {
+      "id": "t003_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 332,
+      "duration": 13.833333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t003_b.webm",
+      "poster": "../../../assets/renders/native/t003_b.png"
+    },
+    "t004_a": {
+      "id": "t004_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 344,
+      "duration": 14.333333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t004_a.webm",
+      "poster": "../../../assets/renders/native/t004_a.png"
+    },
+    "t005_b": {
+      "id": "t005_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 176,
+      "duration": 7.333333333333333,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t005_b.webm",
+      "poster": "../../../assets/renders/native/t005_b.png"
+    },
+    "t004_b": {
+      "id": "t004_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 356,
+      "duration": 14.833333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t004_b.webm",
+      "poster": "../../../assets/renders/native/t004_b.png"
+    },
+    "t006_a": {
+      "id": "t006_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 344,
+      "duration": 14.333333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t006_a.webm",
+      "poster": "../../../assets/renders/native/t006_a.png"
+    },
+    "t006_b": {
+      "id": "t006_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 344,
+      "duration": 14.333333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t006_b.webm",
+      "poster": "../../../assets/renders/native/t006_b.png"
+    },
+    "t007_b": {
+      "id": "t007_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 200,
+      "duration": 8.333333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t007_b.webm",
+      "poster": "../../../assets/renders/native/t007_b.png"
+    },
+    "t054_a": {
+      "id": "t054_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t054_a.webm",
+      "poster": "../../../assets/renders/native/t054_a.png"
+    },
+    "t008_a": {
+      "id": "t008_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 224,
+      "duration": 9.333333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t008_a.webm",
+      "poster": "../../../assets/renders/native/t008_a.png"
+    },
+    "t055_a": {
+      "id": "t055_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t055_a.webm",
+      "poster": "../../../assets/renders/native/t055_a.png"
+    },
+    "t056_a": {
+      "id": "t056_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t056_a.webm",
+      "poster": "../../../assets/renders/native/t056_a.png"
+    },
+    "t058_a": {
+      "id": "t058_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t058_a.webm",
+      "poster": "../../../assets/renders/native/t058_a.png"
+    },
+    "t057_a": {
+      "id": "t057_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t057_a.webm",
+      "poster": "../../../assets/renders/native/t057_a.png"
+    },
+    "t059_a": {
+      "id": "t059_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t059_a.webm",
+      "poster": "../../../assets/renders/native/t059_a.png"
+    },
+    "t060_a": {
+      "id": "t060_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t060_a.webm",
+      "poster": "../../../assets/renders/native/t060_a.png"
+    },
+    "mustard-bottle": {
+      "id": "mustard-bottle",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mustard-bottle.webm",
+      "poster": "../../../assets/renders/native/mustard-bottle.png"
+    },
+    "cup-090": {
+      "id": "cup-090",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 56,
+      "duration": 2.3333333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/cup-090.webm",
+      "poster": "../../../assets/renders/native/cup-090.png"
+    },
+    "mug-handle-070": {
+      "id": "mug-handle-070",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-handle-070.webm",
+      "poster": "../../../assets/renders/native/mug-handle-070.png"
+    },
+    "mug-handle-100": {
+      "id": "mug-handle-100",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-handle-100.webm",
+      "poster": "../../../assets/renders/native/mug-handle-100.png"
+    },
+    "mug-side-070": {
+      "id": "mug-side-070",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-side-070.webm",
+      "poster": "../../../assets/renders/native/mug-side-070.png"
+    },
+    "mug-side-100": {
+      "id": "mug-side-100",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-side-100.webm",
+      "poster": "../../../assets/renders/native/mug-side-100.png"
+    },
+    "mug-side-125": {
+      "id": "mug-side-125",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-side-125.webm",
+      "poster": "../../../assets/renders/native/mug-side-125.png"
+    },
+    "mug-top-070": {
+      "id": "mug-top-070",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-top-070.webm",
+      "poster": "../../../assets/renders/native/mug-top-070.png"
+    },
+    "mug-top-100": {
+      "id": "mug-top-100",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-top-100.webm",
+      "poster": "../../../assets/renders/native/mug-top-100.png"
+    },
+    "mug-top-125": {
+      "id": "mug-top-125",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-top-125.webm",
+      "poster": "../../../assets/renders/native/mug-top-125.png"
+    },
+    "mug-top-transferred": {
+      "id": "mug-top-transferred",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-top-transferred.webm",
+      "poster": "../../../assets/renders/native/mug-top-transferred.png"
+    },
+    "mug-top-exact": {
+      "id": "mug-top-exact",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/mug-top-exact.webm",
+      "poster": "../../../assets/renders/native/mug-top-exact.png"
+    },
+    "apple-camera-exact": {
+      "id": "apple-camera-exact",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/apple-camera-exact.webm",
+      "poster": "../../../assets/renders/native/apple-camera-exact.png"
+    },
+    "apple-mouse-transferred": {
+      "id": "apple-mouse-transferred",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/apple-mouse-transferred.webm",
+      "poster": "../../../assets/renders/native/apple-mouse-transferred.png"
+    },
+    "apple-mouse-exact": {
+      "id": "apple-mouse-exact",
+      "width": 1920,
+      "height": 1080,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3333333333333333,
+        "y": 0.3333333333333333,
+        "width": 0.3333333333333333,
+        "height": 0.3333333333333333
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/apple-mouse-exact.webm",
+      "poster": "../../../assets/renders/native/apple-mouse-exact.png"
+    },
+    "bottle-side-exact": {
+      "id": "bottle-side-exact",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/bottle-side-exact.webm",
+      "poster": "../../../assets/renders/native/bottle-side-exact.png"
+    },
+    "bottle-side-transferred": {
+      "id": "bottle-side-transferred",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/bottle-side-transferred.webm",
+      "poster": "../../../assets/renders/native/bottle-side-transferred.png"
+    },
+    "hammer-wineglass-exact": {
+      "id": "hammer-wineglass-exact",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/hammer-wineglass-exact.webm",
+      "poster": "../../../assets/renders/native/hammer-wineglass-exact.png"
+    },
+    "trigger-sprayer-exact": {
+      "id": "trigger-sprayer-exact",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/trigger-sprayer-exact.webm",
+      "poster": "../../../assets/renders/native/trigger-sprayer-exact.png"
+    },
+    "trigger-sprayer-transferred": {
+      "id": "trigger-sprayer-transferred",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/trigger-sprayer-transferred.webm",
+      "poster": "../../../assets/renders/native/trigger-sprayer-transferred.png"
+    },
+    "v2-10-lift-bottle-s01-t01": {
+      "id": "v2-10-lift-bottle-s01-t01",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bottle-s01-t01.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bottle-s01-t01.png"
+    },
+    "v2-10-lift-bottle-s01-t02": {
+      "id": "v2-10-lift-bottle-s01-t02",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bottle-s01-t02.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bottle-s01-t02.png"
+    },
+    "v2-10-lift-bottle-s01-t05": {
+      "id": "v2-10-lift-bottle-s01-t05",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bottle-s01-t05.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bottle-s01-t05.png"
+    },
+    "v2-10-lift-bottle-s01-t09": {
+      "id": "v2-10-lift-bottle-s01-t09",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bottle-s01-t09.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bottle-s01-t09.png"
+    },
+    "v2-10-lift-bottle-s01-t08": {
+      "id": "v2-10-lift-bottle-s01-t08",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bottle-s01-t08.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bottle-s01-t08.png"
+    },
+    "v2-10-lift-bottle-s02-t02": {
+      "id": "v2-10-lift-bottle-s02-t02",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bottle-s02-t02.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bottle-s02-t02.png"
+    },
+    "v2-10-lift-bottle-s02-t05": {
+      "id": "v2-10-lift-bottle-s02-t05",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bottle-s02-t05.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bottle-s02-t05.png"
+    },
+    "v2-10-lift-bowl-s01-t01": {
+      "id": "v2-10-lift-bowl-s01-t01",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bowl-s01-t01.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bowl-s01-t01.png"
+    },
+    "v2-10-lift-bottle-s02-t09": {
+      "id": "v2-10-lift-bottle-s02-t09",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bottle-s02-t09.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bottle-s02-t09.png"
+    },
+    "v2-10-lift-bowl-s01-t03": {
+      "id": "v2-10-lift-bowl-s01-t03",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bowl-s01-t03.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bowl-s01-t03.png"
+    },
+    "v2-10-lift-bowl-s01-t07": {
+      "id": "v2-10-lift-bowl-s01-t07",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-bowl-s01-t07.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-bowl-s01-t07.png"
+    },
+    "v2-10-lift-mug-top": {
+      "id": "v2-10-lift-mug-top",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-mug-top.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-mug-top.png"
+    },
+    "v2-10-lift-trigger-sprayer-s02-t01": {
+      "id": "v2-10-lift-trigger-sprayer-s02-t01",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s02-t01.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s02-t01.png"
+    },
+    "v2-10-lift-trigger-sprayer-s02-t14": {
+      "id": "v2-10-lift-trigger-sprayer-s02-t14",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s02-t14.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s02-t14.png"
+    },
+    "v2-10-lift-trigger-sprayer-s03-t01": {
+      "id": "v2-10-lift-trigger-sprayer-s03-t01",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t01.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t01.png"
+    },
+    "v2-11-stack-lego-blocks": {
+      "id": "v2-11-stack-lego-blocks",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 126,
+      "duration": 5.25,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-11-stack-lego-blocks.webm",
+      "poster": "../../../assets/renders/native/v2-11-stack-lego-blocks.png"
+    },
+    "v2-10-lift-trigger-sprayer-s03-t05": {
+      "id": "v2-10-lift-trigger-sprayer-s03-t05",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t05.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t05.png"
+    },
+    "v2-10-lift-trigger-sprayer-s03-t06": {
+      "id": "v2-10-lift-trigger-sprayer-s03-t06",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t06.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t06.png"
+    },
+    "v2-10-lift-trigger-sprayer-s03-t14": {
+      "id": "v2-10-lift-trigger-sprayer-s03-t14",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t14.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t14.png"
+    },
+    "v2-10-lift-trigger-sprayer-s03-t15": {
+      "id": "v2-10-lift-trigger-sprayer-s03-t15",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t15.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-trigger-sprayer-s03-t15.png"
+    },
+    "v2-10-lift-wineglass-stem": {
+      "id": "v2-10-lift-wineglass-stem",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-10-lift-wineglass-stem.webm",
+      "poster": "../../../assets/renders/native/v2-10-lift-wineglass-stem.png"
+    },
+    "v2-11-lift-ycb-mug-top": {
+      "id": "v2-11-lift-ycb-mug-top",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-11-lift-ycb-mug-top.webm",
+      "poster": "../../../assets/renders/native/v2-11-lift-ycb-mug-top.png"
+    },
+    "v2-11-lift-ycb-pitcher": {
+      "id": "v2-11-lift-ycb-pitcher",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 40,
+      "duration": 1.6666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-11-lift-ycb-pitcher.webm",
+      "poster": "../../../assets/renders/native/v2-11-lift-ycb-pitcher.png"
+    },
+    "v2-03-dispenser-press-twice": {
+      "id": "v2-03-dispenser-press-twice",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 50,
+      "duration": 2.0833333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-03-dispenser-press-twice.webm",
+      "poster": "../../../assets/renders/native/v2-03-dispenser-press-twice.png"
+    },
+    "v2-03-lift-tilt-cup": {
+      "id": "v2-03-lift-tilt-cup",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 56,
+      "duration": 2.3333333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-03-lift-tilt-cup.webm",
+      "poster": "../../../assets/renders/native/v2-03-lift-tilt-cup.png"
+    },
+    "v2-03-lift-tilt-bottle": {
+      "id": "v2-03-lift-tilt-bottle",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 56,
+      "duration": 2.3333333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/v2-03-lift-tilt-bottle.webm",
+      "poster": "../../../assets/renders/native/v2-03-lift-tilt-bottle.png"
+    },
+    "bottle-side-070": {
+      "id": "bottle-side-070",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/bottle-side-070.webm",
+      "poster": "../../../assets/renders/native/bottle-side-070.png"
+    },
+    "bottle-top-070": {
+      "id": "bottle-top-070",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/bottle-top-070.webm",
+      "poster": "../../../assets/renders/native/bottle-top-070.png"
+    },
+    "bottle-top-125": {
+      "id": "bottle-top-125",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 48,
+      "duration": 2.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/bottle-top-125.webm",
+      "poster": "../../../assets/renders/native/bottle-top-125.png"
+    },
+    "notebook-transfer": {
+      "id": "notebook-transfer",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 240,
+      "duration": 10.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/notebook-transfer.webm",
+      "poster": "../../../assets/renders/native/notebook-transfer.png"
+    },
+    "waffleiron-transfer": {
+      "id": "waffleiron-transfer",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 240,
+      "duration": 10.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/waffleiron-transfer.webm",
+      "poster": "../../../assets/renders/native/waffleiron-transfer.png"
+    },
+    "t009_a": {
+      "id": "t009_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 311,
+      "duration": 12.958333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t009_a.webm",
+      "poster": "../../../assets/renders/native/t009_a.png"
+    },
+    "t010_b": {
+      "id": "t010_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 612,
+      "duration": 25.5,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t010_b.webm",
+      "poster": "../../../assets/renders/native/t010_b.png"
+    },
+    "t011_a": {
+      "id": "t011_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 335,
+      "duration": 13.958333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t011_a.webm",
+      "poster": "../../../assets/renders/native/t011_a.png"
+    },
+    "t011_b": {
+      "id": "t011_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 335,
+      "duration": 13.958333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t011_b.webm",
+      "poster": "../../../assets/renders/native/t011_b.png"
+    },
+    "t012_a": {
+      "id": "t012_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 359,
+      "duration": 14.958333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t012_a.webm",
+      "poster": "../../../assets/renders/native/t012_a.png"
+    },
+    "t022_a": {
+      "id": "t022_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t022_a.webm",
+      "poster": "../../../assets/renders/native/t022_a.png"
+    },
+    "t023_a": {
+      "id": "t023_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 160,
+      "duration": 6.666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t023_a.webm",
+      "poster": "../../../assets/renders/native/t023_a.png"
+    },
+    "t024_a": {
+      "id": "t024_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 127,
+      "duration": 5.291666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t024_a.webm",
+      "poster": "../../../assets/renders/native/t024_a.png"
+    },
+    "t025_a": {
+      "id": "t025_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 144,
+      "duration": 6.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t025_a.webm",
+      "poster": "../../../assets/renders/native/t025_a.png"
+    },
+    "t033_b": {
+      "id": "t033_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 110,
+      "duration": 4.583333333333333,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t033_b.webm",
+      "poster": "../../../assets/renders/native/t033_b.png"
+    },
+    "t038_a": {
+      "id": "t038_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 144,
+      "duration": 6.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t038_a.webm",
+      "poster": "../../../assets/renders/native/t038_a.png"
+    },
+    "t040_a": {
+      "id": "t040_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 144,
+      "duration": 6.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t040_a.webm",
+      "poster": "../../../assets/renders/native/t040_a.png"
+    },
+    "t039_a": {
+      "id": "t039_a",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 160,
+      "duration": 6.666666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t039_a.webm",
+      "poster": "../../../assets/renders/native/t039_a.png"
+    },
+    "t041_a": {
+      "id": "t041_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 144,
+      "duration": 6.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t041_a.webm",
+      "poster": "../../../assets/renders/native/t041_a.png"
+    },
+    "t043_a": {
+      "id": "t043_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 127,
+      "duration": 5.291666666666667,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t043_a.webm",
+      "poster": "../../../assets/renders/native/t043_a.png"
+    },
+    "t042_a": {
+      "id": "t042_a",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t042_a.webm",
+      "poster": "../../../assets/renders/native/t042_a.png"
+    },
+    "t047_a": {
+      "id": "t047_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 194,
+      "duration": 8.083333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t047_a.webm",
+      "poster": "../../../assets/renders/native/t047_a.png"
+    },
+    "t048_a": {
+      "id": "t048_a",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t048_a.webm",
+      "poster": "../../../assets/renders/native/t048_a.png"
+    },
+    "t053_b": {
+      "id": "t053_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t053_b.webm",
+      "poster": "../../../assets/renders/native/t053_b.png"
+    },
+    "t054_b": {
+      "id": "t054_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t054_b.webm",
+      "poster": "../../../assets/renders/native/t054_b.png"
+    },
+    "t055_b": {
+      "id": "t055_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t055_b.webm",
+      "poster": "../../../assets/renders/native/t055_b.png"
+    },
+    "t056_b": {
+      "id": "t056_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t056_b.webm",
+      "poster": "../../../assets/renders/native/t056_b.png"
+    },
+    "t057_b": {
+      "id": "t057_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t057_b.webm",
+      "poster": "../../../assets/renders/native/t057_b.png"
+    },
+    "t059_b": {
+      "id": "t059_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t059_b.webm",
+      "poster": "../../../assets/renders/native/t059_b.png"
+    },
+    "t060_b": {
+      "id": "t060_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t060_b.webm",
+      "poster": "../../../assets/renders/native/t060_b.png"
+    },
+    "t062_a": {
+      "id": "t062_a",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 144,
+      "duration": 6.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t062_a.webm",
+      "poster": "../../../assets/renders/native/t062_a.png"
+    },
+    "t064_a": {
+      "id": "t064_a",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t064_a.webm",
+      "poster": "../../../assets/renders/native/t064_a.png"
+    },
+    "t066_a": {
+      "id": "t066_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 110,
+      "duration": 4.583333333333333,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t066_a.webm",
+      "poster": "../../../assets/renders/native/t066_a.png"
+    },
+    "t067_a": {
+      "id": "t067_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t067_a.webm",
+      "poster": "../../../assets/renders/native/t067_a.png"
+    },
+    "t065_a": {
+      "id": "t065_a",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 144,
+      "duration": 6.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t065_a.webm",
+      "poster": "../../../assets/renders/native/t065_a.png"
+    },
+    "t068_a": {
+      "id": "t068_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 194,
+      "duration": 8.083333333333334,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t068_a.webm",
+      "poster": "../../../assets/renders/native/t068_a.png"
+    },
+    "t069_a": {
+      "id": "t069_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 129,
+      "duration": 5.375,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t069_a.webm",
+      "poster": "../../../assets/renders/native/t069_a.png"
+    },
+    "t084_a": {
+      "id": "t084_a",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t084_a.webm",
+      "poster": "../../../assets/renders/native/t084_a.png"
+    },
+    "t083_a": {
+      "id": "t083_a",
+      "width": 1920,
+      "height": 1080,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 640,
+        "y": 360,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3333333333333333,
+        "y": 0.3333333333333333,
+        "width": 0.3333333333333333,
+        "height": 0.3333333333333333
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t083_a.webm",
+      "poster": "../../../assets/renders/native/t083_a.png"
+    },
+    "C03-notebook_a": {
+      "id": "C03-notebook_a",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 55,
+      "duration": 2.2916666666666665,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/C03-notebook_a.webm",
+      "poster": "../../../assets/renders/native/C03-notebook_a.png"
+    },
+    "C03-notebook_b": {
+      "id": "C03-notebook_b",
+      "width": 1280,
+      "height": 720,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 320,
+        "y": 180,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.25,
+        "y": 0.25,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "fps": 24,
+      "frame_count": 55,
+      "duration": 2.2916666666666665,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/C03-notebook_b.webm",
+      "poster": "../../../assets/renders/native/C03-notebook_b.png"
+    },
+    "t090_a": {
+      "id": "t090_a",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 93,
+      "duration": 3.875,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/t090_a.webm",
+      "poster": "../../../assets/renders/native/t090_a.png"
+    },
+    "C02-GT01": {
+      "id": "C02-GT01",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 62,
+      "duration": 2.5833333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/C02-GT01.webm",
+      "poster": "../../../assets/renders/native/C02-GT01.png"
+    },
+    "C02-GT04": {
+      "id": "C02-GT04",
+      "width": 1600,
+      "height": 900,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 480,
+        "y": 270,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.3,
+        "y": 0.3,
+        "width": 0.4,
+        "height": 0.4
+      },
+      "fps": 24,
+      "frame_count": 56,
+      "duration": 2.3333333333333335,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/C02-GT04.webm",
+      "poster": "../../../assets/renders/native/C02-GT04.png"
+    },
+    "C03-banana_handover_a": {
+      "id": "C03-banana_handover_a",
+      "width": 2240,
+      "height": 1260,
+      "nominal_width": 640,
+      "nominal_height": 360,
+      "nominal_rect": {
+        "x": 800,
+        "y": 450,
+        "width": 640,
+        "height": 360
+      },
+      "content_rect": {
+        "x": 0.35714285714285715,
+        "y": 0.35714285714285715,
+        "width": 0.2857142857142857,
+        "height": 0.2857142857142857
+      },
+      "fps": 24,
+      "frame_count": 264,
+      "duration": 11.0,
+      "premultiplied": false,
+      "nominal_focal_y_pixels": 468.9160316448843,
+      "src": "../../../assets/renders/native/C03-banana_handover_a.webm",
+      "poster": "../../../assets/renders/native/C03-banana_handover_a.png"
+    }
+  },
+  "method_reference": {
+    "id": "link-reference",
+    "width": 2160,
+    "height": 2160,
+    "nominal_width": 1080,
+    "nominal_height": 1080,
+    "nominal_rect": {
+      "x": 540,
+      "y": 540,
+      "width": 1080,
+      "height": 1080
+    },
+    "content_rect": {
+      "x": 0.25,
+      "y": 0.25,
+      "width": 0.5,
+      "height": 0.5
+    },
+    "fps": 24,
+    "frame_count": 76,
+    "duration": 3.1666666666666665,
+    "premultiplied": false,
+    "nominal_focal_y_pixels": 1406.748094934653,
+    "src": "media/reference.webm",
+    "poster": "media/reference.png"
+  }
+}
