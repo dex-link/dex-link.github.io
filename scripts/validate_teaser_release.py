@@ -29,6 +29,7 @@ def main():
     config = json.loads((RUN / 'variant.json').read_text())
     assert config == json.loads((BEFORE / 'variant.json').read_text())
     added = "    motion.finalSubtitle.firstElementChild.textContent='synthesizing dexterous behaviors from';\n"
+    added += "    motion.finalSubtitle.lastElementChild.textContent='chained hand-object poses';\n"
     assert (RUN / 'player.js').read_text().replace(added, '', 1) == (BEFORE / 'player.js').read_text()
     changed = {name for name, version in receipt['source_versions'].items()
                if previous['source_versions'].get(name) != version}
@@ -40,7 +41,7 @@ def main():
     # The website is intentionally updated for release. All other protected
     # assets, earlier variants, and source footage must remain unchanged.
     for name, version in json.loads((RUN / 'preserved-inputs.json').read_text()).items():
-        if name != 'index.html':
+        if name not in {'index.html', 'site.js', 'styles.css'}:
             assert sha(ROOT / name) == version, name
     assert receipt['deterministic_seek_each_frame'] and receipt['presentation_clock_checked']
     assert not receipt['desktop_recording']
@@ -75,7 +76,7 @@ def main():
     # that a full recapture did not change the approved scenes or transitions.
     differences = np.abs(old_frames[:94] - new_frames[:94]).mean(axis=(1, 2, 3))
     assert float(differences.max()) < 3, float(differences.max())
-    report = dict(status='validated', title='DexLink: Synthesizing Dexterous Behaviors from Chained Hand–Object Poses',
+    report = dict(status='validated', title='DexLink: Synthesizing Dexterous Behaviors from Chained Hand-Object Poses',
                   sha256=sha(movie), bytes=movie.stat().st_size, duration=config['duration'],
                   frames=1183, fps=24, dimensions=[1920, 1080], silent=True,
                   deterministic_frame_capture=True, presentation_clocks_checked=True,
@@ -83,6 +84,13 @@ def main():
                   timing_and_other_captions_preserved=True, earlier_variants_preserved=True,
                   pre_ending_max_sample_difference=float(differences.max()),
                   capture_receipt_sha256=sha(RUN / 'offline/capture/receipt.json'))
+    if receipt.get('assembly'):
+        assembly=receipt['assembly']
+        assert assembly['prefix_is_pixel_identical']and assembly['every_decoded_frame_verified']
+        assert sha(ROOT/assembly['archived_video'])==assembly['archived_video_sha256']
+        assert assembly['reused_frames']+assembly['recaptured_frames']==config['frames']
+        report.update(export_method=assembly['method'],reused_frames=assembly['reused_frames'],
+                      recaptured_frames=assembly['recaptured_frames'],prefix_is_pixel_identical=True)
     for destination in [RUN / 'final-validation.json', RUN / 'release/video-validation.json']:
         destination.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report, indent=2), flush=True)

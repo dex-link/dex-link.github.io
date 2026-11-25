@@ -4,9 +4,11 @@ This document records the website content and its current visual direction. The 
 
 ## Current refresh — November 2026
 
+- Publish `google0a421e48bf45c85b.html` unchanged at the site root for Google Search Console verification.
+
 - Match the accepted teaser: IBM Plex Sans; background `#F5F4F1`; DexLink gradient `#292421` to `#493B33`; subtitle `#544F4B`; section headings `#3F3631`; secondary text `#706964`; accent `#A65A2A`.
 - Use the accepted transparent, brown hand-and-waypoint sticker for the title and site icon.
-- The selected silent teaser is run-43-v4. It retains the approved opening, staircase shared-recipe message, control and composition examples, real-world deployment, and method sequence. The final title reads “Synthesizing Dexterous Behaviors from Chained Hand–Object Poses.” Preserve earlier tweet iterations and keep thread drafts local.
+- The selected silent teaser is run-43-v4. It retains the approved opening, staircase shared-recipe message, control and composition examples, real-world deployment, and method sequence. The final title reads “Synthesizing Dexterous Behaviors from Chained Hand-Object Poses.” Preserve earlier tweet iterations and keep thread drafts local.
 - Place the teaser first, followed by the expanded task carousel, then the experiment sections. The task gallery replaces the small Additional Examples section and includes the 150 saved task/object configurations in the teaser collection, with semantic labels and category filters.
 - Show the current studio renders with the accepted object colors and matte grey hand materials. Preserve the recorded trajectories, the bounded support under stacked blocks, and the transparent drawer frame. Use complete render bounds, including shadows.
 - Keep the source-template/reference/policy distinction in experimental galleries. Never substitute a learned-policy frame for a source template or an intermediate reference.
@@ -18,7 +20,7 @@ This document records the website content and its current visual direction. The 
 ## Non-negotiable requirements
 
 - Use the framework name **DexLink** everywhere. Do not use the legacy framework name.
-- Show the four authors in order (Meenal Parakh, Deep Patel, Beining Han, Jia Deng), in a single row below the title, linked to their supplied personal websites. Keep local usernames and workstation paths out of deployed metadata.
+- Show the four authors in order (Meenal Parakh, Deep Patel, Beining Han, Jia Deng), in a single row below the paper/code links, linked to their supplied personal websites with small diagonal arrows. Keep local usernames and workstation paths out of deployed metadata.
 - Present the project through the task specification and qualitative behaviors. Do not reproduce every paper result or turn the page into a second paper.
 - Embed media directly in the website. A visitor should not need to open a video browser or external gallery.
 - Never use an untrained timestep-0 checkpoint. Every policy video copied from the revision bundle must have a strictly positive checkpoint timestep in `revision/data/revision_policy_video_manifest_20260924.csv`.
@@ -42,13 +44,13 @@ The page should make three ideas immediately visible:
 
 ### 1. Title and abstract
 
-- Title: **DexLink: Synthesizing Dexterous Behaviors from Chained Hand–Object Poses**
+- Title: **DexLink: Synthesizing Dexterous Behaviors from Chained Hand-Object Poses**
 - A compact, abstract-like project summary using the paper's wording.
-- Center the icon and DexLink name above the full-width subtitle. Keep the subtitle on one line on desktop and allow it to wrap on phones.
-- Below the author row, show only “paper (pdf)” and “code.” Both the resource row and side rail link to the published `paper.pdf`; omit arXiv until its identifier is available and omit supplementary.
+- Match the final video lockup: symbol on the left with an espresso divider, and DexLink and its subtitle left-aligned at the same edge. Keep the subtitle on one line where space permits and wrap it on phones.
+- Above the author row, show only “paper” and “code.” Both the resource row and side rail link to the published `paper.pdf`; omit arXiv until its identifier is available and omit supplementary.
 - No navigation bar, jump links, or footer; the website is a continuous top-to-bottom document.
 - Place the teaser video immediately after the title and summary, without a separate method heading.
-- Include the linked author row beneath the title; do not add affiliations.
+- Include the linked author row beneath the two resource links; do not add affiliations. Place the collapsed abstract toggle immediately below the main video.
 - The released PDF is copied unchanged from `/mnt/external/Downloads/p_arxiv_dexlink (1).pdf` to `paper.pdf`.
 
 ### Favicon studies

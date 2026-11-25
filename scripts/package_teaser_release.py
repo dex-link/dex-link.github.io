@@ -36,6 +36,7 @@ def main():
     SOURCE = TWEET / args.run
     OUT = SOURCE / 'release'
     movie = 'dexlink-' + args.run.replace('run-', 'run', 1) + '.mp4'
+    movie_href = '../' + movie + '?v=' + hashlib.sha256((SOURCE / movie).read_bytes()).hexdigest()[:12]
     OUT.mkdir(exist_ok=True)
     replacements = {
         "../run-39/": "shared/",
@@ -58,8 +59,11 @@ def main():
         text = text.replace('../../favicon.svg', '../../../assets/favicon.png')
         if source.suffix == '.html':
             text = re.sub(r'<nav>.*?</nav>',
-                          f'<nav><a href="../{movie}">silent MP4</a><a href="../../../">project website</a></nav>',
+                          f'<nav><a href="{movie_href}">silent MP4</a><a href="../../../">project website</a></nav>',
                           text, flags=re.DOTALL)
+            if source.name == 'index.html':
+                revision = hashlib.sha256((SOURCE / 'player.js').read_bytes()).hexdigest()[:12]
+                text = re.sub(r'src="player\.js[^\"]*"', f'src="player.js?v={revision}"', text)
         (OUT / source.name).write_text('\n'.join(line.rstrip() for line in text.splitlines()).rstrip() + '\n')
     for name in ["motion.js", "motion.css", "story.js", "story.css", "font.css", "review.css"]:
         text = (TWEET / "run-39" / name).read_text()
@@ -122,7 +126,7 @@ def main():
     (OUT / "data/stills.json").write_text(json.dumps({"images":stills}, indent=2) + "\n")
     (OUT / 'README.md').write_text(
         '# DexLink selected teaser\n\n'
-        'Synthesizing Dexterous Behaviors from Chained Hand–Object Poses.\n\n'
+        'Synthesizing Dexterous Behaviors from Chained Hand-Object Poses.\n\n'
         f'The silent video is `../{movie}`. Serve the repository over HTTP '
         'to open this editable preview. It uses the published native task '
         'renders under `assets/renders/native/`; no local render caches are needed.\n')

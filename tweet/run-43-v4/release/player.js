@@ -22,6 +22,7 @@
     const messageLoaded=new Promise((resolve,reject)=>{messageScript.onload=resolve;messageScript.onerror=reject;});view.document.body.append(messageScript);await messageLoaded;
     const motion=view.run39Motion,story=view.run39Story,openingSeconds=config.opening_seconds;
     motion.finalSubtitle.firstElementChild.textContent='synthesizing dexterous behaviors from';
+    motion.finalSubtitle.lastElementChild.textContent='chained hand-object poses';
     motion.introFramework.textContent='generating';
     // The complete subtitle stays with the opening; there is no diversity footer.
     const diverse=view.document.createElement('span');diverse.className='r42-v5-diverse-word';diverse.textContent='diverse';

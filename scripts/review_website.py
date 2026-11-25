@@ -129,8 +129,8 @@ def main():
             assert page.evaluate('getComputedStyle(document.body).backgroundColor') == 'rgb(245, 244, 241)'
             assert 'IBM Plex Sans' in page.evaluate('getComputedStyle(document.body).fontFamily')
             assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
-            assert page.locator('.teaser-embed video').get_attribute('src') == 'tweet/run-43-v4/dexlink-run43-v4.mp4'
-            assert page.locator('h1 .title-description').inner_text().replace('\n', ' ') == 'Synthesizing Dexterous Behaviors from Chained Hand–Object Poses'
+            assert page.locator('.teaser-embed video').get_attribute('src').split('?')[0] == 'tweet/run-43-v4/dexlink-run43-v4.mp4'
+            assert page.locator('h1 .title-description').inner_text().replace('\n', ' ') == 'Synthesizing Dexterous Behaviors from Chained Hand-Object Poses'
             assert 'demonstrations' not in page.title().lower()
             review_authors(page)
             review_teaser(page)
@@ -209,7 +209,7 @@ def main():
             for time in [0,11.9,12.54,17,28,36,41,48.5]:
                 release.evaluate('t=>run42Seek(t)',time)
                 assert abs(release.evaluate('run42State().time')-time)<.001
-            assert release.evaluate("document.querySelector('iframe').contentWindow.run39Motion.finalSubtitle.textContent") == 'synthesizing dexterous behaviors fromchained hand–object poses'
+            assert release.evaluate("document.querySelector('iframe').contentWindow.run39Motion.finalSubtitle.textContent") == 'synthesizing dexterous behaviors fromchained hand-object poses'
             release.screenshot(path=str(OUT/'release-ending.png')); release.close(); browser.close()
     finally:
         server.shutdown(); server.server_close()
