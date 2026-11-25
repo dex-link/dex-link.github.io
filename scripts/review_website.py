@@ -108,7 +108,7 @@ def review_authors(page):
         ['Deep Patel', 'https://deepsworld.github.io/'],
         ['Beining Han', 'https://beininghan.github.io/'],
         ['Jia Deng', 'https://www.cs.princeton.edu/~jiadeng/']]
-    assert authors.evaluate_all('(links)=>{const r=links.map(a=>a.getBoundingClientRect());return r.every(a=>Math.abs(a.y-r[0].y)<1 && a.left>=0 && a.right<=innerWidth);}')
+    assert authors.evaluate_all('(links)=>{const r=links.map(a=>a.getBoundingClientRect());return r.every(a=>(innerWidth<700 || Math.abs(a.y-r[0].y)<1) && a.left>=0 && a.right<=innerWidth);}')
 
 
 def main():

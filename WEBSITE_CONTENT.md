@@ -20,7 +20,7 @@ This document records the website content and its current visual direction. The 
 ## Non-negotiable requirements
 
 - Use the framework name **DexLink** everywhere. Do not use the legacy framework name.
-- Show the four authors in order (Meenal Parakh, Deep Patel, Beining Han, Jia Deng), in a single row below the paper/code links, linked to their supplied personal websites with small diagonal arrows. Keep local usernames and workstation paths out of deployed metadata.
+- Show the four authors in order (Meenal Parakh, Deep Patel, Beining Han, Jia Deng), in a single row below the paper/code links, linked to their supplied personal websites as comma-separated, gray, italic, underlined names; omit arrows. Keep the author row left-aligned with the title and resource links, allowing natural wrapping on narrow phones. Keep local usernames and workstation paths out of deployed metadata.
 - Present the project through the task specification and qualitative behaviors. Do not reproduce every paper result or turn the page into a second paper.
 - Embed media directly in the website. A visitor should not need to open a video browser or external gallery.
 - Never use an untrained timestep-0 checkpoint. Every policy video copied from the revision bundle must have a strictly positive checkpoint timestep in `revision/data/revision_policy_video_manifest_20260924.csv`.
@@ -46,7 +46,7 @@ The page should make three ideas immediately visible:
 
 - Title: **DexLink: Synthesizing Dexterous Behaviors from Chained Hand-Object Poses**
 - A compact, abstract-like project summary using the paper's wording.
-- Match the final video lockup: symbol on the left with an espresso divider, and DexLink and its subtitle left-aligned at the same edge. Keep the subtitle on one line where space permits and wrap it on phones.
+- Match the final video lockup: symbol on the left with an espresso divider extending alongside the full text block, and DexLink, subtitle, resource links and authors left-aligned at the same edge. Keep the subtitle on one line where space permits and wrap it on phones.
 - Above the author row, show only “paper” and “code.” Both the resource row and side rail link to the published `paper.pdf`; omit arXiv until its identifier is available and omit supplementary.
 - No navigation bar, jump links, or footer; the website is a continuous top-to-bottom document.
 - Place the teaser video immediately after the title and summary, without a separate method heading.
