@@ -47,10 +47,10 @@ The page should make three ideas immediately visible:
 - Title: **DexLink: Synthesizing Dexterous Behaviors from Chained Hand-Object Poses**
 - A compact, abstract-like project summary using the paper's wording.
 - Match the final video lockup: symbol on the left with an espresso divider extending alongside the full text block, and DexLink, subtitle, resource links and authors left-aligned at the same edge. Keep the subtitle on one line where space permits and wrap it on phones.
-- Above the author row, show only “paper” and “code.” Both the resource row and side rail link to the published `paper.pdf`; omit arXiv until its identifier is available and omit supplementary.
+- Above the author row, show “arxiv · paper · code.” Use `https://arxiv.org/abs/2611.34936` in both the resource row and side rail: omit the version suffix so the link follows the latest arXiv version. Keep “paper” linked to the published `paper.pdf` and omit supplementary.
 - No navigation bar, jump links, or footer; the website is a continuous top-to-bottom document.
 - Place the teaser video immediately after the title and summary, without a separate method heading.
-- Include the linked author row beneath the two resource links; do not add affiliations. Place the collapsed abstract toggle immediately below the main video.
+- Include the linked author row beneath the resource links; do not add affiliations. Place the collapsed abstract toggle immediately below the main video.
 - The released PDF is copied unchanged from `/mnt/external/Downloads/p_arxiv_dexlink (1).pdf` to `paper.pdf`.
 
 ### Favicon studies
